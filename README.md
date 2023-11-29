@@ -1,4 +1,4 @@
-# Freind Shaped Plant
+# Friend Shaped Plant
 ## Under Heavy Construction!!!
 
 
