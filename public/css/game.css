@@ -1,0 +1,108 @@
+html, body {
+	margin: 0 auto;
+	font-family: sans-serif;
+	font-size: 20px;
+	background-image: url("../img/web.gif");
+	background-size: 200px;
+}
+
+img {
+	width: 120px;
+	height: auto;
+}
+	
+h1 {
+	margin: 2px;
+	font-size: 55px;
+	font-family: "Halloween", Georgia;
+	color: red;
+	text-shadow: 2px 2px 3px #0000;
+}
+
+p {
+	line-height: 1.5;
+	color: white;
+	font-family: "tatu", Courier New, Tahoma;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.blackBox{
+	background-color: black
+}
+	
+button {
+	margin-right: 20px;
+    padding: 8px;
+	font-size: 15px;
+	font-family: "tatu", Courier New, Tahoma;
+   }
+   
+#start_button {
+	font-size: 25px;
+	text-transform: uppercase;
+	float: right;
+	font-family: "Halloween", Georgia;
+	color: red;
+	background-color: black;
+	width: 140px;
+	height: 50px;
+}
+
+#start_button:disabled {
+	cursor: not-allowed;
+}
+
+#content {
+	padding: 20px;
+	display:flex;
+    flex-wrap:wrap;
+}	
+
+#gamespace {
+	margin: 20px;
+    height: 350px;
+    width: 600px;
+	background-color: black;
+	border: 2px solid white; 
+	cursor: url("../img/pumpkin.cur"), auto;
+}
+
+div #gamespace {
+	position: relative;
+}
+
+div #gamespace img { 
+	position: absolute; 
+}
+
+#timer {
+	display: none;
+	margin-left: 20px;
+	width: fit-content;
+	background-color: black
+}
+
+.col1{
+    text-align:center;
+    width: 550px;
+    min-width: 400px;
+}
+
+@media only screen and (max-width: 900px){
+    #content{
+        display: inline-block;
+    }
+    .col1{
+        margin:0 auto;
+    }
+}
+
+@font-face {
+	font-family: "Halloween";
+	src: url("../font/CFHalloween-Regular.ttf");
+}
+@font-face {
+	font-family: "tatu";
+	src: url("../font/tatu_font.ttf");
+}
