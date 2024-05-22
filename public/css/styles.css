@@ -48,18 +48,13 @@ and then link it! Many fonts have separate files for each style
 }
 
 @font-face {
-	font-family: AddBitmap;
-	src: url('../font/ADDSBP__.TTF');
+	font-family: Arcade;
+	src: url('../font/CthulhumbusArcade.ttf');
 }
 
 @font-face {
 	font-family: Venice;
 	src: url('../font/VeniceClassic.ttf');
-}
-
-@font-face {
-	font-family: Wayfarer;
-	src: url('../font/wayfarers-toy-box.ttf');
 }
 
 body {
@@ -100,6 +95,15 @@ EXCEPT for the navigation */
 	color: var(--silver);
 }
 
+#headerText{
+	color:var(--pale-purple);
+	text-align:center;
+	font-size: 3.8em;
+	font-family: 'Arcade', sans-serif;
+	-webkit-text-stroke: 1px var(--black);
+	text-decoration: blink;
+}
+
 #header {
 	width: 100%;
 	background-color: var(--lavender);
@@ -118,9 +122,10 @@ you can add them directly to the <div id="header"></div> element! */
 
 /* navigation section!! */
 #navbar {
-	height: 2em;
+	/*height: 2em;*/
 	background-color: var(--black); /* navbar color */
 	width: 100%;
+	padding: 10px 0px;
 }
 
 #navbar ul {
@@ -132,7 +137,7 @@ you can add them directly to the <div id="header"></div> element! */
 }
 
 #navbar li {
-	padding-top: 10px;
+	padding: 0px 15px;
 }
 
 /* navigation links*/
@@ -154,7 +159,7 @@ you can add them directly to the <div id="header"></div> element! */
 
 aside {
 	background-color: var(--poly-green);
-	width: 200px;
+	width: 225px;
 	padding: 20px;
 	font-size: smaller; /* this makes the sidebar text slightly smaller */
 }
@@ -257,6 +262,10 @@ feel free to play around with the order!
 
 	#rightSidebar {
 		order: 3;
+	}
+	
+	#headerText{
+		font-size: 2.5em;
 	}
 
 	#navbar ul {
