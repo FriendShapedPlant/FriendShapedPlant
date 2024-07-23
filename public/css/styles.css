@@ -72,6 +72,16 @@ body {
 	box-sizing: border-box;
 }
 
+.aliased { /*disables anti-aliasing, thx to these guys https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images*/
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
 /* below this line is CSS for the layout */
 
 /* the "container" is what wraps your entire website */
@@ -83,6 +93,7 @@ of the container */
 	/* if you change the above value, scroll to the bottom
 and change the media query according to the comment! */
 	margin: 0 auto; /* this centers the entire page */
+	text-decoration: none;
 }
 
 /* the area below is for all links on your page
@@ -90,18 +101,19 @@ EXCEPT for the navigation */
 #container a {
 	color: var(--pale-purple);
 	font-weight: bold;
+	text-decoration: none;
 }
 #container a:hover {
-	color: var(--silver);
+	color: var(--olivine);
+	text-decoration: none;
 }
 
 #headerText{
-	color:var(--pale-purple);
 	text-align:center;
 	font-size: 3.8em;
 	font-family: 'Arcade', sans-serif;
 	-webkit-text-stroke: 1px var(--black);
-	text-decoration: blink;
+	text-decoration: none;
 }
 
 #header {
@@ -198,7 +210,7 @@ footer {
 
 h1{
 	color: var(--pale-purple);
-	font-size: 1.5em;
+	font-size: 1.75em;
 }
 
 h2,
@@ -229,6 +241,43 @@ strong {
 	background-color: (--olivine);
 }
 
+#TV {
+	float:left; 
+	margin-right: 0.625em; 
+	/*margin-bottom: 0.625em;*/
+}
+
+
+li::before {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin-left: 5px;
+	margin-right: 2px;
+	content: "";
+	background: url("https://i.ibb.co/j4Y7r5c/Flower-Bullet.png");
+	background-size: auto;
+	background-size: 100%;
+	/*anti-aliasing shit again*/
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.exception li::before {
+	margin-left: -20px;
+	background: none;
+}
+
 
 /* BELOW THIS POINT IS MEDIA QUERY */
 
@@ -238,6 +287,10 @@ in order to keep things responsive, take your new height,
 and then subtrack it by 100. use this new number as the 
 "max-width" value below
 */
+
+@media only screen and (max-width: 1200px) {
+	.fun {display: none;}	
+}
 
 @media only screen and (max-width: 800px) {
 	#flex {
@@ -272,5 +325,12 @@ feel free to play around with the order!
 		flex-wrap: wrap;
 	}
 	
-	.fun {display: none;}
+}
+@media only screen and (max-width: 500px) {
+	#TV {
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
