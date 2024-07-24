@@ -303,11 +303,11 @@ since the sidebars would be too small on a mobile device.
 feel free to play around with the order!
 */
 	main {
-		order: 3;
+		order: 2;
 	}
 
 	#leftSidebar {
-		order: 2;
+		order: 3;
 	}
 
 	#rightSidebar {
