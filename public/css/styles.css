@@ -100,16 +100,12 @@ and change the media query according to the comment! */
 EXCEPT for the navigation */
 #container a {
 	color: var(--pale-purple);
-	font-weight: bold;
-	text-decoration: none;
 }
 #container a:hover {
 	color: var(--olivine);
-	text-decoration: none;
 }
 
 #headerText{
-	text-align:center;
 	font-size: 3.8em;
 	font-family: 'Arcade', sans-serif;
 	-webkit-text-stroke: 1px var(--black);
@@ -117,6 +113,7 @@ EXCEPT for the navigation */
 }
 
 #header {
+	text-align:center;
 	width: 100%;
 	background-color: var(--lavender);
 	height: 200px;
@@ -306,7 +303,7 @@ since the sidebars would be too small on a mobile device.
 feel free to play around with the order!
 */
 	main {
-		order: 1;
+		order: 3;
 	}
 
 	#leftSidebar {
@@ -314,7 +311,7 @@ feel free to play around with the order!
 	}
 
 	#rightSidebar {
-		order: 3;
+		order: 1;
 	}
 	
 	#headerText{
