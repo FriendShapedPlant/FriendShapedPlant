@@ -113,7 +113,6 @@ EXCEPT for the navigation */
 }
 
 #header {
-	text-align:center;
 	width: 100%;
 	background-color: var(--lavender);
 	height: 200px;
@@ -123,6 +122,7 @@ you can add them directly to the <div id="header"></div> element! */
 	background-image: var(--header-image);
 	background-position: center;
 	background-size: 100%;
+	text-align:center;
 }
 
 .center{
