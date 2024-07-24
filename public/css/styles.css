@@ -231,6 +231,10 @@ strong {
 	overflow-y: scroll;
 }
 
+.comment {
+	color: var(--olivine); 
+}
+
 /* CSS for extras */
 
 #topBar {
