@@ -102,7 +102,7 @@ EXCEPT for the navigation */
 	color: var(--pale-purple);
 }
 #container a:hover {
-	color: var(--olivine);
+	color: var(--smoke);
 }
 
 #headerText{
@@ -125,13 +125,16 @@ you can add them directly to the <div id="header"></div> element! */
 	text-align:center;
 }
 
+#header a:hover{
+	color:var(--olivine);
+}
+
 .center{
 	text-align:center;
 }
 
 /* navigation section!! */
 #navbar {
-	/*height: 2em;*/
 	background-color: var(--black); /* navbar color */
 	width: 100%;
 	padding: 10px 0px;
@@ -168,7 +171,7 @@ you can add them directly to the <div id="header"></div> element! */
 
 aside {
 	background-color: var(--poly-green);
-	width: 225px;
+	width: 275px;
 	padding: 20px;
 	font-size: smaller; /* this makes the sidebar text slightly smaller */
 }
@@ -241,7 +244,7 @@ strong {
 #TV {
 	float:left; 
 	margin-right: 0.625em; 
-	/*margin-bottom: 0.625em;*/
+	margin-top: .625em
 }
 
 
