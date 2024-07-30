@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Shaped Plant</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+  	<script src="js/script.js"></script>
+	<script src="js/sanitizer.js"></script>
+		
+	<div id="container">
+		<div id="headerArea">
+			<div id="header"><a href="index.html" style="text-decoration: none; font-weight: bold;"><span id="headerText">Friend Shaped Plant</span></a></div>
+			<nav id="navbar" class="exception">
+			</nav>
+		</div>
+		<div id="flex">
+			<aside id="leftSidebar">
+			<h2>What does it mean to sanitize links?</h2>
+			<p>Sometimes links come with a bunch of extra garbage in them, all for analytics. Cleaning them up makes them look nicer, as well as removes the servers ability track who or where or how it was shared.</p>
+
+			<p><a href="https://faun.pub/url-sanitization-the-why-and-how-9f14e1547151">URL Sanitization — The Why and How</a> goes over this info in way better detail than I ever could, I reccomend checking that article out!</p>
+			</aside>
+			<main>
+				<h1>Youtube Link Sanitizer</h1>
+				<p>Wanna clean up your youtube links? This is the right place!</p>
+				<p style="margin-bottom:5px;">Supported links so far:</p>
+				<ul style="margin-top:0px;">
+				<li>youtu.be</li>
+				<li>m.youtube.com</li>
+				<li>www.youtube.com</li>
+				</ul>
+				
+				<p>Got suggestions on links to support? let me know!</p>
+				
+				<form name="sanitizer" action="" method="POST">
+				  <label for="ytlink">Dirty Link:</label>
+				  <input type="text" id="ytlink" name="ytlink" size="50"><br>
+				  <input type="button" value="Sanitize!" onclick="sanitize(this.form);">
+				  <input type="button" value="Clear Link" onclick="clearlink(this.form);"><br>
+				  
+				  <p id="oops"> </p>
+				  
+				  <label for="sanilink">Clean Link:</label>
+				  <input type="text" id="sanilink" name="sanilink" size="50" readonly><br>
+				  <input type="button" value="Copy to Clipboard" onclick="clipboard(this.form);">
+				  <input type="button" value="Open Link" onclick="openLink()">
+				</form>
+				
+			</main>
+		</div>
+		<footer id="footer"></footer>
+	</div>
+	
+	<div class="fun aliased" style="position: fixed; right: -50px; bottom: -9px; z-index: 1;"><img alt="Page doll of a green person with red hair and a red flower around its green eye. It wears colorful casual clothes and smiles at the viewer." src="https://f2.toyhou.se/file/f2-toyhou-se/images/78507940_j0ccjskXjF7A10M.png" width="auto" height="350"></div>
+	
+  </body>
+</html>
