@@ -11,8 +11,8 @@ function sanitize() {
 	oops.innerHTML = "";
 		
 	let video = "https://www.youtube.com/watch?v=";
+	let shoppin = "https://www.amazon.com/dp/";
 	
-	//my ass DOES NOT know how to make this switch case shit
 	switch(true) {
 		case dirtyLink.startsWith('https://youtube.com/playlist'):
 		case dirtyLink.startsWith('https://www.youtube.com/playlist'):
@@ -29,6 +29,18 @@ function sanitize() {
 		case dirtyLink.startsWith('https://www.youtube.com/'):
 			cleanLink = dirtyLink.slice(32,43);
 			sanilink.value = video + cleanLink;
+			break;
+		case dirtyLink.startsWith('https://www.amazon.com/') && dirtyLink.includes("/dp/"): 
+		//split into array on the slashes, find the product ID which is ten characters in length
+			let cleanLinkArr = dirtyLink.split("/");
+			cleanLinkArr.forEach(link => {
+				if(link.length == 10){
+					cleanLink = link; 
+					return;
+				}
+			});
+
+			sanilink.value = shoppin + cleanLink;
 			break;
 		default:
 			oops.innerHTML = "Seems the link is incorrect :( Make sure it's one of the accepted links, and starts with \"https://\"!";
@@ -55,7 +67,6 @@ function clipboard() {
 
 function openLink() {
 	let linky = sanilink.value;
-	console.log(linky);
 	window.open(linky, "_blank");
 }
 
