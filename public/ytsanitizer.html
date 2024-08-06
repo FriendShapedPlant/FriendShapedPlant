@@ -22,6 +22,9 @@
 			<p>Sometimes links come with a bunch of extra garbage in them, all for analytics. Cleaning them up makes them look nicer, as well as removes the servers ability track who or where or how it was shared.</p>
 
 			<p><a href="https://faun.pub/url-sanitization-the-why-and-how-9f14e1547151">URL Sanitization — The Why and How</a> goes over this info in way better detail than I ever could, I reccomend checking that article out!</p>
+			
+			<h2>Can I sanitize links on my own?</h2>
+			<p>Sure can!</p> <p>9 times out of 10 you can remove everything after and including the question mark (?) in a url and it should work just fine.</p> <p>If a link has a bunch of junk with equals signs (=) and ampersands (&) in it, some of that may also be removable.</p> <p>Make sure your link still works before sending it off though!</p>
 			</aside>
 			<main>
 				<h1>Youtube Link Sanitizer</h1>
@@ -31,20 +34,21 @@
 				<li>youtu.be</li>
 				<li>m.youtube.com</li>
 				<li>www.youtube.com</li>
+				<li>www.amazon.com/dp</li>
 				</ul>
 				
 				<p>Got suggestions on links to support? let me know!</p>
 				
 				<form name="sanitizer" action="" method="POST">
 				  <label for="ytlink">Dirty Link:</label>
-				  <input type="text" id="ytlink" name="ytlink" size="50"><br>
+				  <input type="text" id="ytlink" name="ytlink" size="45"><br>
 				  <input type="button" value="Sanitize!" onclick="sanitize(this.form);">
 				  <input type="button" value="Clear Link" onclick="clearlink(this.form);"><br>
 				  
 				  <p id="oops"> </p>
 				  
 				  <label for="sanilink">Clean Link:</label>
-				  <input type="text" id="sanilink" name="sanilink" size="50" readonly><br>
+				  <input type="text" id="sanilink" name="sanilink" size="45" readonly><br>
 				  <input type="button" value="Copy to Clipboard" onclick="clipboard(this.form);">
 				  <input type="button" value="Open Link" onclick="openLink()">
 				</form>
