@@ -50,6 +50,7 @@ function sanitize() {
 
 function clearlink() {
 	ytlink.value = "";	
+	sanilink.value = "";
 }
 
 function clipboard() {
