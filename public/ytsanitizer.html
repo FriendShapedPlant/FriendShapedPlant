@@ -19,12 +19,15 @@
 		<div id="flex">
 			<aside id="leftSidebar">
 			<h2>What does it mean to sanitize links?</h2>
-			<p>Sometimes links come with a bunch of extra garbage in them, all for analytics. Cleaning them up makes them look nicer, as well as removes the servers ability track who or where or how it was shared.</p>
+			<p>Sometimes links come with a bunch of extra garbage in them, mainly for analytics. Cleaning them up makes them look nicer, as well as removes the servers ability track who or where or how it was shared.</p>
 
 			<p><a href="https://faun.pub/url-sanitization-the-why-and-how-9f14e1547151">URL Sanitization — The Why and How</a> goes over this info in way better detail than I ever could, I reccomend checking that article out!</p>
 			
 			<h2>Can I sanitize links on my own?</h2>
-			<p>Sure can!</p> <p>9 times out of 10 you can remove everything after and including the question mark (?) in a url and it should work just fine.</p> <p>If a link has a bunch of junk with equals signs (=) and ampersands (&) in it, some of that may also be removable.</p> <p>Make sure your link still works before sending it off though!</p>
+			<p>Sure can!</p> 
+			<p>9 times out of 10 you can remove everything after and including the question mark (?) in a url and it should work just fine.</p> 
+			<p>If you need the question mark, junk after ampersands (&) may be removable.</p> 
+			<p>Make sure your link still works before sending it off though!</p>
 			</aside>
 			<main>
 				<h1>Youtube Link Sanitizer</h1>
@@ -52,6 +55,8 @@
 				  <input type="button" value="Copy to Clipboard" onclick="clipboard(this.form);">
 				  <input type="button" value="Open Link" onclick="openLink()">
 				</form>
+				
+				<img src="img/tub.gif" alt="[bathtub pixel art]" class="fun aliased" style="padding-top:70px; margin:auto; display: block;">
 				
 			</main>
 		</div>
