@@ -31,11 +31,6 @@
   color: #F4F4F4;
 }
 
-#vtubers-on-neocities a:visited {
-  background: none;
-  color: rgb(196, 96, 60);
-}
-
 #vtubers-on-neocities a:focus {
   border-bottom: 1px solid;
   background: none;
