@@ -1,0 +1,172 @@
+/* onionring.js is made up of four files - onionring-widget.js, onionring-index.js, onionring-variables.js and onionring.css (this one!)
+// it's licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html)
+// it was originally made by joey + mord of allium (蒜) house, last updated 2020-10-24 */
+
+/* === ONIONRING.CSS === */
+/* this file affects the style of the widget. remember to replace all instances of #webringid with whatever value you have for ringID in the onionring-widget.js file. make sure it still has the # at the front, though! probably easiest to use find+replace to do it */
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
+@font-face {
+  font-family: 'Distro';
+  src: url('https://vtubers.neocities.org/distro.ttf') format('truetype');
+}
+
+#vtubers-on-neocities {
+  font-family: 'Distro', monospace;
+  color: #fff;
+  margin: 0 auto;
+  padding: 15px; /* creates some space around the widget */
+}
+
+#vtubers-on-neocities a {
+  outline: none;
+  text-decoration: none;
+  background: none;
+  padding: 2px 1px 0;
+}
+
+#vtubers-on-neocities a:link {
+  background: none;
+  color: #F4F4F4;
+}
+
+#vtubers-on-neocities a:visited {
+  background: none;
+  color: rgb(196, 96, 60);
+}
+
+#vtubers-on-neocities a:focus {
+  border-bottom: 1px solid;
+  background: none;
+  color: #333;
+}
+
+#vtubers-on-neocities a:hover {
+  border-bottom: 1px solid;
+  background: none;
+  color: #eee;
+}
+
+#vtubers-on-neocities a:active {
+  background: none;
+  color: #eee;
+}
+
+#vtubers-on-neocities table {
+  /*background-color: #000; /* makes the background pure black */
+  background:
+  radial-gradient(
+    ellipse at 22% 31%,
+    rgb(65, 53, 98),
+    transparent 55%),
+  radial-gradient(
+    ellipse at 97% 87%,
+    rgb(81, 82, 132),
+    transparent 55%),
+  radial-gradient(
+    ellipse at 61% 12%,
+    rgb(209, 61, 58),
+    transparent 45%),
+  radial-gradient(
+    ellipse at 53% 57%,
+    rgb(180, 65, 113),
+    transparent 55%),
+  radial-gradient(
+    ellipse at 17% 79%,
+    rgb(219, 187, 77),
+    transparent 55%),
+  rgb(0, 0, 0);
+  margin: 0 auto; /* centers the widget */
+}
+
+#vtubers-on-neocities table tr td {
+  padding: 0 15px 0 15px; /* creates some space between the links and text inside the widget */
+  border-collapse: separate;
+}
+
+#vtubers-on-neocities .webring-prev {
+  text-align: right;
+}
+
+#vtubers-on-neocities .webring-info {
+   margin: 0;
+   padding: 0;
+}
+
+#vtubers-on-neocities .webring-next {
+  text-align:left;
+}
+
+#vtubers-on-neocities .webring-links {
+  font-size:small;
+  text-align:center;
+}
+
+#vtubers-on-neocities-title-pre
+{
+  margin: 0 0 0 4em;
+  text-align:left;
+}
+
+#vtubers-on-neocities-title-post
+{
+  margin: 0 0 0 13em;
+  text-align:left;
+}
+
+#vtubers-on-neocities-title-wrapper {
+  font-size: 0.5em;
+  position: relative;
+  height: 5.2em;
+  width: 25em;
+  margin: 0 auto;
+  padding: 0;
+  text-shadow:
+          0 0 0.15em rgba(255, 255, 255, 1),
+          0 0 0.3em rgba(255, 255, 255, 1),
+          0 0 0.6em rgba(255, 255, 255, 1);
+}
+
+#vtubers-on-neocities-title-elem-1 {
+  position:absolute;
+  color: rgb(252, 108, 56);
+  font-weight: bold;
+  font-family: "Stint Ultra Expanded", monospace;
+  font-size: 2.8em;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#vtubers-on-neocities-title-elem-2 {
+  position:absolute;
+  color:rgb(0, 0, 0);
+  font-family: 'Krona One', sans-serif;
+  font-size: 4.5em;
+  top: -0.25rem;
+  left: 1.5rem;
+  z-index:0;
+}
+
+#vtubers-on-neocities-title-elem-3 {
+  position:absolute;
+  color:rgb(92, 68, 131);
+  font-family: 'Distro', monospace;
+  font-size: 2.5em;
+  transform: scale(1.6, 1);
+  top: 1.15rem;
+  left: 3rem;
+  z-index:4;
+}
+
+#vtubers-on-neocities-title-elem-4 {
+  position:absolute;
+  color:white;
+  font-style: italic;
+  font-family: courier, "courier new", monospace;
+  font-size: 6em;
+  top: -0.15rem;
+  left: 11.5rem;
+  z-index:4;
+}
