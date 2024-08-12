@@ -62,7 +62,6 @@ body {
 	font-size: 1.35em;
 	margin: 0;
 	background-color: var(--olivine);
-	/* you can delete the line below if you'd prefer to not use an image */
 	background-size: 300px;
 	color: var(--smoke);
 	background-image: var(--body-bg-image);
@@ -72,14 +71,8 @@ body {
 	box-sizing: border-box;
 }
 
-.aliased { /*disables anti-aliasing, thx to these guys https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images*/
-	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated;                 /* Universal support since 2021   */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+.aliased {
+    image-rendering: pixelated;
 }
 
 /* below this line is CSS for the layout */
@@ -237,14 +230,6 @@ strong {
 
 /* CSS for extras */
 
-#topBar {
-	width: 100%;
-	height: 30px;
-	padding: 10px;
-	font-size: smaller;
-	background-color: (--olivine);
-}
-
 #TV {
 	float:left; 
 	margin-right: 0.625em; 
@@ -262,14 +247,7 @@ li::before {
 	background: url("https://i.ibb.co/j4Y7r5c/Flower-Bullet.png");
 	background-size: auto;
 	background-size: 100%;
-	/*anti-aliasing shit again*/
-	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated;                 /* Universal support since 2021   */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    image-rendering: pixelated;
 }
 
 ul {
