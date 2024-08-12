@@ -194,6 +194,10 @@ strong {
 	color: var(--smoke);
 }
 
+summary {
+	margin-top: 18px;
+}
+
 .box {
 	border: 1px solid var(--olivine);
 	height: 300px;
