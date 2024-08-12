@@ -88,6 +88,7 @@
 #vtubers-on-neocities .webring-info {
    margin: 0;
    padding: 0;
+   text-align:center;
 }
 
 #vtubers-on-neocities .webring-next {
@@ -96,7 +97,6 @@
 
 #vtubers-on-neocities .webring-links {
   font-size:small;
-  text-align:center;
 }
 
 #vtubers-on-neocities-title-pre
