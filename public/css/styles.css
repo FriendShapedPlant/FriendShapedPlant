@@ -12,15 +12,11 @@
 	--smoke: #F4F4F4;
 }
 
-/* if you have the URL of a font, you can set it below */
-/* feel free to delete this if it's not your vibe */
-
 /* this seems like a lot for just one font and I would have to agree 
 but I wanted to include an example of how to include a custom font.
 If you download a font file you can upload it onto your Neocities
 and then link it! Many fonts have separate files for each style
 (bold, italic, etc. T_T) which is why there are so many!
-
 */
 
 @font-face {
@@ -47,6 +43,7 @@ and then link it! Many fonts have separate files for each style
 	font-weight: bold;
 }
 
+/* My Fonts */
 @font-face {
 	font-family: Arcade;
 	src: url('../font/CthulhumbusArcade.ttf');
@@ -75,22 +72,16 @@ body {
     image-rendering: pixelated;
 }
 
-/* below this line is CSS for the layout */
+/* Layout CSS */
 
-/* the "container" is what wraps your entire website */
-/* if you want something (like the header) to be Wider than
-the other elements, you will need to move that div outside
-of the container */
 #container {
-	max-width: 900px; /* this is the width of your layout! */
+	max-width: 900px;
 	/* if you change the above value, scroll to the bottom
 and change the media query according to the comment! */
-	margin: 0 auto; /* this centers the entire page */
+	margin: 0 auto;
 	text-decoration: none;
 }
 
-/* the area below is for all links on your page
-EXCEPT for the navigation */
 #container a {
 	color: var(--pale-purple);
 }
@@ -109,7 +100,6 @@ EXCEPT for the navigation */
 	width: 100%;
 	background-color: var(--lavender);
 	height: 200px;
-	/* this is only for a background image! */
 	/* if you want to put images IN the header, 
 you can add them directly to the <div id="header"></div> element! */
 	background-image: var(--header-image);
@@ -126,9 +116,9 @@ you can add them directly to the <div id="header"></div> element! */
 	text-align:center;
 }
 
-/* navigation section!! */
+/* Navbar */
 #navbar {
-	background-color: var(--black); /* navbar color */
+	background-color: var(--black);
 	width: 100%;
 	padding: 10px 0px;
 }
@@ -145,14 +135,12 @@ you can add them directly to the <div id="header"></div> element! */
 	padding: 0px 15px;
 }
 
-/* navigation links*/
 #navbar li a {
-	color: var(--smoke); /* navbar text color */
+	color: var(--smoke);
 	font-weight: 800;
-	text-decoration: none; /* this removes the underline */
+	text-decoration: none;
 }
 
-/* navigation link when a link is hovered over */
 #navbar li a:hover {
 	color: var(--silver);
 	text-decoration: underline;
@@ -166,24 +154,15 @@ aside {
 	background-color: var(--poly-green);
 	width: 275px;
 	padding: 20px;
-	font-size: smaller; /* this makes the sidebar text slightly smaller */
+	font-size: smaller;
 }
 
-
-/* this is the color of the main content area,
-between the sidebars! */
 main {
 	background-color: var(--lavender);
 	flex: 1;
 	padding: 20px;
 	order: 2;
 }
-
-/* what's this "order" stuff about??
-allow me to explain!
-if you're using both sidebars, the "order" value
-tells the CSS the order in which to display them.
-left sidebar is 1, content is 2, and right sidebar is 3! */
 
 #leftSidebar {
 	order: 1;
@@ -194,11 +173,11 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 }
 
 footer {
-	background-color: #13092D; /* background color for footer */
+	background-color: #13092D;
 	width: 100%;
 	height: 40px;
 	padding: 10px;
-	text-align: center; /* this centers the footer text */
+	text-align: center;
 }
 
 h1{
@@ -283,10 +262,6 @@ and then subtrack it by 100. use this new number as the
 		width: 100%;
 	}
 
-	/* the order of the items is adjusted here for responsiveness!
-since the sidebars would be too small on a mobile device.
-feel free to play around with the order!
-*/
 	main {
 		order: 2;
 	}
