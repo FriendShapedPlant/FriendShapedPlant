@@ -1,11 +1,11 @@
 // onionring.js is made up of four files - onionring-widget.js (this one!), onionring-index.js, onionring-variables.js and onionring.css
 // it's licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html)
-// it was originally made by joey + mord of allium (è’œ) house, last updated 2020-11-24
+// it was originally made by joey + mord of allium (蒜) house, last updated 2020-11-24
 
 // === ONIONRING-WIDGET ===
 //this file contains the code which builds the widget shown on each page in the ring. ctrl+f 'EDIT THIS' if you're looking to change the actual html of the widget
 
-var tag = document.getElementById(ringID); //find the widget on the page
+var tag = document.getElementById("hellisreal"); //find the widget on the page
 
 thisSite = window.location.href; //get the url of the site we're currently on
 thisIndex = null;
@@ -28,11 +28,7 @@ function randomSite() {
 //if we didn't find the site in the list, the widget displays a warning instead
 if (thisIndex == null) {
   tag.insertAdjacentHTML('afterbegin', `
-<table>
-  <tr>
-    <td>This site isn't part of the ${ringName} webring yet. You should talk to the manager to have your site added to the list!</td>
-  </tr>
-</table>
+This site isn't part of the ${ringName} webring yet. You should talk to Brutus Buckeye to have your site added to the list!
   `);
 }
 else {
@@ -45,41 +41,32 @@ else {
   indexText = ""
   //if you've chosen to include an index, this builds the link to that
   if (useIndex) {
-    indexText = `<a href='${indexPage}'>index</a>`;
+    indexText = `<a href='${indexPage}'>index</a> | `;
   }
 
   randomText = ""
   //if you've chosen to include a random button, this builds the link that does that
   if (useRandom) {
-    randomText = `<a href='javascript:void(0)' onclick='randomSite()'>random</a> <br>`;
+    randomText = `<a href='javascript:void(0)' onclick='randomSite()'>random</a> | `;
   }
 
-  //this is the code that displays the widget - EDIT THIS if you want to change the structure
-  tag.insertAdjacentHTML('afterbegin', `
+ //this is the code that displays the widget - EDIT THIS if you want to change the structure
+ tag.insertAdjacentHTML('afterbegin', `
   <table>
     <tr>
     <td class='webring-info' colspan=3>
-      <div id='vtubers-on-neocities-title-wrapper'>
-        <div id='vtubers-on-neocities-title-elem-1'>
-        Vtubers
-        </div>
-        <div id='vtubers-on-neocities-title-elem-2'>
-        o n
-        </div>
-        <div id='vtubers-on-neocities-title-elem-3'>
-        n e o c i t i e s
-        </div>
-        <div id='vtubers-on-neocities-title-elem-4'>
-        !
-        </div>
-      </div>
+      <a href="https://prophetesque.gay/hellisreal" id="middleflag">
+	  <img src="https://prophetesque.gay/hellisreal/hellisreal.png" alt="HELL IS REAL"></a>
     </td>
     </tr>
     <tr>
-      <td class='webring-prev'><a href='${sites[previousIndex]}'>&lt;&lt;prev</a></td>
+      <td class='webring-prev'><a href='${sites[previousIndex]}' id="leftarrow">prev</a></td>
       <td class='webring-info'>
-      <span class='webring-links' align="center">${randomText}${indexText}</span>
-	  <td class='webring-next'><a href='${sites[nextIndex]}'>next&gt;&gt;</a></td>
+      <span class='webring-links' align="center">
+        ${randomText}
+        ${indexText}
+        <a href='https://garlic.garden/onionring/'>?</a></span>
+	  <td class='webring-next'><a href='${sites[nextIndex]}' id="rightarrow">next</a></td>
     </tr>
   </table>
   `);
