@@ -13,6 +13,8 @@
   color: #878694;
   font-family: "Helvetica", sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 #hellisreal table {
