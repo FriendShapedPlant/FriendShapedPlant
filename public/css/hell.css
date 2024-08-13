@@ -10,6 +10,8 @@
   padding: 5px; /* creates some space around the widget */
   width: fit-content;
   background:#000;
+  color: #878694;
+  font-family: "Helvetica", sans-serif;
 }
 
 #hellisreal table {
@@ -18,6 +20,18 @@
 
 #hellisreal table tr td {
   padding: 5px; /* creates some space between the links and text inside the widget */
+}
+
+#hellisreal a{
+	
+}
+
+#hellisreal a:focus {
+	color: #6A0042;
+}
+
+#hellisreal a:hover {
+	color: #6A0042;
 }
 
 #hellisreal .webring-prev {
