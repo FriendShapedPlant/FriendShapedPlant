@@ -55,18 +55,18 @@ else {
   <table>
     <tr>
     <td class='webring-info' colspan=3>
-      <a href="https://prophetesque.gay/hellisreal" id="middleflag">
+      <a href="https://prophetesque.gay/hellisreal">
 	  <img src="https://prophetesque.gay/hellisreal/hellisreal.png" alt="HELL IS REAL" width="100%"></a>
     </td>
     </tr>
     <tr>
-      <td class='webring-prev'><p><a href='${sites[previousIndex]}' id="leftarrow">prev</a></p></td>
+      <td class='webring-prev'><p><a href='${sites[previousIndex]}'>prev</a></p></td>
       <td class='webring-info'>
       <p><span class='webring-links' align="center">
         ${randomText}
         ${indexText}
         <a href='https://garlic.garden/onionring/'>?</a></span></p>
-	  <td class='webring-next'><p><a href='${sites[nextIndex]}' id="rightarrow">next</a></p></td>
+	  <td class='webring-next'><p><a href='${sites[nextIndex]}'>next</a></p></td>
     </tr>
   </table>
   `);

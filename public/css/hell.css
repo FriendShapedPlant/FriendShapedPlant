@@ -18,12 +18,8 @@
   margin: 0 auto; /* centers the widget */
 }
 
-#hellisreal table tr td {
-  padding: 5px; /* creates some space between the links and text inside the widget */
-}
-
 #hellisreal a{
-	
+	color: #878694;
 }
 
 #hellisreal a:focus {
@@ -36,39 +32,32 @@
 
 #hellisreal .webring-prev {
   text-align:right;
-  font-family: Serif;
-   font-size: 22px;
-   color: #fff;
+  font-size: 22px;
 }
 
 #hellisreal .webring-info {
    text-align:center;
-   font-family: Serif;
    font-size: 22px;
-   color: #fff;
 }
 
 #hellisreal .webring-next {
   text-align:left;
-   font-family: Serif;
-   font-size: 22px;
-   color: #fff;
+  font-size: 22px;
 }
 
 #hellisreal .webring-links {
-  font-family: Serif;
-   font-size: 22px;
-   color: #fff;
+  text-align:center;
+  font-size: 22px;
 }
+
+/*
 #leftarrow{
 height: 50px;  
-/* content: url() */
 }
 #rightarrow{
 height: 50px;
-/* content: url() */
 }
 #middleflag{
 height: 58px;
-/* content: url() */
 }
+*/
