@@ -47,7 +47,7 @@ else {
   randomText = ""
   //if you've chosen to include a random button, this builds the link that does that
   if (useRandom) {
-    randomText = `<a href='javascript:void(0)' onclick='randomSite()'>random</a> | `;
+    randomText = `<a href='javascript:void(0)' onclick='randomSite()'>random</a> <br> `;
   }
 
  //this is the code that displays the widget - EDIT THIS if you want to change the structure
@@ -60,13 +60,13 @@ else {
     </td>
     </tr>
     <tr>
-      <td class='webring-prev'><p><a href='${sites[previousIndex]}'>prev</a></p></td>
+      <td class='webring-prev'><p><a href='${sites[previousIndex]}'>< prev</a></p></td>
       <td class='webring-info'>
       <p><span class='webring-links' align="center">
         ${randomText}
         ${indexText}
         <a href='https://garlic.garden/onionring/'>?</a></span></p>
-	  <td class='webring-next'><p><a href='${sites[nextIndex]}'>next</a></p></td>
+	  <td class='webring-next'><p><a href='${sites[nextIndex]}'>next ></a></p></td>
     </tr>
   </table>
   `);
