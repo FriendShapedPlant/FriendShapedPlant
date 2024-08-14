@@ -211,6 +211,10 @@ summary {
 	color: var(--olivine); 
 }
 
+.full-height {
+        height: 50vh;
+}
+
 /* CSS for extras */
 
 #TV {
