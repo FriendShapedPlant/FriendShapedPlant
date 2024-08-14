@@ -5,7 +5,7 @@ window.addEventListener('load', (event) =>{
 		navbar.innerHTML = `
 		<ul>
 			<li><a href="about.html">About</a></li>
-			<li><a href="#" style="color:var(--silver); text-decoration:line-through;">Gallery</a></li>
+			<li><a href="gallery/index.html">Gallery</a></li>
 			<li><a href="#" style="color:var(--silver); text-decoration:line-through;">Shrines</a></li>
 			<li><a href="links.html">Links</a></li>
 			<li><a href="projects.html">Code Projects</a></li>	
