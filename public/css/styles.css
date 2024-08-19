@@ -6,7 +6,7 @@
 	--olivine: #9DBD89; /* safe on poly green, NOT lavender*/
 	--poly-green: #384B35;
 	--pale-purple: #BDB2F5; /* safe on poly green & lavender*/
-	--lavender: #52468C;
+	--lavender: #51428c;
 	--black: #181F1C;
 	--silver: #AAAAAA;
 	--smoke: #F4F4F4;
@@ -119,6 +119,7 @@ you can add them directly to the <div id="header"></div> element! */
 /* Navbar */
 #navbar {
 	background-color: var(--black);
+	background-image: url("../img/gravel.png");
 	width: 100%;
 	padding: 10px 0px;
 }
@@ -152,6 +153,7 @@ you can add them directly to the <div id="header"></div> element! */
 
 aside {
 	background-color: var(--poly-green);
+	background-image: url("../img/buried.png");
 	width: 275px;
 	padding: 20px;
 	font-size: smaller;
@@ -159,6 +161,7 @@ aside {
 
 main {
 	background-color: var(--lavender);
+	background-image: url("../img/leaf.png");
 	flex: 1;
 	padding: 20px;
 	order: 2;
@@ -174,6 +177,7 @@ main {
 
 footer {
 	background-color: #13092D;
+	background-image: url("../img/gravel.png");
 	width: 100%;
 	height: 40px;
 	padding: 10px;
