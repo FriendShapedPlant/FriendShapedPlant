@@ -16,7 +16,8 @@
 
 #photos img {
     border: 3px ridge #F4F4F4;
-	height: 280px;
+	max-height: 280px;
+	width: auto;
 }
 
 #photos img:hover {
@@ -50,7 +51,7 @@
 
 @media (max-width: 800px) {
     body {
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     #photos figure {
@@ -79,6 +80,7 @@
 
 #js-viewer img {
     max-height: 80%;
+	max-width: 100%;
     height: auto;
     width: auto;
     border: 3px ridge #c3c3c3;
