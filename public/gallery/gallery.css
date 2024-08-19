@@ -50,10 +50,6 @@
 /* Mobile Styling */
 
 @media (max-width: 800px) {
-    body {
-        /* padding: 10px; */
-    }
-
     #photos figure {
         max-width: unset;
     }
