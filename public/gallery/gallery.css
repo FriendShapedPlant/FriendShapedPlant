@@ -29,10 +29,6 @@
     display: block;
 }
 
-#photos figcaption {
-    padding: 10px 0px;
-}
-
 .page-links {
     text-align: center;
 }
@@ -51,11 +47,11 @@
 
 @media (max-width: 800px) {
     #photos figure {
-        max-width: unset;
+        /* max-width: unset; */
     }
 
     #photos img {
-        width: 100%;
+        /* width: 100%; */
     }
 }
 
