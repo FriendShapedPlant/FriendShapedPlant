@@ -65,7 +65,7 @@ else {
       <p><span class='webring-links' align="center">
         ${randomText}
         ${indexText}
-        <a href='https://garlic.garden/onionring/'>?</a></span></p>
+      </span></p>
 	  <td class='webring-next'><p><a href='${sites[nextIndex]}'>next ></a></p></td>
     </tr>
   </table>
