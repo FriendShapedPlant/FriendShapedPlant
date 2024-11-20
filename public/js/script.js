@@ -6,7 +6,7 @@ window.addEventListener('load', (event) =>{
 		<ul>
 			<li><a href="about.html">About</a></li>
 			<li><a href="gallery/index.html">Gallery</a></li>
-			<li><a href="#" style="color:var(--silver); text-decoration:line-through;">Shrines</a></li>
+			<li><a href="shrines.html">Shrines</a></li>
 			<li><a href="links.html">Links</a></li>
 			<li><a href="projects.html">Code Projects</a></li>	
 		</ul>

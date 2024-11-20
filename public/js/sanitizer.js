@@ -9,6 +9,7 @@ function sanitize() {
 	sanilink.value = "";
 	let cleanLink = "";
 	oops.innerHTML = "";
+	let cleanLinkArr = [];
 		
 	let video = "https://www.youtube.com/watch?v=";
 	let shoppin = "https://www.amazon.com/dp/";
@@ -31,19 +32,14 @@ function sanitize() {
 			sanilink.value = video + cleanLink;
 			break;
 		case dirtyLink.startsWith('https://www.amazon.com/') && dirtyLink.includes("/dp/"): 
-		//split into array on the slashes, find the product ID which is ten characters in length
-			let cleanLinkArr = dirtyLink.split("/");
-			cleanLinkArr.forEach(link => {
-				if(link.length == 10){
-					cleanLink = link; 
-					return;
-				}
-			});
-
+			cleanLinkArr = dirtyLink.split("/");
+			cleanLink = cleanLinkArr[cleanLinkArr.length - 2];
 			sanilink.value = shoppin + cleanLink;
 			break;
 		default:
-			oops.innerHTML = "Seems the link is incorrect :( Make sure it's one of the accepted links, and starts with \"https://\"!";
+			cleanLinkArr = dirtyLink.split("?");
+			cleanLink = cleanLinkArr[0];
+			sanilink.value = cleanLink;
 			break;
 	}
 }
