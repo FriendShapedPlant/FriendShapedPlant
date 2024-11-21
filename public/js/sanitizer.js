@@ -33,7 +33,16 @@ function sanitize() {
 			break;
 		case dirtyLink.startsWith('https://www.amazon.com/') && dirtyLink.includes("/dp/"): 
 			cleanLinkArr = dirtyLink.split("/");
-			cleanLink = cleanLinkArr[cleanLinkArr.length - 2];
+			let dpFound = false;
+			//look for dp; if dp found, switch to true & it'll grab the value after dp before setting false again
+			cleanLinkArr.forEach(m => {
+				if(dpFound == true){
+					let splitter = m.split("?"); //also get rid of ? crap if needed
+					cleanLink = splitter[0];
+					dpFound = false;
+				}
+				if(m === "dp") dpFound = true;
+			})
 			sanilink.value = shoppin + cleanLink;
 			break;
 		default:
