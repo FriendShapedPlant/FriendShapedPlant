@@ -1,5 +1,5 @@
 # Friend Shaped Plant
-## Under Heavy Construction!!!
+## A site for fun arts, viddy games, and old web vibes.
 
 
 [Link to the live site!](https://friendshapedplant.neocities.org/)
