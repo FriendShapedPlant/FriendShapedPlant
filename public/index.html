@@ -16,14 +16,67 @@
 	<script src="js/script.js"></script>
     <div id="container">
         <div id="headerArea">
-            <div id="header" class="center"><a href="index.html" target="_self" style="text-decoration: none; font-weight: bold;"><span id="headerText">Friend Shaped Plant</span></a></div>
+            <div id="header" class="center">
+			<a href="#flex" class="center skipper" target="_self" style="color:black; background-color:white;">Skip to main content</a> <br/>
+			<a href="index.html" target="_self" style="text-decoration: none; font-weight: bold;">
+			<span id="headerText">Friend Shaped Plant</span></a>
+			</div>
             <nav id="navbar" class="exception">				
             </nav>
         </div>
     
         <div id="flex">
+		    <main>
+				<h1>Welcome to the Friend Shaped Garden!</h1>
+				<p>My lil space on the internet for uhhhhh things! Probably mainly video game things.</p>
+				<p>Website should be mobile compatible, though you do miss out on a few minor fun things. Developed on an 1920x1080 desktop using Firefox, so that's likely the best way to view it!</p>
+				<p>All external links open on a new tab by default.</p>
+				
+				<label for="sitebtn"><img src="https://i.ibb.co/pjLs2sD/FSPbutton.png" alt="Friend Shaped Plant Button" title="Friend Shaped Plant" style="padding:0px 10px 0px 5px"></label><textarea id="sitebtn" readonly><a href="https://friendshapedplant.neocities.org/"><img src="https://i.ibb.co/pjLs2sD/FSPbutton.png" alt="Friend Shaped Plant" title="Friend Shaped Plant"</a></textarea>
+				
+				<br>
+				<h4>My Twitch channel, live every Thursday evening!</h4>
+				<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+				<div id="gamers" class="full-height"></div>
+				<script type="text/javascript">
+				  var options = {
+					width: "100%",
+					height: "100%",
+					channel: "friendshapedplant",
+					// only needed if your site is also embedded on embed.example.com and othersite.example.com
+					parent: ["friendshapedplant.neocities.org"]
+				  };
+				  var player = new Twitch.Player("gamers", options);
+				  player.setVolume(0.5);
+				</script>
+				
+				<script type="text/javascript">
+					var embed = document.getElementById('gamers');
+					var info = document.getElementById('info');
+					var cls = 'full-height';
+
+					function updateInfo() {
+							info.textContent = document.body.clientHeight + 'px, #twitch-embed height is ' + embed.clientHeight + 'px';
+					}
+					updateInfo();
+
+					document.getElementById('style').addEventListener('click', function() {
+							if (embed.classList.contains(cls)) {
+									embed.classList.remove(cls);
+							} else {
+									embed.classList.add(cls);
+							}
+							updateInfo();
+					});
+				</script>
+
+				<br/>
+				<iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Maduna&dob=1716470636&gender=f&element=Darkness&pet=https%3A%2F%2Fi.ibb.co%2F1nsPn4s%2FDMS.gif&map=tree.jpg&background=&tablecolor=%23f4f4f4&textcolor=%23f4f4f4"></iframe>    
+    
+            </main>
+			
             <aside id="leftSidebar">
-				<a href="http://www.mabsland.com/Adoption.html"><img alt="Rebma: Mature Rated Site" title="Contains swearing, gore, & nudity.  Viewer should be at least 17 or with parental guidance." src="img/Censor_Ma.gif" class="aliased"></a><br>
+				<a href="http://www.mabsland.com/Adoption.html"><img alt="Rebma: Mature Rated Site" title="Contains swearing, gore, & nudity. Viewer should be at least 17 or with parental guidance." src="img/Censor_Ma.gif" class="aliased"></a><br>
 				<img alt="No nazi, no fascism, no racism." src="https://i.ibb.co/YyYDqjz/antinazi.gif">
 				<img alt="You're telling me a queer coded this?" src="https://i.ibb.co/4KXD16L/queer.png"> <img src="https://i.ibb.co/rfmsG5b/notepadpp3.gif" alt="Friend Shaped Plant Button"> 
 				<img alt="Get FireFox." src="https://i.ibb.co/ZMPcKgX/firefox.gif">
@@ -43,15 +96,23 @@
 				<p style="margin-top:0px;"><a href="https://garlic.garden/onionring/">Powered by Onionring.js</a></p>
 	
                 <h2>Updates</h2>
+				<a href="#footer" class="skipper" target="_self">Skip to footer content</a>
                 <div class="box">
 				
 					<details open="">
-					<summary><strong>April 30, 2025</strong></summary>
+					<summary><strong>May 1, 2025</strong></summary>
 					<ul>
+					<li>Navbar links now all open in same tab instead of new tab once again!</li>
+					<li>Implemented keyboard accessibility to skip the nav and this updates bit if desired.</li>
+					<li>Added missing alt text on Nanci shrine.</li>
+					</ul>
+					</details>
+					
+					<details>
+					<summary><strong>April 30, 2025</strong></summary>
 					<p>Navbar now has dropdown menus! They're keyboard accessible too :D</p>
 					<span class="comment"><p>That's all rip, haven't had the motivation to do much :( But I am not dead!</p>
 					<p>HEY WAIT ITS BEEN A YEAR SINCE I STARTED MY SITE???? 1 year anniversary update I guess lmao</p></span>
-					</ul>
 					</details>
 					
 					<details>
@@ -74,6 +135,7 @@
 					<li>Created Shrines page! Currently showcases other's shrines.</li>
 					<li>Link Sanitizer now has general link support</li>
 					<li>Link Sanitizer handles Amazon links more effectively :3</li>
+					</ul>
 					
 					</details>
 					
@@ -83,6 +145,7 @@
 					<li>Fixed Gallery thumbnails on mobile <span class="comment">(I Hope...)</span></li>
 					<li>All Gallery pieces now have a caption with some bare bone details about each piece!</li>
 					<li>Backloggery now has a pixel button on my Links sidebar</li>
+					</ul>
 					</details>
 					
 					<details>
@@ -90,6 +153,7 @@
 					<ul>
 					<li>Added more cosplays to Gallery</li>
 					<li>Gallery pages now have "Back to Top" button at the bottom of the page!</li>
+					</ul>
 					</details>
 					
 					<details>
@@ -98,6 +162,7 @@
 					<ul>
 					<li>All containers (main, navbar, etc) get a bit of texture :3</li>
 					<li>Fixed up Gallery mobile formatting</li>
+					</ul>
 					</details>
 					
 					<details>
@@ -213,54 +278,6 @@
 					<p>After a million years I'm givin this place a proper look. What do you think?</p>
                 </div>
             </aside>
-            <main>
-				<h1>Welcome to the Friend Shaped Garden!</h1>
-				<p>My lil space on the internet for uhhhhh things! Probably mainly video game things.</p>
-				<p>Website should be mobile compatible, though you do miss out on a few minor fun things. Developed on an 1920x1080 desktop using Firefox, so that's likely the best way to view it!</p>
-				<p>All external links open on a new tab by default.</p>
-				
-				<img src="https://i.ibb.co/pjLs2sD/FSPbutton.png" alt="Friend Shaped Plant Button" title="Friend Shaped Plant" style="padding:0px 10px 0px 5px"><textarea readonly><a href="https://friendshapedplant.neocities.org/"><img src="https://i.ibb.co/pjLs2sD/FSPbutton.png" alt="Friend Shaped Plant" title="Friend Shaped Plant"</a></textarea>
-				
-				<br>
-				<p>My Twitch channel, live every Thursday evening!</p>
-				<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-				<div id="gamers" class="full-height"></div>
-				<script type="text/javascript">
-				  var options = {
-					width: "100%",
-					height: "100%",
-					channel: "friendshapedplant",
-					// only needed if your site is also embedded on embed.example.com and othersite.example.com
-					parent: ["friendshapedplant.neocities.org"]
-				  };
-				  var player = new Twitch.Player("gamers", options);
-				  player.setVolume(0.5);
-				</script>
-				
-				<script type="text/javascript">
-					var embed = document.getElementById('gamers');
-					var info = document.getElementById('info');
-					var cls = 'full-height';
-
-					function updateInfo() {
-							info.textContent = document.body.clientHeight + 'px, #twitch-embed height is ' + embed.clientHeight + 'px';
-					}
-					updateInfo();
-
-					document.getElementById('style').addEventListener('click', function() {
-							if (embed.classList.contains(cls)) {
-									embed.classList.remove(cls);
-							} else {
-									embed.classList.add(cls);
-							}
-							updateInfo();
-					});
-				</script>
-
-				<br>
-				<iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Maduna&dob=1716470636&gender=f&element=Darkness&pet=https%3A%2F%2Fi.ibb.co%2F1nsPn4s%2FDMS.gif&map=tree.jpg&background=&tablecolor=%23f4f4f4&textcolor=%23f4f4f4"></iframe>    
-    
-            </main>
         </div>
         <footer id="footer"></footer>
     </div>

@@ -255,7 +255,23 @@ summary {
 }
 
 .full-height {
-        height: 50vh;
+    height: 50vh;
+}
+
+.skipper{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+ 
+.skipper:focus{
+	position:static;
+	width:auto;
+	height:auto;
+	font-size: 2em;
 }
 
 /* CSS for extras */

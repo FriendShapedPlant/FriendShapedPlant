@@ -31,7 +31,7 @@ window.addEventListener('load', (event) =>{
 		
 		//Navbar links all target self
 		var i_will_target_self = document.querySelectorAll("#navbar a");
-		for (var i = 0; i < 6; i++) {
+		for (var i = 0; i < i_will_target_self.length; i++) {
 			i_will_target_self[i].target = "_self";
 		}
 		
