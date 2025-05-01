@@ -5,10 +5,27 @@ window.addEventListener('load', (event) =>{
 		navbar.innerHTML = `
 		<ul>
 			<li><a href="../../about.html">About</a></li>
-			<li><a href="../index.html">Gallery</a></li>
-			<li><a href="../../shrines.html">Shrines</a></li>
+			<li><a href="../index.html">Gallery</a>
+			<ul class="dropdown">
+				<li><a href="../cosplays/index.html">Cosplays</a></li>
+				<li><a href="../pixels/index.html">Pixel Art</a></li>
+				<li><a href="../2024/index.html">2024</a></li>
+				<li><a href="../2022-23/index.html">2022-23</a></li>
+				</ul>
+			</li>
+			<li><a href="../../shrines.html">Shrines</a>
+				<ul class="dropdown">
+				<li><a href="../../shrines/nanci.html">Nanci</a></li>
+				</ul>
+			</li>
 			<li><a href="../../links.html">Links</a></li>
-			<li><a href="../../projects.html">Code Projects</a></li>	
+			<li><a href="../../projects.html">Code Projects</a>	
+				<ul class="dropdown">
+				<li><a href="../../ytsanitizer.html">Link Sanitizer</a></li>
+				<li><a href="../../GhostZapper.html">Ghost Zapper</a></li>
+				<li><a href="https://findyourflag.neocities.org">Find Your Flag</a></li>
+				</ul>
+			</li>
 		</ul>
 		`;
 		

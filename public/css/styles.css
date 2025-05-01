@@ -117,6 +117,7 @@ you can add them directly to the <div id="header"></div> element! */
 }
 
 /* Navbar */
+
 #navbar {
 	background-color: var(--black);
 	background-image: url("../img/gravel.png");
@@ -142,9 +143,47 @@ you can add them directly to the <div id="header"></div> element! */
 	text-decoration: none;
 }
 
-#navbar li a:hover {
+#navbar .dropdown li {
+	padding: 5px 15px;
+}
+
+#navbar li a:hover,
+#navbar li a:focus {
 	color: var(--silver);
 	text-decoration: underline;
+}
+
+#navbar ul li ul { /* sub-menu */
+	background-color: var(--black);
+	background-image: url("../img/gravel.png");
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+	min-width: 10rem;
+	position: absolute;
+	padding: 10px 0px;
+	margin: 0px -20px;
+}
+
+#navbar ul li:hover > ul,
+#navbar ul li ul:focus
+#navbar ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+#navbar ul li:focus-within > ul {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  padding: 10px 0px;
+  margin: 0px -20px;
+}
+
+#navbar ul li ul li { /* sub-menu items */
+	clear: both;
+	width: 100%;
 }
 
 #flex {
