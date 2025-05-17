@@ -16,6 +16,7 @@ window.addEventListener('load', (event) =>{
 			<li><a href="../../shrines.html">Shrines</a>
 				<ul class="dropdown">
 				<li><a href="../../shrines/nanci.html">Nanci</a></li>
+				<li><a href="../../shrines/esclabbabies.html">Escaped Lab Babies</a></li>
 				</ul>
 			</li>
 			<li><a href="../../links.html">Links</a></li>
