@@ -11,29 +11,23 @@
 	<link rel="stylesheet" href="css/vtubers.css"> <!-- Vtubers on Neocities -->
 	<link rel="stylesheet" href="css/hell.css"> <!-- Hell is Real -->
   </head>
-  
+
   <body>
 	<script src="js/script.js"></script>
+	<script src="js/hideCommentary.js"></script>
     <div id="container">
-        <div id="headerArea">
-            <div id="header" class="center">
-			<a href="#flex" class="center skipper" target="_self" style="color:black; background-color:white;">Skip to main content</a> <br/>
-			<a href="index.html" target="_self" style="text-decoration: none; font-weight: bold;">
-			<span id="headerText">Friend Shaped Plant</span></a>
-			</div>
-            <nav id="navbar" class="exception">				
-            </nav>
-        </div>
-    
-        <div id="flex">
+        <div w3-include-html="js\header.html"></div>
+		<nav id="navbar" w3-include-html="js\navbar.html" class="exception"></nav>
+
+		<div id="flex">
 		    <main>
 				<h1>Welcome to the Friend Shaped Garden!</h1>
 				<p>My lil space on the internet for uhhhhh things! Probably mainly video game things.</p>
 				<p>Website should be mobile compatible, though you do miss out on a few minor fun things. Developed on an 1920x1080 desktop using Firefox, so that's likely the best way to view it!</p>
-				<p>All external links open on a new tab by default.</p>
-				
+				<p>All external links open in a new tab by default.</p>
+
 				<label for="sitebtn"><img src="https://i.ibb.co/pjLs2sD/FSPbutton.png" alt="Friend Shaped Plant Button" title="Friend Shaped Plant" style="padding:0px 10px 0px 5px"></label><textarea id="sitebtn" readonly><a href="https://friendshapedplant.neocities.org/"><img src="https://i.ibb.co/pjLs2sD/FSPbutton.png" alt="Friend Shaped Plant" title="Friend Shaped Plant"</a></textarea>
-				
+
 				<br>
 				<h4>My Twitch channel, live every Thursday evening!</h4>
 				<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
@@ -49,7 +43,7 @@
 				  var player = new Twitch.Player("gamers", options);
 				  player.setVolume(0.5);
 				</script>
-				
+
 				<script type="text/javascript">
 					var embed = document.getElementById('gamers');
 					var info = document.getElementById('info');
@@ -71,41 +65,57 @@
 				</script>
 
 				<br/>
-				<iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Maduna&dob=1716470636&gender=f&element=Darkness&pet=https%3A%2F%2Fi.ibb.co%2F1nsPn4s%2FDMS.gif&map=tree.jpg&background=&tablecolor=%23f4f4f4&textcolor=%23f4f4f4"></iframe>    
-    
+				<iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Maduna&dob=1716470636&gender=f&element=Darkness&pet=https%3A%2F%2Fi.ibb.co%2F1nsPn4s%2FDMS.gif&map=tree.jpg&background=&tablecolor=%23f4f4f4&textcolor=%23f4f4f4"></iframe>
+
             </main>
-			
+
             <aside id="leftSidebar">
 				<a href="http://www.mabsland.com/Adoption.html"><img alt="Rebma: Mature Rated Site" title="Contains swearing, gore, & nudity. Viewer should be at least 17 or with parental guidance." src="img/Censor_Ma.gif" class="aliased"></a><br>
 				<img alt="No nazi, no fascism, no racism." src="https://i.ibb.co/YyYDqjz/antinazi.gif">
-				<img alt="You're telling me a queer coded this?" src="https://i.ibb.co/4KXD16L/queer.png"> <img src="https://i.ibb.co/rfmsG5b/notepadpp3.gif" alt="Friend Shaped Plant Button"> 
+				<img alt="You're telling me a queer coded this?" src="https://i.ibb.co/4KXD16L/queer.png"> <img src="https://i.ibb.co/rfmsG5b/notepadpp3.gif" alt="Friend Shaped Plant Button">
 				<img alt="Get FireFox." src="https://i.ibb.co/ZMPcKgX/firefox.gif">
 				<img alt="Responsive site" src="https://i.ibb.co/TcC51bW/responsivesite.jpg">
 				<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffriendshapedplant.neocities.org%2F"><img alt="Valid CSS!" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"></a>
-				
+
 				<div id="vtubers-on-neocities" style="padding:0;">
 				  <script src="https://vtubers.neocities.org/onionring-variables.js"></script>
 				  <script src="js/vtubercontent.js"></script>
 				</div>
-				
+
 				<div id="hellisreal">
 				  <script type="text/javascript" src="https://prophetesque.gay/hellisreal/onionring-variables.js"></script>
 				  <script type="text/javascript" src="js/hell-widget.js"></script>
 				</div>
-				
+
 				<p style="margin-top:0px;"><a href="https://garlic.garden/onionring/">Powered by Onionring.js</a></p>
-	
+
                 <h2>Updates</h2>
 				<a href="#footer" class="skipper" target="_self">Skip to footer content</a>
+				<form action="/action_page.php">
+					<input type="checkbox" id="commentary" onclick="hideCommentary()">
+					<label for="commentary">Hide Commentary <span class="comment">(indicated by green text)</span></label>
+				</form>
                 <div class="box">
-				
+
 					<details open="">
-					<summary><strong>May 16, 2025</strong></summary>
+					<summary><strong>May 25, 2025</strong></summary>
+					<p>Lotsa updates!</p>
 					<ul>
-					<li>New shrine just dropped! Check out <a href="shrines/esclabbabies.html">Escaped Lab Babies!</a> <span class="comment">Literally I am SO proud of it I spent every day makin it look as swag as it is and writing about my blorbos :D ehehe</span></li>
+					<li>Made my inserted header/nav/footer less messy code-side. <span class="comment">I hope...</span></li>
+					<li>SURL is now accessible on the Code Projects page!</li>
+					<li>Header is FINALLY vertically centered!</li>
+					<li>There is now a Navlink Ad below these updates!</li>
+					<li>Theres now a toggle for whether or not you want to see my side tangents in these updates. <span class="comment">Try it out right now with this little comment!</span></li>
 					</ul>
 					</details>
-				
+
+					<details>
+					<summary><strong>May 16, 2025</strong></summary>
+					<ul>
+					<li>New shrine just dropped! Check out <a href="shrines/esclabbabies.html">Escaped Lab Babies!</a> <span class="comment">Literally I am SO proud of it I spent a week makin it look as swag as it is and writing about my blorbos :D ehehe</span></li>
+					</ul>
+					</details>
+
 					<details>
 					<summary><strong>May 1, 2025</strong></summary>
 					<ul>
@@ -114,14 +124,14 @@
 					<li>Added missing alt text on Nanci shrine.</li>
 					</ul>
 					</details>
-					
+
 					<details>
 					<summary><strong>April 30, 2025</strong></summary>
 					<p>Navbar now has dropdown menus! They're keyboard accessible too :D</p>
 					<span class="comment"><p>That's all rip, haven't had the motivation to do much :( But I am not dead!</p>
 					<p>HEY WAIT ITS BEEN A YEAR SINCE I STARTED MY SITE???? 1 year anniversary update I guess lmao</p></span>
 					</details>
-					
+
 					<details>
 					<summary><strong>December 31, 2024</strong></summary>
 					<ul>
@@ -129,12 +139,12 @@
 					<li>Couple more buttons placed here n there</li>
 					</ul>
 					</details>
-					
+
 					<details>
 					<summary><strong>December 12, 2024</strong></summary>
 					<p>I uploaded my <a href="shrines/nanci.html" target="_self">first shrine</a>! Devoted to the Nanci blind box dolls :3</p>
 					</details>
-					
+
 					<details>
 					<summary><strong>November 19, 2024</strong></summary>
 					<ul>
@@ -143,9 +153,9 @@
 					<li>Link Sanitizer now has general link support</li>
 					<li>Link Sanitizer handles Amazon links more effectively :3</li>
 					</ul>
-					
+
 					</details>
-					
+
 					<details>
 					<summary><strong>October 3, 2024</strong></summary>
 					<ul>
@@ -154,7 +164,7 @@
 					<li>Backloggery now has a pixel button on my Links sidebar</li>
 					</ul>
 					</details>
-					
+
 					<details>
 					<summary><strong>August 27, 2024</strong></summary>
 					<ul>
@@ -162,7 +172,7 @@
 					<li>Gallery pages now have "Back to Top" button at the bottom of the page!</li>
 					</ul>
 					</details>
-					
+
 					<details>
 					<summary><strong>August 19, 2024</strong></summary>
 					<p>I lied about putting off updates rip shit was buggin me</p>
@@ -171,7 +181,7 @@
 					<li>Fixed up Gallery mobile formatting</li>
 					</ul>
 					</details>
-					
+
 					<details>
 					<summary><strong>August 14, 2024</strong></summary>
 					<ul>
@@ -181,7 +191,7 @@
 					<span class="comment"><li>Likely to be the last update for a second, ik my past few were back to back but I gotta focus on prepping for Matsuricon and college semester comin up!</li></span>
 					</ul>
 					</details>
-				
+
 					<details>
 					<summary><strong>August 13, 2024</strong></summary>
 					<ul>
@@ -189,7 +199,7 @@
 					<li>Embedded my twitch channel into the homepage! <span class="comment">Holy SHIT did it take so much fiddling...</span></li>
 					</ul>
 					</details>
-				
+
 					<details>
 					<summary><strong>August 12, 2024</strong></summary>
 					<ul>
@@ -198,7 +208,7 @@
 					<li>Updates are now collapsible by date</li>
 					</ul>
 					</details>
-					
+
 					<details>
 					<summary><strong>August 6, 2024</strong></summary>
 					<ul>
@@ -207,16 +217,16 @@
 					<li>Couple more cool sites in Links!</li>
 					</ul>
 					</details>
-					
+
 					<details>
-					<summary><strong>July 30, 2024</strong></summary> 
+					<summary><strong>July 30, 2024</strong></summary>
 					<ul>
 					<li>New pages: <a href="projects.html">Coding Projects</a> and <a href="ytsanitizer.html">Youtube Link Sanitizer</a>!</li>
 					<li>Coding Projects has replaced Ghost Zapper in navbar</li>
 					<li>Joined the Vtubers on Neocities Webring!!!</li>
 					</ul>
 					</details>
-					
+
 					<details>
 					<summary><strong>July 24, 2024</strong></summary>
 					<ul>
@@ -228,7 +238,7 @@
 					<li>Links hover white instead of green for better contrast, except the title tis still green</li>
 					</ul>
 					</details>
-					
+
 					<details>
 					<summary><strong>July 23, 2024</strong></summary>
 					<p>Part Two! Completed right before midnight lmao</p>
@@ -238,7 +248,7 @@
 					<li>Added my country to my About. <span class="comment">Hod fuck the USA o7</span></li>
 					</ul>
 					</details>
-					
+
 					<details>
 					<summary><strong>July 23, 2024</strong></summary>
 					<p>It is midnight as I post this update hello :3</p>
@@ -252,16 +262,16 @@
 					<li>Added prospective Links link to the nav! <span class="comment">Probably what I'll work on next.</span></li>
 					</ul>
 					</details>
-					
+
 					<details>
-					<summary><strong>July 17, 2024</strong></summary> 
+					<summary><strong>July 17, 2024</strong></summary>
 					<ul>
 					<li>Added back button for Ghost Zapper</li>
 					<li>Added site button code to main page! Go copy it and slap it anywhere you want babey</li>
 					<li>Adopted a <a href="http://www.mabsland.com/Adoption.html">MabsLand Censorship panda</a>! Got Nyra for now :3</li>
 					</ul>
 					</details>
-					
+
 					<details>
 					<summary><strong>May 23, 2024</strong></summary>
 					<ul>
@@ -270,7 +280,7 @@
 					<li>Uploaded and implemented a favicon!</li>
 					</ul>
 					</details>
-					
+
 					<details>
 					<summary><strong>May 22, 2024</strong></summary>
 					<ul>
@@ -280,15 +290,19 @@
 					<li>The About page is now live!</li>
 					</ul>
 					</details>
-					
+
 					<p><strong>April 30, 2024</strong></p>
 					<p>After a million years I'm givin this place a proper look. What do you think?</p>
                 </div>
+
+				<iframe width="100%" style="border:none; margin-top: 15px; aspect-ratio:1/1;" src="https://dimden.neocities.org/navlink/" name="neolink" id="neolink" class="aliased"></iframe>
             </aside>
         </div>
-        <footer id="footer"></footer>
+
+        <footer w3-include-html="js\footer.html"></footer>
+
     </div>
-	
+
 	<div class="fun aliased" style="position: fixed; right: -50px; bottom: -9px; z-index: 1;"><img alt="Page doll of a green person with red hair and a red flower around its green eye. It wears colorful casual clothes and smiles at the viewer." src="https://f2.toyhou.se/file/f2-toyhou-se/images/78507940_j0ccjskXjF7A10M.png" height="350"></div>
   </body>
 

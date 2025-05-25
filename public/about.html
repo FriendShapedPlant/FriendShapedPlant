@@ -8,20 +8,13 @@
 	<link rel="icon" type="image/x-icon" href="img/FSPfavicon.ico">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  
+
   <body>
 	<script src="js/script.js"></script>
     <div id="container">
-        <div id="headerArea">
-            <div id="header" class="center">
-			<a href="#flex" class="center skipper" target="_self" style="color:black; background-color:white;">Skip to main content</a> <br/>
-			<a href="index.html" target="_self" style="text-decoration: none; font-weight: bold;">
-			<span id="headerText">Friend Shaped Plant</span></a>
-			</div>
-            <nav id="navbar" class="exception">				
-            </nav>
-        </div>
-    
+        <div id="headerArea" w3-include-html="js\header.html"></div>
+		<nav id="navbar" w3-include-html="js\navbar.html" class="exception"></nav>
+
         <div id="flex">
             <main>
 				<img src="./img/AtTV.gif" alt="Pixel art of Atticus' persona in a TV, licking the camera." id="TV" class="aliased">
@@ -33,18 +26,20 @@
 				<li><b>Date of Birth:</b> 10-10-2002</li>
 				<li><b>Country:</b> United States</li>
 				</ul>
-                
+
 				<p>I took my first HTML class in the summer of 2022, but before then I had some experience with customizing my DeviantART page in  2016-ish. I love me some programming but this is definitely my favorite language lmao. I also obviously know CSS and Javascript! It all goes hand in hand. :3</p>
 				<p>Outside of webmastering, I love drawing, cosplaying, and playing video games. Some of my faves are Kirby, OFF, Undertale/Deltarune, Len'en Project, and Pump it Up. I'm all about indie and rhythm games, and I stream the former on my <a href="https://www.twitch.tv/friendshapedplant" target="_blank">Twitch!</a></p>
 				<p>I am also VERY leftist. My activism is focused on disability and queer rights, but I stand in solidarity with many other minorities.</p>
 				<p>If it wasn't apparent, my fave aesthetics currently are old web and bright colors :3 I do love me some punkish fashion though, half my shirts are black lmao, but I've adopted some more kidcore-esque pieces as of late. I'm in my anemoia-nostalgia era.</p>
-    
-    
+
+
             </main>
         </div>
-        <footer id="footer"></footer>
+
+        <footer w3-include-html="js\footer.html"></footer>
+
     </div>
-	
+
 	<div class="fun aliased" style="position: fixed; right: -50px; bottom: -9px; z-index: 1;"><img alt="Page doll of a green person with red hair and a red flower around its green eye. It wears colorful casual clothes and smiles at the viewer." src="https://f2.toyhou.se/file/f2-toyhou-se/images/78507940_j0ccjskXjF7A10M.png" height="350"></div>
   </body>
 

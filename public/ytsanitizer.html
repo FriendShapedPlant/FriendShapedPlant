@@ -10,31 +10,25 @@
   <body>
   	<script src="js/script.js"></script>
 	<script src="js/sanitizer.js"></script>
-		
+
 	<div id="container">
-		<div id="headerArea">
-            <div id="header" class="center">
-			<a href="#flex" class="center skipper" target="_self" style="color:black; background-color:white;">Skip to main content</a> <br/>
-			<a href="index.html" target="_self" style="text-decoration: none; font-weight: bold;">
-			<span id="headerText">Friend Shaped Plant</span></a>
-			</div>
-            <nav id="navbar" class="exception">				
-            </nav>
-        </div>
+		<div w3-include-html="js\header.html"></div>
+		<nav id="navbar" w3-include-html="js\navbar.html" class="exception"></nav>
+
 		<div id="flex">
 			<aside id="leftSidebar">
 			<h2>What does it mean to sanitize links?</h2>
 			<p>Sometimes links come with a bunch of extra garbage in them, mainly for analytics. Cleaning them up makes them look nicer, as well as removes the servers ability track who or where or how it was shared.</p>
 
 			<p><a href="https://faun.pub/url-sanitization-the-why-and-how-9f14e1547151">URL Sanitization — The Why and How</a> goes over this info in way better detail than I ever could, I reccomend checking that article out!</p>
-			
+
 			<h2>Can I sanitize links on my own?</h2>
-			<p>Sure can!</p> 
-			<p>9 times out of 10 you can remove everything after and including the question mark (?) in a url and it should work just fine.</p> 
-			<p>If you need the question mark, junk between ampersands (&) may be removable.</p> 
+			<p>Sure can!</p>
+			<p>9 times out of 10 you can remove everything after and including the question mark (?) in a url and it should work just fine.</p>
+			<p>If you need the question mark, junk between ampersands (&) may be removable.</p>
 			<p>Make sure your link still works before sending it off though!</p>
 			</aside>
-			
+
 			<main>
 				<h1>Link Sanitizer</h1>
 				<p>Wanna clean up your web links? This is the right place!</p>
@@ -45,33 +39,35 @@
 				<li>www.youtube.com</li>
 				<li>www.amazon.com/dp</li>
 				</ul>
-				
+
 				<p>All other links will have content after & including the "?" removed. Please ensure it still works before sending out!</p>
-				
+
 				<p>Got suggestions on links to support? Let me know!</p>
-				
+
 				<form name="sanitizer" method="POST">
 				  <label for="ytlink">Dirty Link:</label>
 				  <input type="text" id="ytlink" name="ytlink" size="45"><br>
 				  <input type="button" value="Sanitize!" onclick="sanitize(this.form);">
 				  <input type="button" value="Clear Link" onclick="clearlink(this.form);"><br>
-				  
+
 				  <p id="oops"> </p>
-				  
+
 				  <label for="sanilink">Clean Link:</label>
 				  <input type="text" id="sanilink" name="sanilink" size="45" readonly><br>
 				  <input type="button" value="Copy to Clipboard" onclick="clipboard(this.form);">
 				  <input type="button" value="Open Link" onclick="openLink()">
 				</form>
-				
+
 				<img src="img/tub.gif" alt="[bathtub pixel art]" class="fun aliased" style="padding:50px 0px 30px 0px; margin:auto; display: block;">
-				
+
 			</main>
 		</div>
-		<footer id="footer"></footer>
+
+		<footer w3-include-html="js\footer.html"></footer>
+
 	</div>
-	
+
 	<div class="fun aliased" style="position: fixed; right: -50px; bottom: -9px; z-index: 1;"><img alt="Page doll of a green person with red hair and a red flower around its green eye. It wears colorful casual clothes and smiles at the viewer." src="https://f2.toyhou.se/file/f2-toyhou-se/images/78507940_j0ccjskXjF7A10M.png" height="350"></div>
-	
+
   </body>
 </html>

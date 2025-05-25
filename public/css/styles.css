@@ -12,7 +12,7 @@
 	--smoke: #F4F4F4;
 }
 
-/* this seems like a lot for just one font and I would have to agree 
+/* this seems like a lot for just one font and I would have to agree
 but I wanted to include an example of how to include a custom font.
 If you download a font file you can upload it onto your Neocities
 and then link it! Many fonts have separate files for each style
@@ -100,7 +100,10 @@ and change the media query according to the comment! */
 	width: 100%;
 	background-color: var(--lavender);
 	height: 200px;
-	/* if you want to put images IN the header, 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* if you want to put images IN the header,
 you can add them directly to the <div id="header"></div> element! */
 	background-image: var(--header-image);
 	background-position: center;
@@ -165,7 +168,7 @@ you can add them directly to the <div id="header"></div> element! */
 	margin: 0px -20px;
 }
 
-#navbar ul li:hover > ul,
+#navbar ul li:hover > ul, /* make sub-menu viisble on hover/focus */
 #navbar ul li ul:focus
 #navbar ul li ul:hover {
   visibility: visible;
@@ -173,7 +176,7 @@ you can add them directly to the <div id="header"></div> element! */
   display: block;
 }
 
-#navbar ul li:focus-within > ul {
+#navbar ul li:focus-within > ul { /* ditto but further browser compatibility */
   visibility: visible;
   opacity: 1;
   display: block;
@@ -238,7 +241,7 @@ strong {
 }
 
 summary {
-	margin-top: 18px;
+	margin-bottom: 18px;
 }
 
 .box {
@@ -251,7 +254,7 @@ summary {
 }
 
 .comment {
-	color: var(--olivine); 
+	color: var(--olivine);
 }
 
 .full-height {
@@ -266,7 +269,7 @@ summary {
 	height:1px;
 	overflow:hidden;
 }
- 
+
 .skipper:focus{
 	position:static;
 	width:auto;
@@ -277,8 +280,8 @@ summary {
 /* CSS for extras */
 
 #TV {
-	float:left; 
-	margin-right: 0.625em; 
+	float:left;
+	margin-right: 0.625em;
 	margin-top: .625em
 }
 
@@ -309,15 +312,15 @@ ul {
 
 /* Mobile Formatting (Media Query) */
 
-/* so you wanna change the width of your page? 
+/* so you wanna change the width of your page?
 by default, the container width is 900px.
 in order to keep things responsive, take your new height,
-and then subtrack it by 100. use this new number as the 
+and then subtrack it by 100. use this new number as the
 "max-width" value below
 */
 
 @media only screen and (max-width: 1200px) {
-	.fun {display: none;}	
+	.fun {display: none;}
 }
 
 @media only screen and (max-width: 800px) {
@@ -340,7 +343,7 @@ and then subtrack it by 100. use this new number as the
 	#rightSidebar {
 		order: 1;
 	}
-	
+
 	#headerText{
 		font-size: 2.5em;
 	}
@@ -348,7 +351,11 @@ and then subtrack it by 100. use this new number as the
 	#navbar ul {
 		flex-wrap: wrap;
 	}
-	
+
+	#neolink{
+		width: 50%;
+	}
+
 }
 @media only screen and (max-width: 500px) {
 	#TV {

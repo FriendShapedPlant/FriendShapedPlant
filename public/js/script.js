@@ -1,42 +1,40 @@
 window.addEventListener('load', (event) =>{
+	//Better Way of Repeating html
+	includeHTML();
 
-		//Navbar
-		
-		navbar.innerHTML = `
-		<ul>
-			<li><a href="about.html">About</a></li>
-			<li><a href="gallery/index.html">Gallery</a>
-			<ul class="dropdown">
-				<li><a href="gallery/cosplays/index.html">Cosplays</a></li>
-				<li><a href="gallery/pixels/index.html">Pixel Art</a></li>
-				<li><a href="gallery/2024/index.html">2024</a></li>
-				<li><a href="gallery/2022-23/index.html">2022-23</a></li>
-				</ul>
-			</li>
-			<li><a href="shrines.html">Shrines</a>
-				<ul class="dropdown">
-				<li><a href="shrines/nanci.html">Nanci</a></li>
-				<li><a href="shrines/esclabbabies.html">Escaped Lab Babies</a></li>
-				</ul>
-			</li>
-			<li><a href="links.html">Links</a></li>
-			<li><a href="projects.html">Code Projects</a>	
-				<ul class="dropdown">
-				<li><a href="ytsanitizer.html">Link Sanitizer</a></li>
-				<li><a href="GhostZapper.html">Ghost Zapper</a></li>
-				<li><a href="https://findyourflag.neocities.org">Find Your Flag</a></li>
-				</ul>
-			</li>
-		</ul>
-		`;
-		
-		//Navbar links all target self
-		var i_will_target_self = document.querySelectorAll("#navbar a");
-		for (var i = 0; i < i_will_target_self.length; i++) {
-			i_will_target_self[i].target = "_self";
+	//Navbar links all target self
+	var i_will_target_self = document.querySelectorAll("#navbar a");
+	console.log(i_will_target_self);
+	for (var i = 0; i < i_will_target_self.length; i++) {
+		i_will_target_self[i].target = "_self";
+	}
+
+});
+
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+	elmnt = z[i];
+	/*search for elements with a certain atrribute*/
+	file = elmnt.getAttribute("w3-include-html");
+	if (file) {
+	  /* Make an HTTP request using the attribute value as the file name */
+	  xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+		if (this.readyState == 4) {
+		  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+		  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+		  /* Remove the attribute, and call this function once more */
+		  elmnt.removeAttribute("w3-include-html");
+		  includeHTML();
 		}
-		
-		//Footer
-		footer.innerHTML = '<a href="https://neocities.org/site/friendshapedplant">Site Profile</a> | <a href="https://github.com/FriendShapedPlant/FriendShapedPlant">Github Repo</a>';
-		
-		});
+	  }
+	  xhttp.open("GET", file, true);
+	  xhttp.send();
+
+	  return;
+	}
+  }
+}
