@@ -1,7 +1,4 @@
 window.addEventListener('load', (event) =>{
-	//Better Way of Repeating html
-	includeHTML();
-
 	//Navbar links all target self
 	var i_will_target_self = document.querySelectorAll("#navbar a");
 	console.log(i_will_target_self);
