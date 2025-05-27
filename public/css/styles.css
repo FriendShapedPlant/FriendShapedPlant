@@ -115,10 +115,6 @@ you can add them directly to the <div id="header"></div> element! */
 	color:var(--olivine);
 }
 
-#inline div{
-	display:inline;
-}
-
 .center{
 	text-align:center;
 }
