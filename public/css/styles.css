@@ -231,6 +231,11 @@ h1{
 	font-size: 1.75em;
 }
 
+main h2,
+main h3 {
+	color: var(--pale-purple);
+}
+
 h2,
 h3 {
 	color: var(--olivine);
@@ -242,6 +247,22 @@ strong {
 
 summary {
 	margin-bottom: 18px;
+}
+
+.links {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.links td, .links th {
+  border: 3px dotted var(--pale-purple);
+  text-align: left;
+  padding: 8px;
+}
+
+.links th {
+	background: var(--pale-purple);
+	color: var(--lavender);
 }
 
 .box {
