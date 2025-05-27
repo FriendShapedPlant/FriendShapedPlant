@@ -1,13 +1,3 @@
-window.addEventListener('load', (event) =>{
-	//Navbar links all target self
-	var i_will_target_self = document.querySelectorAll("#navbar a");
-	console.log(i_will_target_self);
-	for (var i = 0; i < i_will_target_self.length; i++) {
-		i_will_target_self[i].target = "_self";
-	}
-
-});
-
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements */
