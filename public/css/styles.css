@@ -265,6 +265,12 @@ summary {
 	color: var(--lavender);
 }
 
+.links img{
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+}
+
 .box {
 	border: 1px solid var(--olivine);
 	height: 300px;
