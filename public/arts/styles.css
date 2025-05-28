@@ -39,6 +39,17 @@
   margin: 0px 3px;
 }
 
+@media (max-width: 800px) {
+    #photos figure {
+        max-width: unset;
+    }
+
+    #photos img {
+        width: 100%;
+        max-height: unset;
+    }
+}
+
 /* Styling for JavaScript viewer (if enabled) */
 
 #js-viewer {

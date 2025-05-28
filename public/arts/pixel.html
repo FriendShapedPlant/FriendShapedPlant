@@ -8,9 +8,16 @@
 	<link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/arts/styles.css">
     <style>
-        #photos img {
+        #photos figure {
             height: 200px;
             image-rendering: pixelated;
+        }
+
+        @media (max-width: 800px) {
+            #photos figure {
+                height: auto;
+                max-width: 44%;
+            }
         }
     </style>
   </head>
@@ -54,7 +61,7 @@
 
                     <figure>
                         <img src="gallery/pixel/miracle.png" alt="Miracle Matter from Kirby 64 on the genderfluid flag.">
-                        <figcaption class="photo-info">Genderfluid Miracle Matter</figcaption>
+                        <figcaption class="photo-info">Genderfluid Miracle Matter.</figcaption>
                     </figure>
                 </section>
 
