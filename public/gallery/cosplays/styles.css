@@ -1,8 +1,0 @@
-#photos img {
-    border: 3px ridge #c3c3c3;
-	object-fit: cover;
-	width: 260px;
-    height: 260px;
-}
-
-/* Makes thumbnails square, default is 4:3*/

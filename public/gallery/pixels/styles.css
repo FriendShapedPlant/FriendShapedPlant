@@ -1,8 +1,0 @@
-#photos img {
-	object-fit: cover;
-	width: 150px;
-    height: 150px;
-	image-rendering: pixelated;
-}
-
-/* Makes thumbnails square, default is 4:3*/
