@@ -1,0 +1,115 @@
+#photos {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#photos figure {
+  margin: 10px;
+  max-width: min-content;
+}
+
+#photos img {
+  max-height: 280px;
+  width: auto;
+}
+
+#photos img:hover {
+  border-color: #9DBD89;
+}
+
+#photos span {
+  text-align: center;
+  display: block;
+}
+
+.page-links {
+  text-align: center;
+}
+
+.page-links ul {
+  padding: 0px 5px;
+  display: inline-block;
+  margin: 10px 0px;
+}
+.page-links li {
+  list-style: none;
+  display: inline;
+  margin: 0px 3px;
+}
+
+/* Styling for JavaScript viewer (if enabled) */
+
+#js-viewer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.612);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#js-viewer img {
+  max-height: 80%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border: 3px ridge #c3c3c3;
+}
+
+#js-viewer span {
+  margin-top: 10px;
+}
+
+#js-viewer span button {
+  border-radius: 0px;
+  border: 2px outset #cecece;
+  background-color: #e2e2e2;
+  cursor: pointer;
+}
+
+#js-viewer span button:hover {
+  border: 2px inset #cecece;
+  background-color: #b8b8b8;
+}
+
+#index ul{
+  font-size: 1.25em;
+}
+
+#index ul li{
+  display: inline-block;
+  width: 32%;
+  line-height: 200%;
+  border: 1px solid #9DBD89;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #9DBD89;
+  margin: 4px 0px;
+}
+
+#index ul li:hover {
+  border-color: #BDB2F5;
+  background-color: #BDB2F5;
+  color: #384B35;
+}
+
+#index ul li::before{
+  background: none;
+}
+
+#index ul a {
+  color: #384B35;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  #index ul li{
+    width: 46%;
+  }
+}
