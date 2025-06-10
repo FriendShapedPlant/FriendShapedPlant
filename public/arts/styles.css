@@ -112,6 +112,7 @@
 
 #index ul li::before{
   background: none;
+  content: none;
 }
 
 #index ul a {
