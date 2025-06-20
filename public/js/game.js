@@ -91,7 +91,7 @@ function countDown(){
 function addImage(){
 	let x = PosX();
 	let y = PosY();
-	$('#gamespace').append(`<img class="ghost" id="spectre${id}" src="img/ghost.gif" alt="ghost" style=" left: ${x}px; top: ${y}px;">`);
+	$('#gamespace').append(`<img class="ghost" id="spectre${id}" src="/img/ghost.gif" alt="ghost" style=" left: ${x}px; top: ${y}px;">`);
 	id++;
 	out = setTimeout("removeImage()", randomFlee()); //removes ghosts after random amt of time
 	img = setTimeout("addImage()", randomAdd()); //effectively loops the function with random pause between loops
