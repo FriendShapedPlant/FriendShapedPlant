@@ -166,6 +166,7 @@ you can add them directly to the <div id="header"></div> element! */
 	position: absolute;
 	padding: 10px 0px;
 	margin: 0px -20px;
+	z-index: 3;
 }
 
 #navbar ul li:hover > ul, /* make sub-menu viisble on hover/focus */
