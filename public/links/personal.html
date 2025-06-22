@@ -10,6 +10,7 @@
   </head>
   <body>
   	<script src="/js/script.js"></script>
+	<script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script> <!-- FreezeFrame.js -->
 
 	<div id="container">
 		<div w3-include-html="\js\header.html"></div>
@@ -21,9 +22,12 @@
 				<p>Cool websites made by cool individuals! Hover over each button/link for a lil description of the site!</p>
 				<p>I cannot guarantee the accessibility of each site linked here; I know many of them are definitely not in many regards, I just find them neat. Maybe one day I'll sort em in some regard...</p>
 
+				<button id='play-gif' type='button'>Play GIFs</button>
+				<button id='stop-gif' type='button'>Stop GIFs</button>
+
 				<h2>Friends/Mutuals Sites!</h2>
 
-				<table class="links">
+				<table class="links freezeframe">
 					<tr>
 						<th>Link</th>
 						<th>Name</th>
@@ -58,7 +62,7 @@
 
 
 				<h2>Other Cool Sites!</h2>
-				<table class="links">
+				<table class="links freezeframe">
 					<tr>
 						<th>Link</th>
 						<th>Name</th>
@@ -101,7 +105,7 @@
 						<td>Wacky ass site brimming with graphics and projects</td>
 					</tr>
 					<tr>
-						<td><a href="https://neonauticon.neocities.org/"><img alt="[Neonauticon]" src="/img/buttons/neonaut.png"></a></td>
+						<td><a href="https://neonaut.neocities.org/"><img alt="[Neonauticon]" src="/img/buttons/neonaut.png"></a></td>
 						<td>Neonauticon</td>
 						<td>Programming and art, sometimes one in the same craft on this site! Also games and software stuffs.</td>
 					</tr>

@@ -10,6 +10,7 @@
   </head>
   <body>
   	<script src="/js/script.js"></script>
+	<script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script> <!-- FreezeFrame.js -->
 
 	<div id="container">
 		<div w3-include-html="\js\header.html"></div>
@@ -21,9 +22,12 @@
 				<p>Sites dedicated to providin you some sorta free help!</p>
 				<p>I cannot guarantee the accessibility of each site linked here, unfortunately. Proceed with caution.</p>
 
+				<button id='play-gif' type='button'>Play GIFs</button>
+				<button id='stop-gif' type='button'>Stop GIFs</button>
+
 				<h2>Website Resources!</h2>
 
-				<table class="links">
+				<table class="links freezeframe">
 					<tr>
 						<th>Link</th>
 						<th>Name</th>
@@ -77,7 +81,7 @@
 				</table>
 
 				<h2>Other Resources!</h2>
-				<table class="links">
+				<table class="links freezeframe">
 					<tr>
 						<th>Link</th>
 						<th>Name</th>
