@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Friend Shaped Plant</title>
+	<base target="_blank">
+	<link rel="icon" type="image/x-icon" href="/img/FSPfavicon.ico">
+	<link rel="stylesheet" href="/css/styles.css">
+	
+	<style>
+
+		#rightSidebar{
+			width:225px;
+			text-align: center;
+		}
+		
+		#stamps{
+			text-align: center;
+		}
+		
+		#stamps br{
+			margin: 20px 0;
+		}
+		
+		@media only screen and (max-width: 800px){
+			#rightSidebar{
+				width:100%;
+				order: 3;
+			}
+		}
+	</style>
+	
+  </head>
+
+  <body>
+	<script src="/js/script.js"></script>
+    <div id="container">
+        <div w3-include-html="\js\header.html"></div>
+		<nav id="navbar" w3-include-html="\js\navbar.html" class="exception"></nav>
+		
+
+        <div id="flex" class="aliased">
+            <main style="background-color:#384B35;">
+				<h1>Collections</h1>
+				
+				<ul>
+				<h2><li><a href="collections/grafix.html">Grafix</a></li></h2>
+				<h2><li><a href="collections/nanci.html">Nanci</a></li></h2>
+				</ul>
+
+				<h3 style="margin-bottom:0px;">Collections to come!</h3>
+				<ul style="margin-top:0px;">
+				<li>Tech</li>
+				<li>Bath and Body Works</li>
+				</ul>
+
+            </main>
+
+        </div>
+
+        <footer w3-include-html="\js\footer.html"></footer>
+
+    </div>
+
+	<div class="fun aliased" style="position: fixed; right: -50px; bottom: -9px; z-index: 1;"><img alt="Page doll of a green person with red hair and a red flower around its green eye. It wears colorful casual clothes and smiles at the viewer." src="https://f2.toyhou.se/file/f2-toyhou-se/images/78507940_j0ccjskXjF7A10M.png" height="350"></div>
+
+	<script>includeHTML();</script>
+
+  </body>
+
+</html>
