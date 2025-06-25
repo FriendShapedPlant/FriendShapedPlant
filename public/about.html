@@ -10,15 +10,27 @@
 	<link rel="stylesheet" href="/css/styles.css">
   </head>
 
+  <style>
+	.ff-container,
+	.ff-canvas {
+  		display: block!important;
+	}
+	.ff-canvas{
+		margin-right: 0.625em;
+  		margin-top: .625em;
+	}
+  </style>
+
   <body>
 	<script src="js/script.js"></script>
+	<script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script> <!-- FreezeFrame.js -->
     <div id="container">
         <div w3-include-html="js\header.html"></div>
 		<nav id="navbar" w3-include-html="js\navbar.html" class="exception"></nav>
 
         <div id="flex">
             <main>
-				<img src="/img/AtTV.gif" alt="Pixel art of Atticus' persona in a TV, licking the camera." id="TV" class="aliased">
+				<img src="/img/AtTV.gif" alt="Pixel art of Atticus' persona in a TV, licking the camera." id="TV" class="aliased freezeframe">
                 <h1>Meet the Webmaster!</h1>
 				<ul class="flower-bullet" style="font-size:1.25em;">
 				<li><b>Name:</b> Atticus Atlas</li>
@@ -72,7 +84,7 @@
 
 	<div class="fun aliased" style="position: fixed; right: -50px; bottom: -9px; z-index: 1;"><img alt="Page doll of a green person with red hair and a red flower around its green eye. It wears colorful casual clothes and smiles at the viewer." src="https://f2.toyhou.se/file/f2-toyhou-se/images/78507940_j0ccjskXjF7A10M.png" height="350"></div>
 
-	<script>includeHTML();</script>
+	<script>includeHTML(); new Freezeframe({responsive: false});</script>
 
   </body>
 
