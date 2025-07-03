@@ -282,6 +282,7 @@ a{
 	display: flex;
 	text-align: center;
 	margin: auto;
+	width: fit-content;
 }
 
 .box {
