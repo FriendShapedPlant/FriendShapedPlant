@@ -250,6 +250,12 @@ summary {
 	margin-bottom: 18px;
 }
 
+a{
+	display: inline-block;
+	height: fit-content;
+	width: fit-content;
+}
+
 .links {
   border-collapse: collapse;
   width: 100%;
@@ -275,6 +281,7 @@ summary {
 .links a {
 	display: flex;
 	text-align: center;
+	margin: auto;
 }
 
 .box {
