@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: Positions;
+	src: url('/font/PositionsByArixbored-Regular.otf');
+}
+
+body{	
+	background: black url('/img/drowned/bg_small.png') center no-repeat fixed;
+	background-size: auto 100%;
+	color: white;
+	font: 1.25em 'Positions', 'Garamond', serif;
+	text-align: center;
+}
+
+header{
+	margin: 15em 0em;
+}
+
+p {
+	padding: 10em 0;
+	font-size: 1.5em;
+}
+
+.layer--back,
+.layer--base {
+		display: none;
+	}
+	
+.demo__info {
+  position: absolute;
+  z-index: 100;
+  bottom: 1vh;
+  top: auto;
+  font-size: 80%;
+  text-align: center;
+  width: 100%;
+}
+
+
+@media screen and (min-width: 40em) {
+  @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+	  
+	body{	
+		background: black url('/img/drowned/bg.png') no-repeat fixed bottom;
+		background-size: cover;
+	}
+
+    #parallax {
+		perspective: 1px;
+		height: 100vh;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	.layer {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	.layer--fore {
+		transform: translateZ(0);
+	}
+	.layer--base {
+		display: inline;
+		transform: translateZ(-1px) scale(2);
+	}
+	.layer--back {
+		display: inline;
+		transform: translateZ(-15px) scale(16);
+	}
+	
+	img.left,
+	img.right{
+		display: block;
+		position: relative;
+		padding: 20em 5em;
+		filter: blur(2px);
+	}
+	.left {
+		left: 2em;
+	}
+	
+	.right {
+		left: 60em;
+	}
+}
+}
