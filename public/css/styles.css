@@ -240,6 +240,12 @@ main h3 {
 h2,
 h3 {
 	color: var(--olivine);
+	margin-bottom: 0px;
+}
+
+h2 + p,
+h3 + p {
+	margin-top: 0px;
 }
 
 strong {
