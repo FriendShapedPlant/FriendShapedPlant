@@ -355,7 +355,7 @@ ul {
 	content: none;
 }
 
-a:not[href^="https://friendshapedplant.neocities.org"]:not(:has(img))::after { 
+a[href]:not(:has(img))::after { 
     content: "";
     height: .75em;
 	width: .75em;
@@ -370,6 +370,10 @@ a:not[href^="https://friendshapedplant.neocities.org"]:not(:has(img))::after {
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
 	-webkit-mask-size: contain;
+}
+
+a[href^="https://friendshapedplant.neocities.org"]::after { 
+    content: none;
 }
 
 #navbar a::after{
