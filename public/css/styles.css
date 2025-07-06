@@ -355,7 +355,7 @@ ul {
 	content: none;
 }
 
-a[href]:not(:has(img))::after { 
+a[href^="http"]:not(:has(img))::after { 
     content: "";
     height: .75em;
 	width: .75em;
