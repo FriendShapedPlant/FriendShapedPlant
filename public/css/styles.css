@@ -352,8 +352,28 @@ ul {
 }
 
 .exception li::before {
-	margin-left: -20px;
-	background: none;
+	content: none;
+}
+
+a:not[href^="https://friendshapedplant.neocities.org"]:not(:has(img))::after { 
+    content: "";
+    height: .75em;
+	width: .75em;
+	margin-bottom: -3px;
+    display: inline-block;
+    background-color: var(--pale-purple);
+    mask-image: url("/img/icons8-external-link.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+	mask-size: contain;
+    -webkit-mask-image: url("/img/icons8-external-link.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+	-webkit-mask-size: contain;
+}
+
+#navbar a::after{
+	background-color: var(--smoke)!important;
 }
 
 
