@@ -257,7 +257,6 @@ summary {
 }
 
 a{
-	display: inline-block;
 	height: fit-content;
 	width: fit-content;
 }
