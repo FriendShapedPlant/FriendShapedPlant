@@ -17,49 +17,76 @@
 
 		body{
 			background-image: url("/img/gingham.jpg");
+			background-color: #4472a6d9;
 			background-size: auto;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 		}
 		main, nav, footer {
 			background-image: url("/img/dark-wood.png")!important;
 			background-color: #693213!important;
 		}
-		h1, h2 { color: #99bad6!important; }
+		h1, h2, a { color: #99bad6!important; }
 		h3, h3 + p { 
 			color: #ffe1b9!important; 
 			text-align: center;
 		}
+		li::before { display: none;}
+		ul { 
+			list-style: initial;
+			padding-left: 20px;
+			margin-top: 0;
+		}
+
+		#mobile { display: none;}
 
 		.item {
 			background: no-repeat center;
 			background-size: contain;
 			width: 100px; 
 			height: 300px;
-			margin: 25px 25px;
+			margin: 25px 37px;
 		}
 		.description {
-			height: 100%;
+			height: 101%;
 			width: 170px;
 			margin-top: -26px;
+			margin-left: -35px;
 			padding: 0 5px;
-			opacity: .01;
-			background-color:rgba(68, 114, 166, .85); 
-			transform: translateX(0px);
+			font-size: 1.15rem;
+			opacity: 0;
+			background-color:#4472a6d9;
+			transform: matrix(.4, 0, 0, 1, 0, 0);
 			transition: transform ease-out .3s, opacity ease-out .3s;
 		}
+
 		.item:hover .description,
 		.item:focus .description {
 			opacity: 1;
-			transform: translateX(86px);
+			transform: matrix(1, 0, 0, 1, 120, 0);
 			transition: transform ease-in .3s, opacity ease-in .3s;
 		}
 
+		.description :nth-child(3){
+			margin-bottom: 0;
+		}
+
+		@media only screen and (max-width: 1050px) {
+			.flex .item:hover:nth-child(4n) .description,
+			.flex .item:focus:nth-child(4n) .description { /* Every fourth item description, go left instead of right */
+				transform: matrix(1, 0, 0, 1, -122, 0);
+			}
+		}
+
 		@media only screen and (max-width: 800px) {
+			#mobile { display: initial;}
+
 			.description,
 			.item:hover .description,
 			.item:focus .description{
-				transform: none;
+				transform: none!important;
 				
 			}
+			.item { margin: 25px;}
 			.description{
 				margin-left: -30px;
 			}
@@ -73,9 +100,13 @@
 	<div id="container">
 		<div w3-include-html="../js/shrineNav.html"></div>
 
+		<div id="flex">
 			<main>
+				<a href="../collections.html" target="_self">&#8592; Back to Collections</a>
 				<h1>Bath and Body Works</h1>
-				<p>Just focusing on Fragrance Mists! Sorted first collected to most recently collected.</p>
+				<p>Fragrance is a blessing and a curse. It's so powerful, yet fleeting... and EXPENSIVE.</p>
+				<p>Just focusing on Mists for now! Ordered oldest to newest in terms of when I got them.</p>
+				<p id="mobile">Tap on the mist to reveal some deets about it!</p>
 
 				<h2>Current</h2>
 				<p>Used on a semi-regular basis.</p>
@@ -85,7 +116,7 @@
 					<!-- <div tabindex="0" class="item" style="background-image:url(/img/bbw/.png);">
 						<div class="description">
 							<h3></h3>
-							<p>20</p>
+							<p>Released 20</p>
 							<p>Fragrance Notes: </p>
 						</div>
 					</div> -->
@@ -93,80 +124,141 @@
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/parisamor.png);">
 						<div class="description">
 							<h3>Paris Amour</h3>
-							<p>2014</p>
-							<p>Fragrance Notes: French Tulips, Apple Blossoms, Sparkling Pink Champagne, Sandalwood, Creamy Musk</p>
+							<p>Released 2014</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>French Tulips</li>
+									<li>Apple Blossoms</li>
+									<li>Sparkling Pink Champagne</li>
+									<li>Sandalwood</li>
+									<li>Creamy Musk</li>
+								</ul>
+							<p>My first ever B&BW item!</p>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/magic.png);">
 						<div class="description">
 							<h3>Everlasting Magic</h3>
-							<p>2023</p>
-							<p>Fragrance Notes: Bejeweled Berries, Phantom Petals, Magic Musk</p>
+							<p>Released 2023</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Bejeweled Berries</li>
+									<li>Phantom Petals</li>
+									<li>Magic Musk</li>
+								</ul>
+							<p>Gift from my mom.</p>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/pink.png);">
 						<div class="description">
 							<h3>Perfect in Pink</h3>
-							<p>2024</p>
-							<p>Fragrance Notes: Vibrant Cherries, Pink Camellia, Whipped Almond Creme</p>
+							<p>Released 2024</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Vibrant Cherries</li>
+									<li>Pink Camellia</li>
+									<li>Whipped Almond Creme</li>
+								</ul>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/goldEclipse.png);">
 						<div class="description">
 							<h3>Golden Eclipse</h3>
-							<p>2022</p>
-							<p>Fragrance Notes: Glowing Berries, Shimmering Blossoms, Sun-Warmed Woods</p>
+							<p>Released 2022</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Glowing Berries</li>
+									<li>Shimmering Blossoms</li>
+									<li>Sun-Warmed Woods</li>
+								</ul>
+							<p>Gift from a friend.</p>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/champagneToast.png);">
 						<div class="description">
 							<h3>Champagne Toast</h3>
-							<p>2024</p>
-							<p>Fragrance Notes: Bubbly Champagne, Sparkling Berries, Juicy Tangerine</p>
+							<p>Released 2024</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Bubbly Champagne</li>
+									<li>Sparkling Berries</li>
+									<li>Juicy Tangerine</li>
+								</ul>
+							<p>Bought with the Chirstmas gift box.</p>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/paradise.png);">
 						<div class="description">
 							<h3>Pink Paradise: Dragon Fruit & Hibiscus</h3>
-							<p>2024</p>
-							<p>Fragrance Notes: Pink Dragon Fruit, Wild Hibiscus, Blush Moss</p>
+							<p>Released 2024</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Pink Dragon Fruit</li>
+									<li>Wild Hibiscus</li>
+									<li>Blush Moss</li>
+								</ul>
+							<p>Got from Semi-Annual Sale.</p>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/vampBlood.png);">
 						<div class="description">
 							<h3>Vampire Blood</h3>
-							<p>2024</p>
-							<p>Fragrance Notes: Red Berries, Night-Blooming Jasmine, Petrifying Plum</p>
+							<p>Released 2024</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Red Berries</li>
+									<li>Night-Blooming Jasmine</li>
+									<li>Petrifying Plum</li>
+								</ul>
+							<p>Got from Semi-Annual Sale.</p>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/ghoulFriend.png);">
 						<div class="description">
 							<h3>Ghoul Friend</h3>
-							<p>2024</p>
-							<p>Fragrance Notes: Dark Strawberries, Ghostly Peony, Spine-Chilling Citrus</p>
+							<p>Released 2024</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Dark Strawberries</li>
+									<li>Ghostly Peony</li>
+									<li>Spine-Chilling Citrus</li>
+								</ul>
+							<p>Got from Semi-Annual Sale.</p>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/sweetestSong.png);">
 						<div class="description">
 							<h3>Sweetest Song</h3>
-							<p>2025</p>
-							<p>Fragrance Notes: Blush Raspberries, Sugar Crystals, Whipped Musk</p>
+							<p>Released 2025</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Blush Raspberries</li>
+									<li>Sugar Crystals</li>
+									<li>Whipped Musk</li>
+								</ul>
+							<p>Got with the Mother's Day gift set.</p>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/firecracker.png);">
 						<div class="description">
 							<h3>Firecracker Pop</h3>
-							<p>2025</p>
-							<p>Fragrance Notes: Red Cherry, Fresh Citrus, Juicy Berry</p>
+							<p>Released 2025</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Red Cherry</li>
+									<li>Fresh Citrus</li>
+									<li>Juicy Berry</li>
+								</ul>
+							<p>Got from Semi-Annual Sale.</p>
 						</div>
 					</div>
 
@@ -182,56 +274,95 @@
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/loveWins.png);">
 						<div class="description">
 							<h3>Love Always Wins: Rainbow Waves</h3>
-							<p>2022</p>
-							<p>Fragrance Notes: Sunny Sangria, Bright Melon, Misty Waters</p>
+							<p>Released 2022</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Sunny Sangria</li>
+									<li>Bright Melon</li>
+									<li>Misty Waters</li>
+								</ul>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/macaronCloud.png);">
 						<div class="description">
 							<h3>Emily in Paris: Macaron Cloud</h3>
-							<p>2024</p>
-							<p>Fragrance Notes: Macaron Delight, Parisian Spun Sugar, Pink Berries</p>
+							<p>Released 2024</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Macaron Delight</li>
+									<li>Parisian Spun Sugar</li>
+									<li>Pink Berries</li>
+								</ul>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/parisamour2.png);">
 						<div class="description">
 							<h3>Paris Amour</h3>
-							<p>2024</p>
-							<p>Fragrance Notes: French Tulips, Apple Blossoms, Sparkling Pink Champagne, Sandalwood, Creamy Musk</p>
+							<p>Released 2024</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>French Tulips</li>
+									<li>Apple Blossoms</li>
+									<li>Sparkling Pink Champagne</li>
+									<li>Sandalwood</li>
+									<li>Creamy Musk</li>
+								</ul>
+							<p>Got from Semi-Annual Sale.</p>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/candyApple.png);">
 						<div class="description">
 							<h3>Candy Apple Cauldron</h3>
-							<p>2024</p>
-							<p>Fragrance Notes: Mysterious Green Apple, Simmering Sugar, Crytsalized Bergamot</p>
+							<p>Released 2024</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Mysterious Green Apple</li>
+									<li>Simmering Sugar</li>
+									<li>Crytsalized Bergamot</li>
+								</ul>
+							<p>Got one to use, one to vault.</p>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/4everSweet.png);">
 						<div class="description">
-							<h3>4 Ever Sweet</h3>
-							<p>2025</p>
-							<p>Fragrance Notes: Candied Grape, Sweet Berry, Powdered Sugar</p>
+							<h3>Sweethearts Collab: 4 Ever Sweet</h3>
+							<p>Released 2025</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Candied Grape</li>
+									<li>Sweet Berry</li>
+									<li>Powdered Sugar</li>
+								</ul>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/blueRazz.png);">
 						<div class="description">
 							<h3>Blue Raspberry Burst</h3>
-							<p>2025</p>
-							<p>Fragrance Notes: Blue Raspberry, Juicy Candy, Sweet Musk</p>
+							<p>Released 2025</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Blue Raspberry</li>
+									<li>Juicy Candy</li>
+									<li>Sweet Musk</li>
+								</ul>
 						</div>
 					</div>
 
 					<div tabindex="0" class="item" style="background-image:url(/img/bbw/cottonCandy.png);">
 						<div class="description">
 							<h3>Cotton Candy Clouds</h3>
-							<p>2025</p>
-							<p>Fragrance Notes: Spun Sugar, Pink Berries, Whipped Vanilla</p>
+							<p>Released 2025</p>
+							<p>Fragrance Notes:</p>
+								<ul>
+									<li>Spun Sugar</li>
+									<li>Pink Berries</li>
+									<li>Whipped Vanilla</li>
+								</ul>
 						</div>
 					</div>
 
@@ -241,7 +372,7 @@
 
 				<div class="flex">
 
-					<div class="item" style="background-image:url(/img/bbw/sweetestSongEDP.png); width: 300px;">
+					<div class="item" style="background-image:url(/img/bbw/sweetestSongEDP.png); width: 262px;">
 					</div>
 
 					<div class="item" style="background-image:url(/img/bbw/champagneToastEDP.png); width: 150px;">
@@ -249,9 +380,13 @@
 
 				</div>
 
-			</main>
+				<p style="text-align:center; margin: 50px 0 0 0; font-size:18px;">Photos are official product images by Bath & Body Works. | Gingham pattern from <a href="https://www.freepik.com/free-vector/seamless-plaid-background-blue-checkered-pattern-design-vector_20346018.htm">Freepik.</a></p>
 
+			</main>
+		</div>
+		
 		<footer w3-include-html="\js\footer.html"></footer>
+		
 
 	</div>
 
