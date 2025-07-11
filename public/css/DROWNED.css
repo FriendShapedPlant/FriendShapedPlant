@@ -20,9 +20,10 @@ header{
 	margin: 15em 0em;
 }
 
-p {
+p, a {
 	padding: 10em 0;
 	font-size: 1.5em;
+	color: white;
 }
 
 .layer--back,
