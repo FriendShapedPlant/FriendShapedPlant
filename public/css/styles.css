@@ -331,27 +331,18 @@ a{
 	margin-top: .625em
 }
 
-
-li::before {
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin-left: 5px;
-	margin-right: 2px;
-	content: "";
-	background: url("https://i.ibb.co/j4Y7r5c/Flower-Bullet.png");
-	background-size: auto;
-	background-size: 100%;
-    image-rendering: pixelated;
-}
-
 ul {
-	list-style: none;
-	padding-left: 0px;
+	list-style-image: url("https://i.ibb.co/j4Y7r5c/Flower-Bullet.png");
+	image-rendering: pixelated;
+	padding-left: 15px;
 }
 
-.exception li::before {
-	content: none;
+ul > ul {
+	padding-left: 40px;
+}
+
+.exception li {
+	list-style-image: none;
 }
 
 a[href^="http"]:not(:has(img))::after { 
