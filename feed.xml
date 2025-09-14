@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>Friend Shaped Updates</title>
+  <description>Log of updates for friendshaped.garden!</description>
+  <link>https://friendshaped.garden</link>
+  <lastBuildDate>
+    Sun, 14 Sep 2025 17:17:31 +0000
+  </lastBuildDate>
+  <ttl>20000</ttl>
+  
+  <item>
+    <title>First RSS post</title>
+    <description>
+      RSS is live! Give it a follow for site updates.
+    </description>
+    <link>https://friendshaped.garden</link>
+    <pubDate>
+      Sun, 14 Sep 2025 17:17:31 +0000
+    </pubDate>
+  </item>
+</channel>
+</rss>
