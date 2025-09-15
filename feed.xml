@@ -12,9 +12,7 @@
   <item>
     <title>September 15</title>
     <description>
-      &lt;ul&gt;
-      &lt;li&gt;Link sanitizer now sanitizes amazon links regardless of reigon and youtube playlists!&lt;/li&gt;
-      &lt;/ul&gt;
+      Link sanitizer now sanitizes amazon links regardless of reigon and youtube playlists!
     </description>
     <link>https://friendshaped.garden</link>
     <pubDate>
