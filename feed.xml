@@ -5,9 +5,22 @@
   <description>Log of updates for friendshaped.garden!</description>
   <link>https://friendshaped.garden</link>
   <lastBuildDate>
-    Sun, 14 Sep 2025 18:22:03 -0400
+    Sun, 15 Sep 2025 16:55:03 -0400
   </lastBuildDate>
   <ttl>20000</ttl>
+
+  <item>
+    <title>September 15</title>
+    <description>
+      &lt;ul&gt;
+      &lt;li&gt;Link sanitizer now sanitizes amazon links regardless of reigon and youtube playlists!&lt;/li&gt;
+      &lt;/ul&gt;
+    </description>
+    <link>https://friendshaped.garden</link>
+    <pubDate>
+      Sun, 15 Sep 2025 16:55:03 -0400
+    </pubDate>
+  </item>
 
   <item>
     <title>September 14</title>
