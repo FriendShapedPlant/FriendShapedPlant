@@ -12,12 +12,13 @@ function sanitize() {
 	let cleanLinkArr = [];
 		
 	let video = "https://www.youtube.com/watch?v=";
-	let shoppin = "https://www.amazon.com/dp/";
+	let shoppin = "";
 	
 	switch(true) {
 		case dirtyLink.startsWith('https://youtube.com/playlist'):
 		case dirtyLink.startsWith('https://www.youtube.com/playlist'):
-			oops.innerHTML = "Sorry, playlist links don't work yet! For now, remove everying after and including \"&si=\"."
+			cleanLinkArr = dirtyLink.split('&');
+			sanilink.value = cleanLinkArr[0];
 			break;
 		case dirtyLink.startsWith('https://youtu.be/'):
 			cleanLink = dirtyLink.slice(17,28);
@@ -31,7 +32,7 @@ function sanitize() {
 			cleanLink = dirtyLink.slice(32,43);
 			sanilink.value = video + cleanLink;
 			break;
-		case dirtyLink.startsWith('https://www.amazon.com/') && dirtyLink.includes("/dp/"): 
+		case dirtyLink.startsWith('https://www.amazon.') && dirtyLink.includes("/dp/"): 
 			cleanLinkArr = dirtyLink.split("/");
 			let dpFound = false;
 			//look for dp; if dp found, switch to true & it'll grab the value after dp before setting false again
@@ -43,7 +44,9 @@ function sanitize() {
 				}
 				if(m === "dp") dpFound = true;
 			})
-			sanilink.value = shoppin + cleanLink;
+			//grab the amazon dot whatever domains after (amazon.com, amazon.co.uk, etc.)
+			shoppin = cleanLinkArr[0].concat("//", cleanLinkArr[2]);
+			sanilink.value = shoppin + "/dp/" + cleanLink;
 			break;
 		default:
 			cleanLinkArr = dirtyLink.split("?");
@@ -75,9 +78,3 @@ function openLink() {
 	let linky = sanilink.value;
 	window.open(linky, "_blank");
 }
-
-/*case dirtylink.startsWith('https://www.youtube.com/playlist'):
-			oops.innerHTML = "Sorry, playlist links don't work right now! For now, remove everying after and including \"&si=\"."
-			//let cleanLinkArr = dirtylink.split("&si=");
-			//sanilink.value = cleanLinkArr[0];
-			break;*/
