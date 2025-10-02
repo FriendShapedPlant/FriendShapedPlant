@@ -6,32 +6,19 @@
   <description>Log of updates for friendshaped.garden!</description>
   <link>https://friendshaped.garden</link>
   <lastBuildDate>
-    Mon, 15 Sep 2025 16:55:03 -0400
+    Thu, 02 Oct 2025 11:22:42 -0400
   </lastBuildDate>
 
   <item>
-    <title>September 15</title>
+    <title>October</title>
     <description>
-      Link sanitizer now sanitizes amazon links regardless of region and youtube playlists!
+      More indie site links, new art, new fragrance mists in the Bath and Body Works Collection (lird help me), and I've put the work into updating my URL in many places! 
+      Fixed my guestbook to redirect to here, as well as my button code. Most fanlistings automatically updated, but for the rest and the webrings I had to send out emails. Heres to hoping those all switch over eventually!
+      Also PLEASE tell me my feed is working now I had like 3 other updates between my first and this that I never saw get sent out QwQ hell world. I deleted them I hope that kills this curse
     </description>
     <link>https://friendshaped.garden</link>
     <pubDate>
-      Mon, 15 Sep 2025 16:55:03 -0400
-    </pubDate>
-  </item>
-
-  <item>
-    <title>September 14</title>
-    <description>
-      &lt;ul&gt;
-      &lt;li&gt;Finally fixed the bullet styling on my About page.&lt;/li&gt;
-			&lt;li&gt;Github Repo in the footer now links to the Cloudflare branch.&lt;/li&gt;
-      &lt;li&gt;Also hoping and praying I did this escaping HTML correctly. This stuff should be in an unordered list.&lt;/li&gt;
-      &lt;/ul&gt;
-    </description>
-    <link>https://friendshaped.garden</link>
-    <pubDate>
-      Sun, 14 Sep 2025 18:22:03 -0400
+      Thu, 02 Oct 2025 11:22:42 -0400
     </pubDate>
   </item>
   
