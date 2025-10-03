@@ -2,15 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <atom:link href="https://friendshaped.garden/feed.xml" rel="self" type="application/rss+xml" />
+  <language>en-us</language> 
   <title>Friend Shaped Updates</title>
   <description>Log of updates for friendshaped.garden!</description>
+  <ttl>60</ttl>
   <link>https://friendshaped.garden</link>
-  <lastBuildDate>
-    Thu, 02 Oct 2025 11:22:42 -0400
-  </lastBuildDate>
 
   <item>
-    <title>October</title>
+    <title>October 2</title>
     <description>
       More indie site links, new art, new fragrance mists in the Bath and Body Works Collection (lird help me), and I've put the work into updating my URL in many places! 
       Fixed my guestbook to redirect to here, as well as my button code. Most fanlistings automatically updated, but for the rest and the webrings I had to send out emails. Heres to hoping those all switch over eventually!
