@@ -370,6 +370,41 @@ a[href^="https://friendshapedplant.neocities.org"]::after {
 	background-color: var(--smoke)!important;
 }
 
+.hover-gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.img-container {
+	position: relative; 
+	width: auto; 
+}
+
+.img-container > img { height: fit-content; }
+
+.popover {
+	display: none;
+	position: absolute;
+	background: var(--black);
+	bottom: calc(100% + 10px);
+	text-align: center;
+	padding: 5px;
+	max-width: none !important;
+}
+
+.popover > img:last-of-type {padding-bottom: 10px}
+.img-container:hover .popover {display: inherit;}
+
+.popover::after {
+	content: "";
+	position: absolute;
+	top: 100%; 
+	left: 50%;
+	margin-left: -10px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: var(--black) transparent transparent transparent;
+}
 
 /* Mobile Formatting (Media Query) */
 
