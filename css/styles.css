@@ -362,7 +362,7 @@ a[href^="http"]:not(:has(img))::after {
 	-webkit-mask-size: contain;
 }
 
-a[href^="https://friendshapedplant.neocities.org"]::after { 
+a[href^="https://friendshaped.garden"]::after { 
     content: none;
 }
 
