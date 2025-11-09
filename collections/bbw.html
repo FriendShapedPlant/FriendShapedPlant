@@ -39,7 +39,7 @@
 
 		#mobile { display: none;}
 
-		.item {
+		.spray {
 			background: no-repeat center;
 			background-size: contain;
 			width: 100px; 
@@ -59,8 +59,8 @@
 			transition: transform ease-out .3s, opacity ease-out .3s;
 		}
 
-		.item:hover .description,
-		.item:focus .description {
+		.spray:hover .description,
+		.spray:focus .description {
 			opacity: 1;
 			transform: matrix(1, 0, 0, 1, 120, 0);
 			transition: transform ease-in .3s, opacity ease-in .3s;
@@ -71,8 +71,8 @@
 		}
 
 		@media only screen and (max-width: 1050px) {
-			.flex .item:hover:nth-child(4n) .description,
-			.flex .item:focus:nth-child(4n) .description { /* Every fourth item description, go left instead of right */
+			.flex .spray:hover:nth-child(4n) .description,
+			.flex .spray:focus:nth-child(4n) .description { /* Every fourth item description, go left instead of right */
 				transform: matrix(1, 0, 0, 1, -122, 0);
 			}
 		}
@@ -81,12 +81,12 @@
 			#mobile { display: initial;}
 
 			.description,
-			.item:hover .description,
-			.item:focus .description{
+			.spray:hover .description,
+			.spray:focus .description{
 				transform: none!important;
 				
 			}
-			.item { margin: 25px;}
+			.spray { margin: 25px;}
 			.description{
 				margin-left: -30px;
 			}
@@ -113,7 +113,7 @@
 				
 				<div class="flex">
 
-					<!-- <div tabindex="0" class="item" style="background-image:url(/img/bbw/.png);">
+					<!-- <div tabindex="0" class="spray" style="background-image:url(/img/bbw/.png);">
 						<div class="description">
 							<h3></h3>
 							<p>Released 20</p>
@@ -126,7 +126,7 @@
 						</div>
 					</div> -->
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/parisamor.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/parisamor.png);">
 						<div class="description">
 							<h3>Paris Amour</h3>
 							<p>Released 2014</p>
@@ -142,7 +142,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/magic.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/magic.png);">
 						<div class="description">
 							<h3>Everlasting Magic</h3>
 							<p>Released 2023</p>
@@ -156,7 +156,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/pink.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/pink.png);">
 						<div class="description">
 							<h3>Perfect in Pink</h3>
 							<p>Released 2024</p>
@@ -169,7 +169,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/goldEclipse.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/goldEclipse.png);">
 						<div class="description">
 							<h3>Golden Eclipse</h3>
 							<p>Released 2022</p>
@@ -183,7 +183,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/champagneToast.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/champagneToast.png);">
 						<div class="description">
 							<h3>Champagne Toast</h3>
 							<p>Released 2024</p>
@@ -197,7 +197,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/paradise.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/paradise.png);">
 						<div class="description">
 							<h3>Pink Paradise: Dragon Fruit & Hibiscus</h3>
 							<p>Released 2024</p>
@@ -211,7 +211,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/vampBlood.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/vampBlood.png);">
 						<div class="description">
 							<h3>Vampire Blood</h3>
 							<p>Released 2024</p>
@@ -225,7 +225,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/ghoulFriend.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/ghoulFriend.png);">
 						<div class="description">
 							<h3>Ghoul Friend</h3>
 							<p>Released 2024</p>
@@ -239,7 +239,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/sweetestSong.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/sweetestSong.png);">
 						<div class="description">
 							<h3>Sweetest Song</h3>
 							<p>Released 2025</p>
@@ -253,7 +253,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/firecracker.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/firecracker.png);">
 						<div class="description">
 							<h3>Firecracker Pop</h3>
 							<p>Released 2025</p>
@@ -267,7 +267,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/pinkObsessed.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/pinkObsessed.png);">
 						<div class="description">
 							<h3>Pink Obsessed</h3>
 							<p>Released 2025</p>
@@ -280,7 +280,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/milkbar.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/milkbar.png);">
 						<div class="description">
 							<h3>Milk Bar Birthday Cake</h3>
 							<p>Released 2025</p>
@@ -294,7 +294,7 @@
 						</div>
 					</div>
 					
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/touchGold.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/touchGold.png);">
 						<div class="description">
 							<h3>Touch of Gold</h3>
 							<p>Released 2025</p>
@@ -307,7 +307,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/pieBar.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/pieBar.png);">
 						<div class="description">
 							<h3>Raspberry Holiday Pie Bar</h3>
 							<p>Released 2025</p>
@@ -329,7 +329,7 @@
 				
 				<div class="flex">
 					<!--
-						<div tabindex="0" class="item" style="background-image:url(/img/bbw/.png); height: 221px;">
+						<div tabindex="0" class="spray" style="background-image:url(/img/bbw/.png); height: 221px;">
 						<div class="description">
 							<h3></h3>
 							<p>Released 20</p>
@@ -339,7 +339,7 @@
 						</div>
 					</div>
 					-->
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/toastMini.png); height: 221px;">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/toastMini.png); height: 221px;">
 						<div class="description">
 							<h3>Champagne Toast</h3>
 							<p>Released 2022</p>
@@ -350,7 +350,7 @@
 								</ul>
 						</div>
 					</div>
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/brightXmas.png); height: 221px;">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/brightXmas.png); height: 221px;">
 						<div class="description">
 							<h3>Bright Christmas Morning</h3>
 							<p>Released 2024</p>
@@ -361,7 +361,7 @@
 								</ul>
 						</div>
 					</div>
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/sweetCherry.png); height: 221px;">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/sweetCherry.png); height: 221px;">
 						<div class="description">
 							<h3>Sweetheart Cherry</h3>
 							<p>Released 2025</p>
@@ -373,7 +373,7 @@
 							<p>Gift from a friend.</p>
 						</div>
 					</div>
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/blackberryBurst.png); height: 221px;">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/blackberryBurst.png); height: 221px;">
 						<div class="description">
 							<h3>Blackberry Burst</h3>
 							<p>Released 2025</p>
@@ -384,7 +384,7 @@
 								</ul>
 						</div>
 					</div>
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/delicateIris.png); height: 221px;">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/delicateIris.png); height: 221px;">
 						<div class="description">
 							<h3>Delicate Iris</h3>
 							<p>Released 2025</p>
@@ -395,19 +395,7 @@
 								</ul>
 						</div>
 					</div>
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/cerealMilk.png); height: 221px;">
-						<div class="description">
-							<h3>Cereal Milk Soft Serve</h3>
-							<p>Released 2025</p>
-								<ul>
-									<li>Soft Ice Cream</li>
-									<li>Golden Cornflakes</li>
-									<li>Frosted Sugar</li>
-								</ul>
-							<p>Freebie from a pop-up!</p>
-						</div>
-					</div>
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/hollyJolly.png); height: 221px;">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/hollyJolly.png); height: 221px;">
 						<div class="description">
 							<h3>Holly Jolly Lollipop</h3>
 							<p>Released 2025</p>
@@ -418,6 +406,17 @@
 								</ul>
 						</div>
 					</div>
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/sugarPretzel.png); height: 221px;">
+						<div class="description">
+							<h3>Cinnamon Sugar Pretzel Cookie</h3>
+							<p>Released 2025</p>
+								<ul>
+									<li>Toasted Pretzel</li>
+									<li>Cinnamon Dusting</li>
+									<li>Sugared Vanilla</li>
+								</ul>
+						</div>
+					</div>
 				</div>
 
 				<h2>Vaulted</h2>
@@ -425,7 +424,7 @@
 
 				<div class="flex">
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/loveWins.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/loveWins.png);">
 						<div class="description">
 							<h3>Love Always Wins: Rainbow Waves</h3>
 							<p>Released 2022</p>
@@ -438,7 +437,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/macaronCloud.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/macaronCloud.png);">
 						<div class="description">
 							<h3>Emily in Paris: Macaron Cloud</h3>
 							<p>Released 2024</p>
@@ -451,7 +450,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/parisamour2.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/parisamour2.png);">
 						<div class="description">
 							<h3>Paris Amour</h3>
 							<p>Released 2024</p>
@@ -467,7 +466,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/candyApple.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/candyApple.png);">
 						<div class="description">
 							<h3>Candy Apple Cauldron</h3>
 							<p>Released 2024</p>
@@ -481,7 +480,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/4everSweet.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/4everSweet.png);">
 						<div class="description">
 							<h3>Sweethearts Collab: 4 Ever Sweet</h3>
 							<p>Released 2025</p>
@@ -495,7 +494,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/blueRazz.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/blueRazz.png);">
 						<div class="description">
 							<h3>Blue Raspberry Burst</h3>
 							<p>Released 2025</p>
@@ -508,7 +507,7 @@
 						</div>
 					</div>
 
-					<div tabindex="0" class="item" style="background-image:url(/img/bbw/cottonCandy.png);">
+					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/cottonCandy.png);">
 						<div class="description">
 							<h3>Cotton Candy Clouds</h3>
 							<p>Released 2025</p>
@@ -528,10 +527,10 @@
 
 				<div class="flex">
 
-					<div class="item" style="background-image:url(/img/bbw/sweetestSongEDP.png); width: 262px;">
+					<div class="spray" style="background-image:url(/img/bbw/sweetestSongEDP.png); width: 262px;">
 					</div>
 
-					<div class="item" style="background-image:url(/img/bbw/champagneToastEDP.png); width: 150px;">
+					<div class="spray" style="background-image:url(/img/bbw/champagneToastEDP.png); width: 150px;">
 					</div>
 
 				</div>
