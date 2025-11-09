@@ -1,6 +1,6 @@
 :root {
 	--header-image: url('../img/header.jpg');
-	--body-bg-image: url('../img/acGrass.png');
+	--body-bg-image: url('../img/patterns/acGrass.png');
 
 	/* colors */
 	--olivine: #9DBD89; /* safe on poly green, NOT lavender*/
@@ -123,7 +123,7 @@ you can add them directly to the <div id="header"></div> element! */
 
 #navbar {
 	background-color: var(--black);
-	background-image: url("../img/gravel.png");
+	background-image: url("../img/patterns/gravel.png");
 	width: 100%;
 	padding: 10px 0px;
 }
@@ -158,7 +158,7 @@ you can add them directly to the <div id="header"></div> element! */
 
 #navbar ul li ul { /* sub-menu */
 	background-color: var(--black);
-	background-image: url("../img/gravel.png");
+	background-image: url("../img/patterns/gravel.png");
 	visibility: hidden;
 	opacity: 0;
 	display: none;
@@ -196,7 +196,7 @@ you can add them directly to the <div id="header"></div> element! */
 
 aside {
 	background-color: var(--poly-green);
-	background-image: url("../img/buried.png");
+	background-image: url("../img/patterns/buried.png");
 	width: 275px;
 	padding: 20px;
 	font-size: smaller;
@@ -204,7 +204,7 @@ aside {
 
 main {
 	background-color: var(--lavender);
-	background-image: url("../img/leaf.png");
+	background-image: url("../img/patterns/leaf.png");
 	flex: 1;
 	padding: 20px;
 	order: 2;
@@ -220,7 +220,7 @@ main {
 
 footer {
 	background-color: #13092D;
-	background-image: url("../img/gravel.png");
+	background-image: url("../img/patterns/gravel.png");
 	width: 100%;
 	height: 40px;
 	padding: 10px;
@@ -261,6 +261,7 @@ a{
 	width: fit-content;
 }
 
+/* links class used for link tables on personal/resources */
 .links {
   border-collapse: collapse;
   width: 100%;
@@ -322,8 +323,6 @@ a{
 	height:auto;
 	font-size: 2em;
 }
-
-/* CSS for extras */
 
 #TV {
 	float:left;
