@@ -6,8 +6,28 @@
   <title>Friend Shaped Updates</title>
   <description>Log of updates for friendshaped.garden!</description>
   <ttl>1000</ttl>
-  <lastBuildDate>Fri, 31 Oct 2025 12:00:00 -0000</lastBuildDate>
+  <lastBuildDate>Sun, Nov 9 2025 12:00:00 -0000</lastBuildDate>
   <link>https://friendshaped.garden</link>
+
+  <item>
+    <title>November 9</title>
+    <description>
+      &lt;p&gt;We're gonna try putting html in this... Focusing on page/link/navigation cleanup today!&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Deleted links.html. It never really served much purpose rip&lt;/li&gt;
+        &lt;li&gt;Fancied up the links in &lt;a href=&quot;collections.html&quot;&gt;Collections&lt;/a&gt; and &lt;a href=&quot;shrines.html&quot;&gt;Shrines&lt;/a&gt;.&lt;/li&gt;
+        &lt;li&gt;New CSS for those links in my nav that aren't actually links so they don't look like links! (Artistry and Links)&lt;/li&gt;
+        &lt;li&gt;Added &quot;Back&quot; links to some pages that needed them.&lt;/li&gt;
+        &lt;li&gt;Changed up the links in the Shrine/Collection-Specific Navbar.&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;li&gt;Also a new site in Indie Sites&lt;/li&gt;
+      &lt;/ul&gt;
+    </description>
+    <link>https://friendshaped.garden</link>
+    <pubDate>
+      Sun, Nov 9 2025 12:00:00 -0000
+    </pubDate>
+  </item>
 
   <item>
     <title>November 6</title>
