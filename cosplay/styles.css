@@ -1,0 +1,325 @@
+:root {
+	--header-image: url('../img/header.jpg');
+
+	/* colors */
+	--olivine: #9DBD89; /* safe on poly green, NOT lavender*/
+	--poly-green: #384B35;
+	--pale-purple: #C1B7F6; /* safe on poly green & lavender*/
+	--lavender: #51428c;
+	--black: #181F1C;
+	--silver: #AAAAAA;
+	--smoke: #F4F4F4;
+}
+@font-face {
+	font-family: Arcade;
+	src: url('../font/CthulhumbusArcade.ttf');
+}
+
+@font-face {
+	font-family: Venice;
+	src: url('../font/VeniceClassic.ttf');
+}
+
+body {
+	font-family: 'Venice', sans-serif;
+	font-size: 1.35em;
+	margin: 0;
+	color: var(--smoke);
+	background: var(--olivine);
+	background-size: contain;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.aliased {
+    image-rendering: pixelated;
+}
+
+/* Layout CSS */
+
+#flex {
+	display: flex;
+	text-decoration: none;
+}
+
+#flex a {
+	color: var(--pale-purple);
+}
+#flex a:hover {
+	color: var(--smoke);
+}
+
+.center{
+	text-align:center;
+}
+
+/* Navbar */
+
+#navbar {
+	background-color: var(--black);
+	background-image: url("../img/patterns/gravel.png");
+	width: 100%;
+	padding: 10px 0px;
+}
+
+#navbar ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	justify-content: space-evenly;
+}
+
+#navbar li {
+	padding: 0px 15px;
+}
+
+#navbar li a {
+	color: var(--smoke);
+	font-weight: 800;
+	text-decoration: none;
+}
+
+#navbar .dropdown li {
+	padding: 5px 15px;
+}
+
+#navbar li a:hover,
+#navbar li a:focus {
+	color: var(--silver);
+	text-decoration: underline;
+}
+
+#navbar ul li ul { /* sub-menu */
+	background-color: var(--black);
+	background-image: url("../img/patterns/gravel.png");
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+	min-width: 10rem;
+	position: absolute;
+	padding: 10px 0px;
+	margin: 0px -20px;
+	z-index: 3;
+}
+
+#navbar ul li:hover > ul, /* make sub-menu viisble on hover/focus */
+#navbar ul li ul:focus
+#navbar ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+#navbar ul li:focus-within > ul { /* ditto but further browser compatibility */
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  padding: 10px 0px;
+  margin: 0px -20px;
+}
+
+#navbar ul li ul li { /* sub-menu items */
+	clear: both;
+	width: 100%;
+}
+
+#rightSide {
+	flex: 0 0 70%;
+	background-color: var(--lavender);
+	background-image: url("../img/patterns/leaf.png");
+	order: 2;
+}
+
+main {
+	padding: 20px;
+}
+
+aside {
+	flex: 0 0 30%;
+	position: sticky;
+	top: 0;
+	background: black center no-repeat;
+	background-size: cover;
+	order: 3;
+	height: 100vh;
+}
+
+footer {
+	background-color: #13092D;
+	background-image: url("../img/patterns/gravel.png");
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	text-align: center;
+}
+
+h1{
+	color: var(--pale-purple);
+	font-size: 1.75em;
+}
+
+main h2,
+main h3 {
+	color: var(--pale-purple);
+}
+
+h2,
+h3 {
+	color: var(--olivine);
+	margin-bottom: 0px;
+}
+
+h2 + p,
+h3 + p {
+	margin-top: 0px;
+}
+
+p::first-letter {
+	padding-left: 40px;
+}
+
+strong {
+	color: var(--smoke);
+}
+
+summary {
+	margin-bottom: 18px;
+}
+
+a{
+	height: fit-content;
+	width: fit-content;
+}
+
+table {
+  float: left;
+  padding-right: 10px;
+}
+
+table td, table th {
+  border: 3px dotted var(--pale-purple);
+  text-align: left;
+  padding: 8px;
+}
+
+table th {
+	background: var(--pale-purple);
+	color: var(--lavender);
+}
+
+table img {
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+}
+
+table a {
+	display: flex;
+	text-align: center;
+	margin: auto;
+	width: fit-content;
+}
+
+/* Extras */
+
+.skipper{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.skipper:focus{
+	position:static;
+	width:auto;
+	height:auto;
+	font-size: 2em;
+}
+
+
+ul {
+	list-style-image: url("https://i.ibb.co/j4Y7r5c/Flower-Bullet.png");
+	image-rendering: pixelated;
+	padding-left: 15px;
+}
+
+ul > ul {
+	padding-left: 40px;
+}
+
+.exception li {
+	list-style-image: none;
+}
+
+a[href^="http"]:not(:has(img))::after { 
+    content: "";
+    height: .75em;
+	width: .75em;
+	margin-bottom: -3px;
+    display: inline-block;
+    background-color: var(--pale-purple);
+    mask-image: url("/img/icons8-external-link.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+	mask-size: contain;
+    -webkit-mask-image: url("/img/icons8-external-link.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+	-webkit-mask-size: contain;
+}
+
+a[href^="https://friendshaped.garden"]::after { 
+    content: none;
+}
+
+#navbar a[href="#"] {
+	text-decoration: none!important;
+	color: unset!important;
+	pointer-events: none;
+}
+
+#navbar a::after{
+	background-color: var(--smoke)!important;
+}
+
+/* Mobile Formatting (Media Query) */
+
+/* so you wanna change the width of your page?
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the
+"max-width" value below
+*/
+
+@media only screen and (max-width: 1200px) {
+	.fun {display: none;}
+}
+
+@media only screen and (max-width: 800px) {
+	#flex {
+		flex-wrap: wrap;
+	}
+
+	aside {
+		background-position: top;
+		position: static;
+		height: 30vh;
+		flex: 0 0 100%;
+		order: 1;
+	}
+
+	#rightSide {
+		flex: 0 0 100%;
+		min-height: 70vh;
+	}
+
+	#navbar ul {
+		flex-wrap: wrap;
+	}
+
+}
