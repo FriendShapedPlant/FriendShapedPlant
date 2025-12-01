@@ -44,10 +44,10 @@ body {
 	text-decoration: none;
 }
 
-#flex a {
+a {
 	color: var(--pale-purple);
 }
-#flex a:hover {
+a:hover {
 	color: var(--smoke);
 }
 
@@ -59,7 +59,6 @@ body {
 
 #navbar {
 	background-color: var(--black);
-	background-image: url("../img/patterns/gravel.png");
 	width: 100%;
 	padding: 10px 0px;
 }
@@ -94,7 +93,6 @@ body {
 
 #navbar ul li ul { /* sub-menu */
 	background-color: var(--black);
-	background-image: url("../img/patterns/gravel.png");
 	visibility: hidden;
 	opacity: 0;
 	display: none;
@@ -124,6 +122,13 @@ body {
 #navbar ul li ul li { /* sub-menu items */
 	clear: both;
 	width: 100%;
+}
+
+footer a{
+	color: var(--smoke);
+}
+footer a[href^="http"]:not(:has(img))::after {
+	background-color: var(--smoke);
 }
 
 #rightSide {

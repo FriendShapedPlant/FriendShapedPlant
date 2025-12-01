@@ -9,6 +9,43 @@
 	<link rel="icon" type="image/x-icon" href="/img/FSPfavicon.ico">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="/arts/styles.css">
+
+    <style>
+        @font-face {
+			font-family: ProFont;
+			src: url('/font/Profont.otf');
+		}
+        :root{
+            --green: #2EA804;
+            --blackgreen: #0F3003;
+        }
+        body {
+            font-family: "ProFont", Trebuchet MS;
+            font-size: 1.2em;
+        }
+        #rightSide {
+            background-color: var(--green);
+            background-image: url(/img/patterns/old-wall.png);
+        }
+        table th, #navbar {
+            background: var(--blackgreen);
+        }
+        table td, table th {
+            border-color: var(--blackgreen);
+        }
+        main h1, main h2, main h3, a, table th {
+            color: var(--smoke);
+        }
+        
+        a[href^="http"]:not(:has(img))::after {
+            background-color: var(--smoke);
+        }
+
+        p {
+            color: var(--blackgreen);
+        }
+
+    </style>
   </head>
 
   <body>
@@ -16,7 +53,7 @@
 
         <div id="flex">
             <div id="rightSide">
-                <nav id="navbar" w3-include-html="\js\shrineNav.html" class="exception">Please enable Javascript or use the <a href="/sitemap.html" target="_self">Sitemap</a></nav>
+                <nav w3-include-html="\js\shrineNav.html" class="exception">Please enable Javascript or use the <a href="/sitemap.html" target="_self">Sitemap</a></nav>
                 <main>
 
                     <a href="../cosplay.html" target="_self">&#8592; Back to Cosplays</a>
