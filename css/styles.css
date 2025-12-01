@@ -279,9 +279,7 @@ a{
 }
 
 .links img {
-	display: flex;
 	margin: 0 auto;
-	align-items: center;
 }
 
 .links a {
@@ -365,12 +363,6 @@ a{
 	font-size: 2em;
 }
 
-#TV {
-	float:left;
-	margin-right: 0.625em;
-	margin-top: .625em
-}
-
 ul {
 	list-style-image: url("https://i.ibb.co/j4Y7r5c/Flower-Bullet.png");
 	image-rendering: pixelated;
@@ -429,7 +421,9 @@ a[href^="https://friendshaped.garden"]::after {
 .img-container > img { height: fit-content; }
 
 .popover {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
+	display: none;	
 	position: absolute;
 	background: var(--black);
 	bottom: calc(100% + 10px);
@@ -439,7 +433,12 @@ a[href^="https://friendshaped.garden"]::after {
 }
 
 .popover > img:last-of-type {padding-bottom: 10px}
-.img-container:hover .popover {display: inherit;}
+.img-container:hover .popover,
+.img-container:focus-within .popover {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+}
 
 .popover::after {
 	content: "";
@@ -503,12 +502,4 @@ and then subtrack it by 100. use this new number as the
 		display: none;
 	}
 
-}
-@media only screen and (max-width: 500px) {
-	#TV {
-		float: none;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 }
