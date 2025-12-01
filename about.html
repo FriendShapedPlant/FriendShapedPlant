@@ -11,26 +11,38 @@
   </head>
 
   <style>
-	.ff-container,
-	.ff-canvas {
-  		display: block!important;
-	}
-	.ff-canvas{
+	.ff-container {
+  		float: left;
 		margin-right: 0.625em;
-  		margin-top: .625em;
+		margin-top: .625em;
 	}
+
+	button {
+		float: left; 
+		clear: left;
+		margin-bottom: 10px;
+	}
+
+	@media only screen and (max-width: 500px) {
+	.ff-container, button {
+		float: none;
+		display: block;
+		margin-bottom: 0;
+	}
+}
   </style>
 
   <body>
 	<script src="js/script.js"></script>
-	<script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script> <!-- FreezeFrame.js -->
+	<script src="/js/freezeframe.js"></script>
     <div id="container">
         <div w3-include-html="js\header.html"></div>
 		<nav id="navbar" w3-include-html="js\navbar.html" class="exception">Please enable Javascript or use the <a href="/sitemap.html" target="_self">Sitemap</a></nav>
 
         <div id="flex">
             <main>
-				<img src="/img/AtTV.gif" alt="Pixel art of Atticus' persona in a TV, licking the camera." id="TV" class="aliased freezeframe">
+				<img src="/img/AtTV.gif" alt="Pixel art of Atticus' persona in a TV, licking the camera." class="aliased freeze">
+				<button class='toggle-gif' type='button'>Play/Pause TV</button>
                 <h1>Meet the Webmaster!</h1>
 				<ul style="font-size:1.25em; list-style: none;">
 				<li><b>Name:</b> Atticus Atlas</li>
@@ -40,7 +52,7 @@
 				<li><b>Country:</b> United States</li>
 				</ul>
 
-				<p>I took my first HTML class in the summer of 2022, but before then I had some experience with customizing my DeviantART page in  2016-ish. I love me some programming but this is definitely my favorite language lmao. I also obviously know CSS and Javascript! It all goes hand in hand. :3</p>
+				<p style="clear: both;">I took my first HTML class in the summer of 2022, but before then I had some experience with customizing my DeviantART page in  2016-ish. I love me some programming but this is definitely my favorite language lmao. I also obviously know CSS and Javascript! It all goes hand in hand. :3</p>
 				<p>Outside of webmastering, I love drawing, cosplaying, and playing video games. Some of my faves are Kirby, OFF, Undertale/Deltarune, Len'en Project, and Pump it Up. I'm all about indie and rhythm games, and I stream the former on my <a href="https://www.twitch.tv/friendshapedplant" target="_blank">Twitch!</a></p>
 				<p>I am also VERY leftist. My activism is focused on disability and queer rights, but I stand in solidarity with many other minorities.</p>
 				<p>If it wasn't apparent, my fave aesthetics currently are old web and bright colors :3 I do love me some punkish fashion though, half my shirts are black lmao, but I've adopted some more kidcore-esque pieces as of late. I'm in my anemoia-nostalgia era.</p>
@@ -84,7 +96,7 @@
 
 	<div class="fun aliased" style="position: fixed; right: -50px; bottom: -9px; z-index: 1;"><img alt="" src="https://f2.toyhou.se/file/f2-toyhou-se/images/78507940_j0ccjskXjF7A10M.png" height="350"></div>
 
-	<script>includeHTML(); new Freezeframe({responsive: false});</script>
+	<script>includeHTML();</script>
 
   </body>
 
