@@ -6,8 +6,24 @@
   <title>Friend Shaped Updates</title>
   <description>Log of updates for friendshaped.garden!</description>
   <ttl>1000</ttl>
-  <lastBuildDate>Sun, Nov 9 2025 12:00:00 -0000</lastBuildDate>
+  <lastBuildDate>Mon, Dec 1 2025 12:00:00 -0000</lastBuildDate>
   <link>https://friendshaped.garden</link>
+
+  <item>
+    <title>December</title>
+    <description>
+      &lt;ul&gt;
+      &lt;li&gt;Impletmented Bechno's fresh new take on the &lt;a href=&quot;https://bechnokid.neocities.org/resources/tutorials/freezeframe/&quot;&gt;freezeFrame.js!&lt;/a&gt; &lt;span class=&quot;comment&quot;&gt;With my own little adjustments here and there. Took a min but its here and nice and clean and easy!&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;My Pixel Art is now animation toggleable! &lt;span class=&quot;comment&quot;&gt;Thanks to the previously mentioned freezeframe fiddling.&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;Did a bit of styling on the Dedan Cosplay page. &lt;span class=&quot;comment&quot;&gt;It aint much but it gives it some uniqueness. Also the font is probably easier to read than my neverending serifs lmao&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;Reorganized my BBW Mists &amp; Webrings a tad.&lt;/li&gt;
+      &lt;/ul&gt;
+    </description>
+    <link>https://friendshaped.garden</link>
+    <pubDate>
+      Mon, Dec 1 2025 12:00:00 -0000
+    </pubDate>
+  </item>
 
   <item>
     <title>November 20</title>
