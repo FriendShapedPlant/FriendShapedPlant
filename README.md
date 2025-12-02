@@ -1,5 +1,5 @@
 # Friend Shaped Plant
-## A site for fun arts, viddy games, and old web vibes.
+## Deprecated version of my website
 
 
 [Link to the live site!](https://friendshapedplant.neocities.org/)
