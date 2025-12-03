@@ -13,36 +13,48 @@
     <style>
         @font-face {
 			font-family: ProFont;
-			src: url('/font/Profont.otf');
+			src: url('/font/RM2000alt.ttf');
+            size-adjust: 120%
 		}
         :root{
             --green: #2EA804;
-            --blackgreen: #0F3003;
+            --smoke: #e6e6e6;
         }
         body {
-            font-family: "ProFont", Trebuchet MS;
-            font-size: 1.2em;
+            font-family: "Profont", 'Courier New', Courier, monospace;
         }
         #rightSide {
             background-color: var(--green);
             background-image: url(/img/patterns/old-wall.png);
         }
         table th, #navbar {
-            background: var(--blackgreen);
+            background: black;
         }
         table td, table th {
-            border-color: var(--blackgreen);
+            border-color: black;
         }
-        main h1, main h2, main h3, a, table th {
+        main h1, main h2, main h3{
+            color: var(--smoke);
+        }
+        main h1, main h2, main h3 {
+            padding-left: 15px;
+            background-color: black;
+        }
+        
+        table th, #flex a:focus {
             color: var(--smoke);
         }
         
         a[href^="http"]:not(:has(img))::after {
             background-color: var(--smoke);
         }
+        #flex a:hover,
+        #flex a:focus{
+            background-color: black;
+        }
 
-        p {
-            color: var(--blackgreen);
+        p, a {
+            color: black;
         }
 
     </style>
