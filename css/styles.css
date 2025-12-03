@@ -85,7 +85,8 @@ and change the media query according to the comment! */
 #container a {
 	color: var(--pale-purple);
 }
-#container a:hover {
+#container a:hover,
+#container a:focus {
 	color: var(--smoke);
 }
 
@@ -111,7 +112,8 @@ you can add them directly to the <div id="header"></div> element! */
 	text-align:center;
 }
 
-#header a:hover{
+#header a:hover,
+#header a:focus{
 	color:var(--olivine);
 }
 
