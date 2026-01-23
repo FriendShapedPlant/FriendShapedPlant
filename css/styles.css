@@ -171,7 +171,7 @@ you can add them directly to the <div id="header"></div> element! */
 	z-index: 3;
 }
 
-#navbar ul li:hover > ul, /* make sub-menu viisble on hover/focus */
+#navbar ul li:hover > ul, /* make sub-menu visible on hover/focus */
 #navbar ul li ul:focus
 #navbar ul li ul:hover {
   visibility: visible;
@@ -344,10 +344,6 @@ a{
 }
 
 /* Extras */
-
-.full-height {
-    height: 50vh;
-}
 
 .skipper{
 	position:absolute;
