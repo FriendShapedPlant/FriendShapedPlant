@@ -259,6 +259,8 @@ summary {
 	margin-bottom: 18px;
 }
 
+iframe {border: none;}
+
 a{
 	height: fit-content;
 	width: fit-content;
