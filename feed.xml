@@ -6,8 +6,19 @@
   <title>Friend Shaped Updates</title>
   <description>Log of updates for friendshaped.garden!</description>
   <ttl>1000</ttl>
-  <lastBuildDate>Fri, 23 Jan 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 12 Feb 2026 12:00:00 +0000</lastBuildDate>
   <link>https://friendshaped.garden</link>
+
+  <item>
+    <title>February 12</title>
+    <description>
+      Lots of updates today! New body text font, new cosplay, and blurred Art thumbnails can now be unblurred!
+    </description>
+    <link>https://friendshaped.garden</link>
+    <pubDate>
+      Thu, 12 Feb 2026 12:00:00 +0000
+    </pubDate>
+  </item>
 
   <item>
     <title>January 23</title>
@@ -19,7 +30,7 @@
           &lt;li&gt;Setting up my Maduna gifypet replacement :0 Shoutout to Mar64 their art is SO good&lt;/li&gt;
       &lt;/ul&gt;
     </description>
-    <link>https://friendshaped.garden/cosplay/tvhead</link>
+    <link>https://friendshaped.garden</link>
     <pubDate>
       Fri, 23 Jan 2026 12:00:00 +0000
     </pubDate>
@@ -30,7 +41,7 @@
     <description>
       I have added my TV Head to my cosplay roster! It is a big page, so the only other thing is I added a list of the definitions I'll use for my Cosplay Statuses.
     </description>
-    <link>https://friendshaped.garden/cosplay/tvhead</link>
+    <link>https://friendshaped.garden</link>
     <pubDate>
       Mon, 05 Jan 2026 12:00:00 +0000
     </pubDate>
@@ -69,7 +80,7 @@
       &lt;ul&gt;
         &lt;li&gt;The updates section on the homepage has been made into a iframe! Was for the sake of cleanliness, that box of code is really Really long!&lt;/li&gt;
         &lt;li&gt;New arts!&lt;/li&gt;
-        &lt;li&gt;My first &lt;a href=&quot;cosplay.html&quot;&gt;Cosplay&lt;/a&gt; page is live! I want to do more styling to each individual page but thats for later. More cosplays to come as well!&lt;/li&gt;
+        &lt;li&gt;My first &lt;a href=&quot;https://friendshaped.garden/cosplay&quot;&gt;Cosplay&lt;/a&gt; page is live! I want to do more styling to each individual page but thats for later. More cosplays to come as well!&lt;/li&gt;
         &lt;li&gt;Another day, another new B&amp;BW mist added to the collection.&lt;/li&gt;
         &lt;li&gt;Put in an app for another webring :3&lt;/li&gt;
       &lt;/ul&gt;
@@ -86,7 +97,7 @@
       &lt;p&gt;We're gonna try putting html in this... Focusing on page/link/navigation cleanup today!&lt;/p&gt;
       &lt;ul&gt;
         &lt;li&gt;Deleted links.html. It never really served much purpose rip&lt;/li&gt;
-        &lt;li&gt;Fancied up the links in &lt;a href=&quot;collections.html&quot;&gt;Collections&lt;/a&gt; and &lt;a href=&quot;shrines.html&quot;&gt;Shrines&lt;/a&gt;.&lt;/li&gt;
+        &lt;li&gt;Fancied up the links in &lt;a href=&quot;https://friendshaped.garden/collections&quot;&gt;Collections&lt;/a&gt; and &lt;a href=&quot;https://friendshaped.garden/shrines&quot;&gt;Shrines&lt;/a&gt;.&lt;/li&gt;
         &lt;li&gt;New CSS for those links in my nav that aren't actually links so they don't look like links! (Artistry and Links)&lt;/li&gt;
         &lt;li&gt;Added &quot;Back&quot; links to some pages that needed them.&lt;/li&gt;
         &lt;li&gt;Changed up the links in the Shrine/Collection-Specific Navbar.&lt;/li&gt;
