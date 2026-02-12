@@ -91,7 +91,7 @@ and change the media query according to the comment! */
 }
 
 #headerText{
-	font-size: 3.5em;
+	font-size: 4.73rem;
 	font-family: 'Arcade', sans-serif;
 	-webkit-text-stroke: 1px var(--black);
 	text-decoration: none;
@@ -128,6 +128,7 @@ you can add them directly to the <div id="header"></div> element! */
 	background-image: url("../img/patterns/gravel.png");
 	width: 100%;
 	padding: 10px 0px;
+	font-size: 1.35rem;
 }
 
 #navbar ul {
