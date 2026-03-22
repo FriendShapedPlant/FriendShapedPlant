@@ -6,8 +6,23 @@
   <title>Friend Shaped Updates</title>
   <description>Log of updates for friendshaped.garden!</description>
   <ttl>1000</ttl>
-  <lastBuildDate>Sun, 15 Feb 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 21 Mar 2026 12:00:00 +0000</lastBuildDate>
   <link>https://friendshaped.garden</link>
+
+  <item>
+    <title>March 21</title>
+    <description>
+      &lt;ul&gt;
+          &lt;li&gt;New BBW mists, as well as a new category for mists I've used up!&lt;/li&gt;
+          &lt;li&gt;New (to the site) &lt;a href=&quot;http://127.0.0.1:3000/arts/pixel.html&quot;&gt;pixel art piece!&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;The headers on my Code Project page are now h2 instead of h3. &lt;span class=&quot;comment&quot;&gt;Small change but y'know for the sake of&lt;/span&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    </description>
+    <link>https://friendshaped.garden/</link>
+    <pubDate>
+      Sat, 21 Mar 2026 12:00:00 +0000
+    </pubDate>
+  </item>
 
   <item>
     <title>February 20</title>
