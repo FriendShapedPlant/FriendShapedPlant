@@ -483,15 +483,15 @@ and then subtrack it by 100. use this new number as the
 	}
 
 	main {
-		order: 2;
+		order: 1;
 	}
 
 	#leftSidebar {
-		order: 3;
+		order: 2;
 	}
 
 	#rightSidebar {
-		order: 1;
+		order: 3;
 	}
 
 	#headerText{
