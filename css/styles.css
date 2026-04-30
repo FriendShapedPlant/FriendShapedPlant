@@ -219,11 +219,11 @@ main {
 	background-image: url("../img/patterns/leaf.png");
 	flex: 1;
 	padding: 20px;
-	order: 2;
+	order: 1;
 }
 
 #leftSidebar {
-	order: 1;
+	order: 2;
 }
 
 #rightSidebar {
@@ -480,18 +480,6 @@ and then subtrack it by 100. use this new number as the
 
 	aside {
 		width: 100%;
-	}
-
-	main {
-		order: 2;
-	}
-
-	#leftSidebar {
-		order: 3;
-	}
-
-	#rightSidebar {
-		order: 1;
 	}
 
 	#headerText{
