@@ -17,13 +17,17 @@
 		justify-content: space-around;
 		align-items: center;
 	}
-
 	#webrings > div {
 		margin: 5px 0;
 	}
 	#clique img {
 		max-height: 20px;
 		margin: -5px;
+	}
+    #fanlistings {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 	#grad {
 		background-color: #AAAAAA;
@@ -39,6 +43,7 @@
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+    #clique span img {max-height: unset;}
   </style>
   <body>
   	<script src="/js/script.js"></script>
@@ -76,17 +81,42 @@
 					<script type="text/javascript" src="/js/hell-widget.js"></script>
 					</div>
 
+				    <script src="https://transring.neocities.org/ring.js"></script>
+                
+                    <div id="clubpenguinring">
+                    <script src="https://mihkopawistik.com/clubpenguinring/clubpenguinRing.js"></script>
+                    <script>
+                        function setListNumber() {
+                        positionInList = 12; // Your assigned number!
+                        }
+                        
+                        // Initialize the webring widget
+                        window.addEventListener('load', function() {
+                        setListNumber();
+                        clubPenguinFunction('clubpenguinring');
+                        });
+                    </script>
+                    </div>
+
 				</div>
 
 				<h3>&darr; To be added to hopefully &darr;</h3>
 				<br>
+
+                <div id="sapphicring4">
+                <a href="https://sunnishinez.neocities.org/webring/sapphicring"><img
+                    src="https://sunnishinez.neocities.org/webring/sapphic\violets.png" /></a><br />
+                <a href="https://sunnishinez.neocities.org/webring/sapphicring?action=previous"><img
+                    src="https://sunnishinez.neocities.org/webring/sapphic/p_left.png" /></a>
+                <a href="https://sunnishinez.neocities.org/webring/sapphicring?action=random">random</a>
+                <a href="https://sunnishinez.neocities.org/webring/sapphicring?action=next"><img
+                    src="https://sunnishinez.neocities.org/webring/sapphic/p_right.png" /></a>
+                </div>
 				
-				<div id='amiga' style="display: none;">
+				<div id='amiga'>
 				<script type="text/javascript" src="https://nicois.gay/amiga/onionring-variables.js"></script>
 				<script type="text/javascript" src="https://nicois.gay/amiga/onionring-widget.js"></script>
 				</div>
-
-				<script src="https://transring.neocities.org/ring.js"></script>
 
 				<div id='gamer-ring'>
 				<script type="text/javascript" src="https://gamerring.neocities.org/js/variables.js"></script>
@@ -94,7 +124,6 @@
 				</div>
 
 				<!-- Hidden as the ring managers have been inactive for nearly a year. Maybe one day they'll approve my listing... -->
-
 
 				<div id='lesbiering' style="display: none;">
 				<script type="text/javascript" src="https://fandango.neocities.org/lesbiering/onionring-variables.js"></script>
@@ -115,35 +144,53 @@
 			<aside id="rightSidebar">
 				<div id="clique">
 				<h2>Cliques</h2>
-				<p><a href="http://cliqued.wings.nu/">OTF</a> <img src="/img/clique/pink.png" alt="" style="height: auto;"> Kirby</p>
-				<p><a href="http://cliqued.wings.nu/">NPC</a> <img src="/img/clique/violet.png" alt=""> Guardener</p>
-				<p><a href="https://thenothingness.space/" style="color:orange" id="grad">The Nothingness</a> <img src="/img/clique/dedan.png" style="margin-right:5px">Zone 1</p>
-				<p><a href="https://slushiecafe.neocities.org/cliques">Freaky Fabulous</a> <img src="/img/clique/MH.png" alt=""> Venus McFlytrap</p>
-				<p><a href="https://strawberryysnow.neocities.org/cliques">Magic and Demonics</a> <img src="/img/clique/Coven.png" alt=""> Plant & Potions </p>
-				<p><a href="https://lockheart.love/collections/cliques">Cringe is Dead</a> <img src="/img/clique/grave4.gif" alt=""> Creepypasta</p>
-				<p><a href="https://lockheart.love/collections/cliques">Language Learning</a><img src="/img/clique/bang.png" alt=""> PHP & ASL</p>
-				<p><a href="https://sanguineroyal.com/com/nobility">Nobility</a> <img src="/img/clique/crown.gif" alt=""> Ruler of the Decepticons!</p>
-				<p><a href="https://web.archive.org/web/20230922103607/http://music.piratesboard.net/">Digital Love</a> <img src="/img/clique/digital-love11.gif" alt=""> [<a href="https://effoharkay.bandcamp.com/album/slipstream-original-soundtrack">Slipstream</a>] [<a href="https://downloads.khinsider.com/game-soundtracks/album/jet-set-radio-ost">Jet Set Radio</a>]</p>
-				<p><a href="https://web.archive.org/web/20250428062521/https://jubiland.neocities.org/cliques#lesbianism" target="_blank" id="bi">lesbianism</a> // dyke</p>
-				<p>I have a <a href="https://mosaic.tapestry.nu/timeless">Tubular Soul</a></p>
-				<p><a href="https://scented.minty.nu/">Scented</a> // Lilacs & Green Apple</p>
-				<a href="https://bungle.online/clique"><img src="https://bungle.online/clique/img/outline_3.png" alt="[Angel resting upon a computer.]" title="Computer Angel Clique" style="max-height: unset;"></a>
+                    <p><a href="http://cliqued.wings.nu/">OTF</a> <img src="/img/clique/pink.png" alt="" style="height: auto;"> Kirby</p>
+                    <p><a href="http://cliqued.wings.nu/">NPC</a> <img src="/img/clique/violet.png" alt=""> Guardener</p>
+                    <p><a href="https://thenothingness.space/" style="color:orange" id="grad">The Nothingness</a> <img src="/img/clique/dedan.png" style="margin-right:5px">Zone 1</p>
+                    <p><a href="https://slushiecafe.neocities.org/cliques">Freaky Fabulous</a> <img src="/img/clique/MH.png" alt=""> Venus McFlytrap</p>
+                    <p><a href="https://strawberryysnow.neocities.org/cliques">Magic and Demonics</a> <img src="/img/clique/Coven.png" alt=""> Plant & Potions </p>
+                    <p><a href="https://lockheart.love/collections/cliques">Cringe is Dead</a> <img src="/img/clique/grave4.gif" alt=""> Creepypasta</p>
+                    <p><a href="https://lockheart.love/collections/cliques">Language Learning</a><img src="/img/clique/bang.png" alt=""> PHP & ASL</p>
+                    <p><a href="https://sanguineroyal.com/com/nobility">Nobility</a> <img src="/img/clique/crown.gif" alt=""> Ruler of the Decepticons!</p>
+                    <p><a href="https://web.archive.org/web/20230922103607/http://music.piratesboard.net/">Digital Love</a> <img src="/img/clique/digital-love11.gif" alt=""> [<a href="https://effoharkay.bandcamp.com/album/slipstream-original-soundtrack">Slipstream</a>] [<a href="https://downloads.khinsider.com/game-soundtracks/album/jet-set-radio-ost">Jet Set Radio</a>]</p>
+                    <p><a href="https://web.archive.org/web/20250428062521/https://jubiland.neocities.org/cliques#lesbianism" target="_blank" id="bi">lesbianism</a> // dyke</p>
+                    <p>I have a <a href="https://mosaic.tapestry.nu/timeless">Tubular Soul</a></p>
+                    <p><a href="https://scented.minty.nu/">Scented</a> // Lilacs & Green Apple</p>
+                    <p><a href="https://emocowboy.neocities.org/?emo=/home/cliques">Pierced</a> ☆ Lobe x4, Flat, Septum, Labret</p>
+                    <span>
+                    <a href="https://bungle.online/clique"><img src="https://bungle.online/clique/img/outline_3.png" alt="[Angel resting upon a computer.]" title="Computer Angel Clique"></a>
+                    <a href="http://guidingmoonlight.neocities.org"><img src="http://guidingmoonlight.neocities.org/sawcleaver.png" alt="[Saw Cleaver from Bloodborne.]" title="Guiding Moonlight | A Bloodborne Fanclique"></a>
+                    <a href="https://ac.kuchiki.net/"><img src="/img/clique/daisy.gif" title="pixel friends | Daisy"></a>
+                    </span>
 				</div>
 
 				<h2>Fanlistings</h2>
-				<a href="https://fan.hopeslair.haliya.net/fl/kirby/index.php"><img alt="[Kirby.]" src="/img/fanlists/kirby.png"></a>
-				<a href="https://fan.moonkiss.org/utdr/"><img alt="[Undertale and Deltarune.]" src="/img/fanlists/utdr.png"></a>
-				<a href="https://endlessness.nu/vibribbon/"><img alt="[VibRibbon.]" src="/img/fanlists/VibRibbon.png"></a>
-				<a href="https://moondvsted.space/fan/oneshot/"><img alt="[OneShot.]" src="/img/fanlists/oneshot.png"></a>
-				<a href="https://moondvsted.space/fan/uty/"><img alt="[Undertale Yellow.]" src="/img/fanlists/yellow.png"></a>
-				<a href="https://www.marheavenj.net/convergence/yui.php"><img alt="[Will Vandom.]" src="/img/fanlists/will.jpg"></a>
-				<a href="http://fanimated.net/mylittlepony/"><img alt="[My Little Pony: Friendship is Magic.]" src="/img/fanlists/mlp.gif"></a>
-				<a href="https://theatregirl.net/cats/index.php"><img alt="[Cats.]" src="/img/fanlists/cats.png"></a>
-				<a href="https://fans.thislove.nu/html"><img alt="[HTML]" src="/img/fanlists/html.png"></a>
-				<a href="https://kelsey.altervista.org/cookies/"><img alt="[Chocolate Chip Cookies.]" src="/img/fanlists/chocChip.png"></a>
-				<a href="https://emocowboy.neocities.org/cliques/skelanimals"><img alt="[Skelanimals]" src="/img/fanlists/skelanimals.png"></a>
-				<a href="https://thevideodredd.neocities.org/fanlistings/oingoboingo"><img alt="[Oingo Boingo]" src="/img/fanlists/oingo.png"></a>
-				<a href="https://tardis.i-heart-you.net/doctorwho/"><img alt="[Doctor Who (2005).]" src="/img/fanlists/DW.gif"></a>
+                <div id="fanlistings">
+                    <a href="https://fan.hopeslair.haliya.net/fl/kirby/index.php"><img alt="[Kirby.]" src="/img/fanlists/kirby.png"></a>
+                    <a href="https://fan.moonkiss.org/utdr/"><img alt="[Undertale and Deltarune.]" src="/img/fanlists/utdr.png"></a>
+                    <a href="https://endlessness.nu/vibribbon/"><img alt="[VibRibbon.]" src="/img/fanlists/VibRibbon.png"></a>
+                    <a href="https://moondvsted.space/fan/oneshot/"><img alt="[OneShot.]" src="/img/fanlists/oneshot.png"></a>
+                    <a href="https://michael-murder.neocities.org/cliques/skelanimals"><img alt="[Skelanimals.]" src="/img/fanlists/skelanimals.png"></a>
+                    <a href="https://endlessness.nu/shadow/"><img alt="[Shadow the Hedgehog.]" src="/img/fanlists/shadow.png"></a>
+                    <a href="https://fan.elysia.nu/toh/"><img alt="[The Owl House.]" src="/img/fanlists/owlHouse.png"></a>
+                    <a href="https://inkcaps.neocities.org/gf/"><img alt="[Gravity Falls.]" src="/img/fanlists/gravityFalls.png"></a>
+                    <a href="https://moondvsted.space/fan/uty/"><img alt="[Undertale Yellow.]" src="/img/fanlists/yellow.png"></a>
+                    <a href="https://fan.glast-heim.net/glados/"><img alt="[GlaDOS.]" src="/img/fanlists/glados.png"></a>
+                    <a href="https://www.marheavenj.net/saber/"><img alt="[Saber.]" src="/img/fanlists/saber.jpg"></a>
+                    <a href="https://www.marheavenj.net/convergence/yui.php"><img alt="[Will Vandom.]" src="/img/fanlists/will.jpg"></a>
+                    <a href="http://fanimated.net/mylittlepony/"><img alt="[My Little Pony: Friendship is Magic.]" src="/img/fanlists/mlp.gif"></a>
+                    <a href="https://thevideodredd.neocities.org/fanlistings/oingoboingo"><img alt="[Oingo Boingo.]" src="/img/fanlists/oingo.png"></a>
+                    <a href="https://tardis.i-heart-you.net/doctorwho/"><img alt="[Doctor Who (2005).]" src="/img/fanlists/DW.gif"></a>
+                    <a href="https://www.celes.net/nahida/index.php"><img alt="[Nahida from Genshin Impact.]" src="/img/fanlists/nahida.jpg" title="She is the only thing I like about Genshin. Shes cute and green and full of autism"></a>
+                    <a href="https://www.into-a-dream.com.ar/merida/"><img alt="[Merida from Brave.]" src="/img/fanlists/merida.png"></a>
+                    <a href="https://fans.thislove.nu/html"><img alt="[HTML.]" src="/img/fanlists/html.png"></a>
+                    <a href="https://gryffindors.com/sarina/web/"><img alt="[Web surfing.]" src="/img/fanlists/webSurf.png"></a>
+                    <a href="https://theatregirl.net/cats/index.php"><img alt="[Cats.]" src="/img/fanlists/cats.png"></a>
+                    <a href="https://kelsey.altervista.org/cookies/"><img alt="[Chocolate Chip Cookies.]" src="/img/fanlists/chocChip.png"></a>
+                    <a href="https://milkchocolate.fanfreak.net/"><img alt="[Milk Chocolate.]" src="/img/fanlists/chocolate.png"></a>
+                    <a href="https://memories.buruma.net/food/pasta/index.php"><img alt="[Pasta.]" src="/img/fanlists/pasta.gif"></a>
+                    <a href="https://fanacular.net/popcorn/"><img alt="[Buttered Popcorn.]" src="/img/fanlists/buttered.gif"></a>
+                </div>
 
 			</aside>
 		</div>
