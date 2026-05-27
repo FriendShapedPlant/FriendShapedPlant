@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banette | Friend Shaped Garden</title>
+        <base target="_blank">
+        <link rel="icon" type="image/x-icon" href="/img/FSPfavicon.ico">
+        <link rel="stylesheet" href="/css/styles.css">
+
+        <style>
+            :root {
+                --gold: #e8ae27;
+                --red: #FF4C38;
+            }
+            @font-face {
+                font-family: "Satin Stitch";
+                src: url("../font/Satin_Stitch.ttf");
+            }
+            body {
+                background-image: url("/img/banette/banette.png");
+                background-color: #131025;
+            }
+            #container {
+                border-image: url("/img/banette/zipper.png") 196 fill round;
+                border-width: 100px;
+                border-style: solid;
+                border-color: transparent;
+                margin-top: -20px;
+                margin-bottom: 10px;
+                a { color: var(--red); }
+            }
+            a::after { background-color: var(--red)!important; }
+                main{ background: unset; }
+                #navbar, footer {
+                font-family: inherit;
+                background: unset;
+            }
+            h1, h2 {
+                font-family: "Satin Stitch", sans-serif;
+                color: var(--gold)!important;
+                font-size: 2.2em;
+            }
+            /* Alternate image sides */
+            main img {
+                &:nth-of-type(even){
+                    float: left;
+                    margin-left:-40px;
+                    margin-right:15px;
+                }
+                &:nth-of-type(odd){
+                    float: right;
+                    margin-right:-40px;
+                }
+            }
+            /* Styling for the cards, flip upon hover or tab */
+            #bag {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+            .card {
+                width: 200px;
+                aspect-ratio: 717/1000;
+                border: 0;
+                cursor: pointer;
+                perspective: 1000px;
+            }
+            .card-guts {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+            }
+            .front, .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 8px;
+            }
+            .back {
+                background: #050812 url(/img/banette/backb.png);
+                background-size: contain;
+                overflow-y: scroll;
+                padding: 10px;
+                transform: rotateY(180deg);
+                p {margin: 0;}
+            }
+            .card:hover .card-guts,
+            .card:focus-within .card-guts {
+                transform: rotateY(180deg);
+            }
+            /* Pokédex */
+            #dex {
+                position: relative;
+                width: max-content;
+                float: left;
+                margin-right: 10px;
+                img {
+                    float: none;
+                    margin: unset;
+                }
+            }
+            img[src$="dexOff.png"] {
+                display: block;
+                height: auto;
+            }
+            img[src$="dexOn.png"] {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+            }
+            #dex:hover img[src$="dexOn.png"] { opacity: 1; }
+            #dex:hover img[src$="dexOff.png"] { opacity: 0; }
+            /* media queries */
+            @media only screen and (max-width: 500px) {
+                img:not(div > img) {
+                    float: none!important;
+                    margin: 5px auto!important;
+                    display: block;
+                    max-width: 90%;
+                }
+                main{ padding:0px; }
+                #container { 
+                    border-width: 67px;
+                    margin: -21px; 
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <script src="/js/script.js"></script>
+
+    <div id="container">
+    <div w3-include-html="/js/shrineNav.html">Please enable Javascript or use the <a href="/sitemap.html" target="_self">Sitemap</a></div>
+
+    <div id="flex">
+    <main>
+        <a href="../shrines.html" target="_self">&#8592; Back to Shrines</a>
+        <img src="/img/banette/spooky.png" alt="">
+        <h1>Banette</h1>
+        <p id="subtitle">Created May 2026</p>
+
+        <p>The 354th pokémon, introduced in generation three, and my favorite Pokémon despite not playing the games. Actually I don't engage with Pokémon much at all, but this guy still holds a special place in my heart.</p>
+        <a href="https://shinyexe.neocities.org/frienddex/banette" tabindex="-1"><span id="dex">
+            <img src="/img/banette/dexOff.png" alt="Friend-dex"><img src="/img/banette/dexOn.png" alt="">
+        </span></a>
+        <p>This shrine is about my relationship with Banette, for a shrine-esque page about the Pokémon, check them out on Jamie's <a href="https://shinyexe.neocities.org/frienddex/banette">Friend-dex!</a></p>
+
+        <h2>A Wild Banette Appears!</h2>
+        <img src="/img/banette/orchestra.png" alt="Marker drawing of Mega Banette in a black suit playing the lute.">
+        <p>Back in my DeviantArt days, I participated in <a href="https://tommyspuppetlab.com/charity-guild-projects/">TommyGK's</a> <a href="https://www.deviantart.com/charity-guild">Charity Guild Collabs</a> as much as I could. They were 99% Pokémon themed, and I would use a Random Pokémon Picker site to shuffle through until I found a neat one to draw! This was how I first met Banette.</p>
+        <p>Banette was the last of three Pokémon I drew for the 2017 Pokémon Orchestra Collab, I was on a <em>roll</em> that year. I'm pretty sure the randomizer just chose standard Banette, but in researching I found their Mega evolution, which I of course preferred; it's got more going on visually, which makes it interesting, so thats what I drew! Ironically they almost look like the shiny version with how light and blue that grey marker looks in the scan, twas not intentional. I still think this drawing holds up well despite the passage of time!</p>
+
+        <h2>I Choose You!</h2>
+        <img src="/img/banette/scare.png" alt="">
+        <p>I was a Creepypasta kid, so of course I watched videos along the lines of, "Top 10 DARKEST Pokémon that will KILL YOU!!!" and, "Top 50 SCARIEST Pokémon Origins!" I was very familiar with the Driftloons, Yamasks, Bewears, Phantumps, and Froslasses of the Pokéworld. I don't remember Banette being included in such a video, but they definitely fit the vibe with their vengeance and cursing.</p>
+        <img src="/img/banette/chibi.png" alt="">
+        <p>I've also got that classic Plush Empathy Autism. I have a huge attachment to this large dog plush I got at 2 or 3 years old who still sleeps with me in my bed 20+ years later. My sibling does not have such care for plushies and it would make me so upset thinking about them being abandoned under their bed for years. I feel really bad when my plushies fall off the bed or are left in a physically uncomfortable position for a person to sit in to this day! Needless to say I feel for Banette. I think I could fix them.</p>
+        <p>Also for any fellow Plush Empathizers who also worry when their plushies fall off, its okay! They love a little floor time, they don't mind!</p>
+
+        <h2>Bag</h2>
+        <p>I don't have much Banette merch in my personal possession, but heres my favorite Banette cards!</p>
+
+        <div id="bag">
+            <div class="card"><div class="card-guts">
+                <img class="front" src="/img/banette/card1.jpg" alt="Roaring Skies Banette">
+                <div class="back" tabindex="0">
+                <p>This is the only Banette card I own! I was at a convention, passed a booth setting up to sell some Pokémon cards, and I muttered something about finding Banette. The vendor searched their stash, and sure enough they had just that one! And they gave it to me free of charge it was so sweet 🥺 It's a neat little design, contrasting their creepiness against other children's toys.</p>
+                </div>
+            </div></div>
+
+            <div class="card"><div class="card-guts">
+                <img class="front" src="/img/banette/card2.jpg" alt="Celestial Storm Banette">
+                <div class="back" tabindex="0">
+                <p>I would love to have this card. Seeing them in such a girly bedroom with makeup and accessories in front of them is so cute. It also makes me ask, is this their trainers room? Banette's room? Are they a pampered princess? Did they break into this house for the sillies? Who's to say?</p>
+                </div>
+            </div></div>
+
+            <div class="card"><div class="card-guts">
+                <img class="front" src="/img/banette/card3.png" alt="Ascended Heroes Banette">
+                <div class="back" tabindex="0">
+                <p>I just learned about this card, the colors on it are so good! It's a lot newer and rarer though so I don't think I'll get it in my hands anytime soon rip. If the illustration without card text ever surfaces <em>please</em> let me know!!!</p>
+                </div>
+            </div></div>
+        </div>
+
+        <p>Outside of cards, I don't yearn much for Banette merch. I got enough characters to amass plastic things of, but I have considered a simple sticker or two.</p>
+        
+        <img src="/img/banette/shirt.png" alt="">
+        <p>This Mega Banette crop top fucking owns though? Oh my shit? I can live without it but if I ever find it for a reasonable price I am eating it up. I love a crop top and the zippered deets are an awesome touch. Would be even cooler if they installed actual plastic zippers in the shirt, maybe not functional ones but y'know. Or maybe I don't know fashion well and it would suck bad.</p>
+
+        <img src="/img/banette/Sleep.png" alt="">
+        <p>I do dream to one day have a custom-made Banette plush. They are literally a toy/plush/doll pokemon it would be so awesome. The official ones are so small and stiff, and I know they canonically got stiff arms but I think for a plush they should be limp and floppy and the tail on their head should also be floppy and their head overall should rest at a tilt. A life-sized plush sounds cool but the fact they're 3 feet tall kinda scares me so I think I'll go with 13 inches tall, give or take. This is a far off goal though, not something I'll obtain for years to come. If you know any poképlush makers though, I'd love suggestions for when I do get this fella made!</p>
+
+        <img src="/img/banette/lowpoly.png" alt="">
+        <p>Thats all I have to say on the fella. Still craving more Banette though? Don't forget about the <a href="https://shinyexe.neocities.org/frienddex/banette">Friend-dex</a> from earlier, and check out this <a href="https://wondermap.neocities.org/pokemon/banette">Banette shrine by WonderMap</a>! (Not mobile responsive)</p>
+
+
+    </main>
+    </div>
+    <footer style="padding: 0;">
+    <p style="text-align: center;">Artwork not by me is copyright of The Pokémon Company.</p>
+    <p w3-include-html="/js/footer.html"></p>
+    </footer>
+    </div>
+
+    <script>includeHTML();</script>
+
+</body>
+</html>
