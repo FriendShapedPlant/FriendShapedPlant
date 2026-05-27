@@ -188,8 +188,11 @@ footer {
 	text-align: center;
 }
 
-h1{
-	color: var(--pale-purple);
+h1{color: var(--pale-purple);}
+
+#subtitle {
+    margin-top: -20px;
+    font-size:medium;
 }
 
 main h2,
