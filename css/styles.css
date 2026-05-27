@@ -12,38 +12,6 @@
 	--smoke: #F4F4F4;
 }
 
-/* this seems like a lot for just one font and I would have to agree
-but I wanted to include an example of how to include a custom font.
-If you download a font file you can upload it onto your Neocities
-and then link it! Many fonts have separate files for each style
-(bold, italic, etc. T_T) which is why there are so many!
-*/
-
-@font-face {
-	font-family: Nunito;
-	src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
-}
-
-@font-face {
-	font-family: Nunito;
-	src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: Nunito;
-	src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
-	font-style: italic;
-}
-
-@font-face {
-	font-family: Nunito;
-	src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
-	font-style: italic;
-	font-weight: bold;
-}
-
-/* My Fonts */
 @font-face {
 	font-family: Arcade;
 	src: url('../font/CthulhumbusArcade.ttf');
@@ -69,17 +37,11 @@ body {
 	background-image: var(--body-bg-image);
 }
 
-h1, h2, h3, h4, nav, .itemimg {
-	font-family: "Venice", serif;
-}
+h1, h2, h3, h4, nav, .itemimg {font-family: "Venice", serif;}
 
-* {
-	box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 
-.aliased {
-    image-rendering: pixelated;
-}
+.aliased {image-rendering: pixelated;}
 
 /* Layout CSS */
 
@@ -91,9 +53,8 @@ and change the media query according to the comment! */
 	text-decoration: none;
 }
 
-#container a {
-	color: var(--pale-purple);
-}
+#container a {color: var(--pale-purple);}
+
 #container a:hover,
 #container a:focus {
 	color: var(--smoke);
@@ -126,9 +87,7 @@ you can add them directly to the <div id="header"></div> element! */
 	color:var(--olivine);
 }
 
-.center{
-	text-align:center;
-}
+.center{text-align:center;}
 
 /* Navbar */
 
@@ -148,9 +107,7 @@ you can add them directly to the <div id="header"></div> element! */
 	justify-content: space-evenly;
 }
 
-#navbar li {
-	padding: 0px 15px;
-}
+#navbar li {padding: 0px 15px;}
 
 #navbar li a {
 	color: var(--smoke);
@@ -158,9 +115,7 @@ you can add them directly to the <div id="header"></div> element! */
 	text-decoration: none;
 }
 
-#navbar .dropdown li {
-	padding: 5px 15px;
-}
+#navbar .dropdown li {padding: 5px 15px;}
 
 #navbar li a:hover,
 #navbar li a:focus {
@@ -202,9 +157,7 @@ you can add them directly to the <div id="header"></div> element! */
 	width: 100%;
 }
 
-#flex {
-	display: flex;
-}
+#flex {display: flex;}
 
 aside {
 	background-color: var(--poly-green);
@@ -222,13 +175,9 @@ main {
 	order: 2;
 }
 
-#leftSidebar {
-	order: 1;
-}
+#leftSidebar {order: 1;}
 
-#rightSidebar {
-	order: 3;
-}
+#rightSidebar {order: 3;}
 
 footer {
 	background-color: #13092D;
@@ -259,13 +208,9 @@ h3 + p {
 	margin-top: 0px;
 }
 
-strong {
-	color: var(--smoke);
-}
+strong {color: var(--smoke);}
 
-summary {
-	margin-bottom: 18px;
-}
+summary {margin-bottom: 18px;}
 
 iframe {border: none;}
 
@@ -291,9 +236,7 @@ a{
 	color: var(--lavender);
 }
 
-.links img {
-	margin: 0 auto;
-}
+.links img {margin: 0 auto;}
 
 .links a {
 	display: flex;
@@ -350,9 +293,7 @@ a{
 	overflow-y: scroll;
 }
 
-.comment {
-	color: var(--olivine);
-}
+.comment {color: var(--olivine);}
 
 /* Extras */
 
@@ -378,13 +319,9 @@ ul {
 	padding-left: 15px;
 }
 
-ul > ul {
-	padding-left: 40px;
-}
+ul > ul {padding-left: 40px;}
 
-.exception li {
-	list-style-image: none;
-}
+.exception li {list-style-image: none;}
 
 a[href^="http"]:not(:has(img))::after { 
     content: "";
@@ -403,9 +340,7 @@ a[href^="http"]:not(:has(img))::after {
 	-webkit-mask-size: contain;
 }
 
-a[href^="https://friendshaped.garden"]::after { 
-    content: none;
-}
+a[href^="https://friendshaped.garden"]::after {content: none;}
 
 #navbar a[href="#"] {
 	text-decoration: none!important;
@@ -413,9 +348,7 @@ a[href^="https://friendshaped.garden"]::after {
 	pointer-events: none;
 }
 
-#navbar a::after{
-	background-color: var(--smoke)!important;
-}
+#navbar a::after{background-color: var(--smoke)!important;}
 
 .hover-gallery {
 	display: flex;
@@ -474,37 +407,21 @@ and then subtrack it by 100. use this new number as the
 }
 
 @media only screen and (max-width: 800px) {
-	#flex {
-		flex-wrap: wrap;
-	}
+	#flex {flex-wrap: wrap;}
 
-	aside {
-		width: 100%;
-	}
+	aside {width: 100%;}
 
-	main {
-		order: 1;
-	}
+	main {order: 1;}
 
-	#leftSidebar {
-		order: 2;
-	}
+	#leftSidebar {order: 2;}
 
-	#rightSidebar {
-		order: 3;
-	}
+	#rightSidebar {order: 3;}
 
-	#headerText{
-		font-size: 3.4rem;
-	}
+	#headerText{font-size: 3.4rem;}
 
-	#navbar ul {
-		flex-wrap: wrap;
-	}
+	#navbar ul {flex-wrap: wrap;}
 
-	#neolink{
-		width: 50%;
-	}
+	#neolink{width: 50%;}
 	
 	table.links tr td:nth-child(2),
 	table.links tr th:nth-child(2) {
