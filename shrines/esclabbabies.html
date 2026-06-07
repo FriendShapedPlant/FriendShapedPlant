@@ -120,8 +120,10 @@
 
 		#crt{
 			position: relative;
-			border: 150px solid transparent;
-			border-image: url(crt.png) 93 stretch;
+            max-width: 81%;
+			border-style: solid;
+            border-image: url(crt1.png) 90 40;
+            border-width: 150px 70px;
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: -50px;
@@ -168,21 +170,28 @@
 		}
 
 		@media only screen and (max-width: 700px) {
-			#crt {
-				margin-left: -50px;
-				margin-right: -50px;
-				border: 100px solid transparent;
-				border-image: url(crt.png) 93 stretch;
-			}
+			#crt{
+                max-width: 100%;
+                border-style: solid;
+                border-image: url(crt1.png) 90 40;
+                border-width: 150px 70px;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
 		}
 
 		@media only screen and (max-width: 500px) {
-			#crt {
-				border: 75px solid transparent;
-				border-image: url(crt.png) 93 stretch;
-				margin-top: -30px;
-			}
+            #crt{
+                max-width: 100%;
+                border-style: solid;
+                border-image: url(crt1.png) 90 40;
+                border-width: 100px 40px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -30px;
+                clear: both;
+            }
 			#crtcontent img{
 				position: static;
 				height: 110px;
