@@ -6,8 +6,24 @@
   <title>Friend Shaped Updates</title>
   <description>Log of updates for friendshaped.garden!</description>
   <ttl>1000</ttl>
-  <lastBuildDate>Sun, 07 Jun 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 08 Jun 2026 12:00:00 +0000</lastBuildDate>
   <link>https://friendshaped.garden</link>
+
+  <item>
+    <title>July 8</title>
+    <description>
+        &lt;p&gt;Digital Art-centered update!&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;New art piece yay!&lt;/li&gt;
+            &lt;li&gt;Fixed mobile formatting issues on the pixel art page&lt;/li&gt;
+            &lt;li&gt;Art pieces are no longer ALL full width on mobile! &lt;span class=&quot;comment&quot;&gt;Been a problem when an image is thin and it blows up the pixels and you cant see the image in full without scrolling. Not pleasant!&lt;/span&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    </description>
+    <link>https://friendshaped.garden/arts/digital.html</link>
+    <pubDate>
+      Mon, 08 Jun 2026 12:00:00 +0000
+    </pubDate>
+  </item>
 
   <item>
     <title>July 7</title>
