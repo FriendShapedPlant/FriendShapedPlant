@@ -12,7 +12,6 @@
 
 #photos img {
   max-height: 280px;
-  max-width: 100%;
 }
 
 #photos img:hover { border-color: #9DBD89; }
@@ -36,6 +35,9 @@
 }
 
 @media (max-width: 800px) {
+    #photos img {
+        max-width: 100%;
+    }
     #photos figure { 
         max-width: 100%; 
         display: table; 
