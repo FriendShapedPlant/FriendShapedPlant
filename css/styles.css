@@ -286,7 +286,7 @@ a{
 /* Site Update box + comment check */
 
 .box {
-	border: 1px solid var(--olivine);
+	border: 3px ridge var(--olivine);
 	height: 300px;
 	width: 99%;
 	padding: 10px;
