@@ -23,6 +23,8 @@ fetch(url)
     track['image']['2'][t] === "" ? art.src = "/img/linkimg/placeholder.png" : art.src = track['image']['2'][t];
     art.alt = "Album art, links to track's last.fm page."
     link.appendChild(art);
+    art.class = "freeze" //also freeze if animated cus I GUESS thats a thing
+    link.appendChild(art);
     //artist and track
     const name = document.createElement('p');
     widget.appendChild(name);
