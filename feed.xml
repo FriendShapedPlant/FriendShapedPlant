@@ -6,8 +6,22 @@
   <title>Friend Shaped Updates</title>
   <description>Log of updates for friendshaped.garden!</description>
   <ttl>1000</ttl>
-  <lastBuildDate>Mon, 29 Jun 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 30 Jun 2026 12:00:00 +0000</lastBuildDate>
   <link>https://friendshaped.garden</link>
+
+  <item>
+    <title>July 30</title>
+    <description>
+        &lt;ul&gt;
+            &lt;li&gt;Forgot to add Pixel Cliques to the nav dropdown and sitemap!&lt;/li&gt;
+            &lt;li&gt;Fixed Escaped Lab Babies CRT displaying as a giant white border.&lt;/li&gt;
+        &lt;/ul&gt;
+    </description>
+    <link>https://friendshaped.garden/</link>
+    <pubDate>
+      Tue, 30 Jun 2026 12:00:00 +0000
+    </pubDate>
+  </item>
 
   <item>
     <title>July 29</title>
