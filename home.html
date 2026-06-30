@@ -25,6 +25,31 @@
 	<link rel="icon" type="image/x-icon" href="/img/FSPfavicon.ico">
 	<link rel="stylesheet" href="/css/styles.css"> <!-- Standard CSS  -->
 	<link rel="stylesheet" href="/css/hell.css"> <!-- Hell is Real -->
+
+    <style>
+        #content {
+            width: 250px;
+            text-align: center;
+            float: right;
+            border: 4px ridge #D51007;
+            background-color: var(--black);
+            margin: -30px auto 10px;
+            padding: 10px 5px 20px;
+            img {max-width: 75%}
+            a {color:#FF3814;}
+            h2 {color: #D51007;}
+        }
+        #content p {margin:0;}
+        #playState {margin-top:0;}
+        .hidden {display: none;}
+
+        @media only screen and (max-width: 800px) {
+            #content {
+                float: none;
+                margin-top: -10px;
+            }
+        }
+    </style>
   </head>
 
   <body>
@@ -38,8 +63,26 @@
 				<h1>Welcome to the Friend Shaped Garden!</h1>
 				<p>My lil space on the internet for my art, coding, and love of vidya games!</p>
 
+                <!-- Last.fm -->
+
+                <div id="content">
+                    <div id="widget">
+                        <h2 id="playState">Last.fm</h2>
+                        <p id="loading">&#8987;</p>
+                    </div>
+                    <p>
+                        <small>
+                            powered by
+                            <a href="https://github.com/biancarosa/lastfm-last-played">
+                                @biancaRosa</a>
+                        </small>
+                    </p>
+                </div>
+
 				<label for="sitebtn"><img src="https://i.ibb.co/pjLs2sD/FSPbutton.png" alt="Friend Shaped Plant Button" style="padding:0px 10px 0px 5px"></label>
 				<textarea id="sitebtn" readonly><a href="https://friendshaped.garden/"><img src="https://i.ibb.co/pjLs2sD/FSPbutton.png" alt="Friend Shaped Garden"></a></textarea>
+
+                <p>I have a lot of wacky pages I've tried to sort into the navbar, check the dropdowns for a plethora of options! I'm still adding more stuff, so check back about once a month!</p>
 
 				<!--<h2>My Twitch channel</h2>
 				<p style="margin-bottom:0">Live every Thursday evening!</p>
@@ -125,7 +168,9 @@
 	<div title="Art by vexx-ation on Tumblr" class="fun aliased" style="position: fixed; right: -50px; bottom: -9px; z-index: 1;"><img alt="" src="https://f2.toyhou.se/file/f2-toyhou-se/images/78507940_j0ccjskXjF7A10M.png" height="350"></div>
 
 	<script>includeHTML();</script>
+    <script src="js/lastFM.js"></script>
 
   </body>
 
+</html>
 </html>
