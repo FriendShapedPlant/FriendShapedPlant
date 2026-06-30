@@ -6,8 +6,19 @@
   <title>Friend Shaped Updates</title>
   <description>Log of updates for friendshaped.garden!</description>
   <ttl>1000</ttl>
-  <lastBuildDate>Tue, 30 Jun 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 30 Jun 2026 21:21:11 +0000</lastBuildDate>
   <link>https://friendshaped.garden</link>
+
+  <item>
+    <title>July 30 (last.fm patch)</title>
+    <description>
+        APPARENTLY some last.fm album art is animated, figured that out the hard way. Added the freezeframe class to prevent that and it seems to be working good! Sorry to anyone who got flash-banged by Slipknot.
+    </description>
+    <link>https://friendshaped.garden/</link>
+    <pubDate>
+      Tue, 30 Jun 2026 21:21:11 +0000
+    </pubDate>
+  </item>
 
   <item>
     <title>July 30</title>
