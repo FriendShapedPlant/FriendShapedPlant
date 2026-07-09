@@ -405,7 +405,7 @@ and then subtrack it by 100. use this new number as the
 */
 
 @media only screen and (max-width: 1200px) {
-	.fun {display: none;}
+	.fun {display: none!important;}
 }
 
 @media only screen and (max-width: 800px) {
