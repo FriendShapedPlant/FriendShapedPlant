@@ -10,9 +10,9 @@
   max-width: min-content;
 }
 
-#photos img {
-  max-height: 280px;
-}
+#photos figcaption { text-align: center; }
+
+#photos img { max-height: 280px; }
 
 #photos img:hover { border-color: #9DBD89; }
 
