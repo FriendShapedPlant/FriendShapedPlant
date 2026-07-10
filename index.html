@@ -22,9 +22,73 @@
     <meta name="twitter:title" content="Friend Shaped Garden">
     <meta name="twitter:description" content="Personal page for art, gaming, and coding!">
     <meta name="twitter:image" content="https://friendshaped.garden/img/header.jpg">
+
+    <style>
+        body {
+        position: relative;
+        }
+
+        .scarves {
+        position: absolute;
+        display: flex;
+        gap: .5rem;
+        top: -8rem;
+        margin-left: .5rem;
+        }
+
+        .scarf {
+        height: 330px;
+        display: flex;
+        overflow: hidden;
+        }
+
+        .scarf .img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-self: end;
+        justify-content: center;
+        margin: 1rem 0;
+        overflow: hidden;
+        }
+
+        .scarf {
+        transition: all .5s ease;
+        margin-top: 2rem;
+        }
+
+        .scarf:hover {
+        margin-top: 5rem;
+        }
+
+        .dog {
+            margin-top: 0rem;
+        }
+
+        .dog:hover {
+        margin-top: 3rem;
+        }
+    </style>
   </head>
 <body>
-  <script src="/js/script.js"></script>
+    <script src="/js/script.js"></script>
+    <div class="fun scarves" aria-hidden="true">
+        <div class="scarf">
+            <div class="img"><a href="https://justjasper.tumblr.com/post/46532563916/blog-scarves-pride-edition"><img src="/img/linkimg/scarfAce.png" alt=""></a></div>
+        </div>
+        <div class="scarf">
+            <div class="img"><a href="https://www.tumblr.com/theinterstate/90993012962/pride-scarves"><img src="/img/linkimg/scarfNB.png" alt=""></a></div>
+        </div>
+        <div class="scarf">
+            <div class="img"><a href="https://bechnokid.com/resources/code-snippets/#scarves" title="Made by me!"><img src="/img/linkimg/scarfLes.png" alt=""></a></div>
+        </div>
+        <div class="scarf">
+            <div class="img"><a href="https://www.tumblr.com/friendshapedplant/786625512809414656/you-want-some-fuckin-uhhhhhhh-off-fandom-scarves"><img src="/img/linkimg/scarfOFF.png" alt=""></a></div>
+        </div>
+        <div class="scarf dog">
+            <div class="img"><a href="https://bechnokid.com/resources/code-snippets/#scarves" title="Source lost to time"><img src="/img/linkimg/scarfDog.gif" alt=""></a></div>
+        </div>
+    </div>
 
   <div id="container" style="height:100vh; display: flex; justify-content: center; align-items: center;">
 
