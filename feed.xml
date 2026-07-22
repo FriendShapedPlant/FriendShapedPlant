@@ -6,8 +6,25 @@
   <title>Friend Shaped Updates</title>
   <description>Log of updates for friendshaped.garden!</description>
   <ttl>1000</ttl>
-  <lastBuildDate>Fri, 17 Jul 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 22 Jul 2026 12:00:00 +0000</lastBuildDate>
   <link>https://friendshaped.garden</link>
+
+  <item>
+    <title>July 22</title>
+    <description>
+        &lt;p&gt;Cosplay-centered update!&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;https://friendshaped.garden/cosplay/noiz.html&quot;&gt;Noiz cosplay&lt;/a&gt; is up!&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;https://friendshaped.garden/cosplay/biker.html&quot;&gt;Biker cosplay&lt;/a&gt; got new photos!&lt;/li&gt;
+            &lt;li&gt;Added higher ratings to those pages (Adults Only and Mature) as their games are not for teens.&lt;/li&gt;
+            &lt;li&gt;Added a mention to the entrance page of higher-rated pages.&lt;/li&gt;
+        &lt;/ul&gt;
+    </description>
+    <link>https://friendshaped.garden/cosplay/noiz.html</link>
+    <pubDate>
+      Wed, 22 Jul 2026 12:00:00 +0000
+    </pubDate>
+  </item>
 
   <item>
     <title>July 17</title>
