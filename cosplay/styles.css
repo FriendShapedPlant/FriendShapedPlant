@@ -182,7 +182,7 @@ h3 + p {
 	margin-top: 0px;
 }
 
-p::first-letter {
+h2 ~ p::first-letter {
 	padding-left: 40px;
 }
 
@@ -229,6 +229,14 @@ table a {
 }
 
 /* Extras */
+
+#warning {
+    display:flex; 
+    align-items: center;
+    margin:auto; 
+    padding: 0 10px; 
+    margin-bottom: 10px;
+}
 
 .skipper{
 	position:absolute;
@@ -326,5 +334,9 @@ and then subtrack it by 100. use this new number as the
 	#navbar ul {
 		flex-wrap: wrap;
 	}
+
+    h2, h3 { clear: left; }
+
+    #warning {flex-direction: column;}
 
 }
