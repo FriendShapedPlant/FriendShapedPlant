@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Noiz | Friend Shaped Garden</title>
+	<base target="_blank">
+	<link rel="icon" type="image/x-icon" href="/img/FSPfavicon.ico">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="/arts/styles.css">
+
+    <style>
+        :root{
+            --green: #d4ffc7;
+            --yeller: #fee793;
+            --dark: #1a2e40;
+            --darker: #16212a;
+        }
+        body { font-family: "MS Gothic", Helvetica, sans-serif }
+        #rightSide {
+            background: var(--dark);
+            background-image: linear-gradient(var(--darker) 1px, transparent 1px),
+            linear-gradient(90deg, var(--darker) 1px, transparent 1px),
+            linear-gradient(var(--darker) 1px, transparent 1px),
+            linear-gradient(90deg, var(--darker) 1px, transparent 1px);
+            background-size: 20px 20px, 20px 20px;
+            background-position: -1px -1px, -1px -1px;
+        }
+        table th {
+            background: var(--green);
+            color: var(--dark);
+        }
+        footer, #navbar{ background: var(--darker); }
+        table td, table th {
+            border-color: var(--green);
+            border-radius: 10px;
+        }
+        main h1, main h2, main h3, a{ color: var(--yeller); }
+        
+        a[href^="http"]:not(:has(img))::after { background-color: var(--yeller); }
+
+        p, td { color: var(--green); }
+
+        @media only screen and (max-width: 800px){
+            aside { background-position-y: 25%;}
+        }
+
+        :root {
+}
+
+#profile {
+ position: fixed;
+ z-index: 100;
+ top: 0; 
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ padding: 50px 100px;
+ font-size: 200%;
+ background-color: var(--warning-background-color);
+ color: var(--warning-text-color);
+ overflow-y: scroll;
+ opacity: 1;
+ transition: .2s;
+text-align:center;
+}
+
+#profile > * {
+ width: 100%;
+ max-width: 700px!important;
+ margin: 20px auto;
+ display: block;
+}
+
+#profile:target {
+ opacity: 0;
+ visibility: hidden;
+}
+
+#profile > a {
+ text-align: center;
+ font-weight: bold;
+}
+
+#profile > ul {
+ padding: 10px 50px;
+ border: 2px dashed var(--warning-text-color);
+}
+
+
+    </style>
+  </head>
+
+  <body>
+	<script src="/js/script.js"></script>
+
+        <div id="flex">
+            <div id="rightSide">
+                <nav w3-include-html="\js\shrineNav.html" class="exception">Please enable Javascript or use the <a href="/sitemap.html" target="_self">Sitemap</a></nav>
+                <main>
+
+                    <a href="/cosplay.html" target="_self">&#8592; Back to Cosplays</a>
+
+                    <div id="warning" style="background-color: var(--darker);">
+                        <a href="https://www.mabsland.com/Adoption.html"><img class="aliased" src="/img/Censor_NC17a.gif" alt="Lady X: Adults Only rated."></a>
+                        <p style="margin-left: 10px;">The media associated with this cosplay is intended for adults only. There is no such content on this page, but I do not recommend engaging further if you are under the age of 18.</p>
+                    </div>
+
+                    <h1>Noiz</h1>
+
+                    <table>
+                        <tr>
+                            <th>Origin</th>
+                            <td>DRAMAtical Murder (Game)</td>
+                        </tr>
+                        <tr>
+                            <th>Year Finished</th>
+                            <td>2022</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>Closeted</td>
+                        </tr>
+                    </table> 
+
+                    <h2 style="display: flex;">Intro</h2>
+                    <p>I had been sorta-kinda cosplaying before I made Noiz, but this is the cosplay that really got me into it. Before then, I was really ambitious in my visions with none of the skills to execute them, which was really frustrating! I have a handful of cosplays from that era I never finished because they just were not turning out how I wanted them to. Noiz however, started out as a, "What if I made his shirt lmao," and sorta progressed from there into a cosplay. It was never made to look Good, just something I could say I made and gets the gist of the character across well enough.</p>
+
+                    <h2>Photos</h2>
+
+                    <div id="photos">
+
+                        <figure>
+                            <a href="img/noiz/2024.png">
+                                <img src="img/noiz/thumb/thumb_2024.png" alt="">
+                            </a>
+                            <figcaption class="photo-info">Taken by a friend, edited by me</figcaption>
+                        </figure>
+
+                        <figure>
+                            <a href="img/noiz/2022-2.png">
+                                <img src="img/noiz/thumb/thumb_2022-2.png" alt="">
+                            </a>
+                            <figcaption class="photo-info">Taken by Randall Gochuico</figcaption>
+                        </figure>
+
+                        <figure>
+                            <a href="img/noiz/2022-3.png">
+                                <img src="img/noiz/thumb/thumb_2022-3.png" alt="">
+                            </a>
+                            <figcaption class="photo-info">Taken by Randall Gochuico, edited by me.</figcaption>
+                        </figure>
+                        
+                        <!--
+                        <figure>
+                            <a href="img/">
+                                <img src="img/thumb/thumb_" alt="">
+                            </a>
+                            <figcaption class="photo-info"></figcaption>
+                        </figure>
+                        -->
+                    </div>
+
+                    <h2>Button-Up (and Capris)</h2>
+                    <p>This cosplay all started with the shirt. I thrifted a plain dark blue shirt, cropped it, and straight-up just sewed all the bits-and-bobs on top of it. The white was some polyester or cotton I already had, and the green is <a href="https://www.spoonflower.com/en/fabric/7705111-happy-trees-solid-light-green-by-kae50">Happy Trees Solid-light green</a> by kae50 on Spoonflower in Petal Signature Cotton. I got two yards but I really only needed one. I have also seen nearly this exact color at Wal-Mart.</p>
+                    <p>To make the white panels, I hap-hazardly traced the shirt shapes onto packing paper and used that as a pattern. It is in no way symmetrical, don't look at it too closely. Pocket is spare shirt fabric. All the green lining was made into pseudo bias tape and the edges are not pretty! Shoulder buttons are from JoAnn, rest in peace.</p>
+                    <p>Capris were a similar process, took some old work pants, cropped them, trimmed them with green and made some shitty butt pockets and put them over the existing pockets.</p>
+
+                    <h2>Accessories</h2>
+                    <p>Theres quite a handful of them!</p>
+
+                    <h3>Pins</h3>
+                    <p>At first, I bought some from Amazon. They were ugly and plastic-backed but they worked! A bit later I drew my own designs and got them made by <a href="https://www.etsy.com/shop/MugsAndPins">MugsAndPins on Etsy</a>. <a href="https://www.tumblr.com/noicefornoiz/727745702025920512/i-made-designs-of-noizs-button-accessories-since">Here are my button designs</a> on my secret DMMD Tumblr I don't use anymore.</p>
+                    <p>If you wanna buy them directly from me though, I have the button bundle available on my <a href="https://acggoods.com/product/noiz-cosplay-buttons-by-atticus-atlas/398048">ACGGOODS</a>!</p>
+
+                    <h3>Tie</h3>
+                    <p>Made with that Spoonflower fabric using <a href="https://www.youtube.com/watch?v=1p0xM53oxOc">this tie tutorial</a>. I made the strap too short so I sorta just sew extra length onto it lmao. Safety pins are from Amazon because I have no clue where to find giant black safety pins.</p>
+
+                    <h3>Bracelets</h3>
+                    <p>Inspired by this <a href="https://www.deviantart.com/fifthstreak/art/Noiz-dmmd-bracelet-wrist-strap-tutorial-487386496">Noiz Bracelet Tutorial by FifthStreak</a>. Thrifted a thick belt, already owned the fluffy lining, and the spikes are 3D-printed in <a href="https://3dfilamentprofiles.com/filament/details/368">Inland Peak Green PLA</a>. I mathed out the size I needed the spikes to be to fill the bracelets, they're easy enough to make in <a href="https://www.tinkercad.com/">TinkerCAD</a>.</p>
+                    <p>So I fucked these up by cutting the fluffy lining and the belt to be the same length, not realizing having one Inside the Other changes the needed length, so these are a lot smaller than I intended. If I remade these, I would cut the lining to size,shape it around my wrist, then wrap the belt around the lining to get a more appropriate size.</p>
+
+                    <h3>Belt Chains</h3>
+                    <p>3D printed using more Peak Green and some basic black, strung together with black paracord. I have the models available on my <a href="https://www.thingiverse.com/thing:4835623">Thingiverse</a>.</p>
+                    <p>My printer isn't multi-filament so I superglued on the faces to either side, but when they get brush against things, they break off very easily QwQ Not sure how to remedy this.</p>
+                    <p>I don't at all remember the knot loop thing I did for these, it was in a paracord loop compilation video though maybe you can find it, I like it because it was nice and round! Also they kinda suck but I printed <a href="https://www.thingiverse.com/thing:983879"> these carabiners</a> to attach the chains to my belt loops.</p>
+
+                    <h3>Belt</h3>
+                    <p>At first, I took a thrifted belt and glued super-thin 3D printouts of the pattern onto the belt. Worked for a bit but they quickly started cracking as PLA is very brittle. I have tried making a belt purely out of PLA held together by split rings, it is not functional at all and is a nightmare to put on but it works! I also had to add a cinch to the capris waistband since it couldn't function as a belt. I think it's only a matter of time before I have to find a new method...</p>
+
+                    <h3>Piercings</h3>
+                    <p>So funny thing. I tried to get snake bites and a bridge piercing, not just for cosplay but because I wanted them. Only one of the lip piercings has survived, the others stayed angry forever and ever, and I've tried to redo my lip TWICE!! I only have one costest photo with them all, the rest are piercing jewelry balls off amazon stuck on with <a href="https://www.bennye.com/product/tools/makeup-adhesives/spirit-gum/">Ben Nye Spirit Gum</a>. They don't stick well so I only put them on for shoots, if at all. My septum is real though!</p>
+
+                    <h3>Hat</h3>
+                    <p>Cant be assed to get/make a canon-compliant hat so I took inspo from one of his concept art designs and did a black beanie hat with safety pins, and of course the hat button. Maybe I lose cosplay points for being lazy but I don't care. Hat was bought somewhere and I have safety pins around the house.</p>
+
+                    <h2>Other</h2>
+                    <p>I also cant be assed to get/make canon-compliant shoes. This goes for all cosplays really. If they're a hyper specific design you get something that fits the vibes, usually black or white sneakers. And I'm just wearing knee-high black socks.</p>
+                    <p>I haven't bothered getting a wig since you see so little of his hair, I've pondered finding some wefts and just figuring out how to sew them into the hat.</p>
+                    <p>Oh yeah gloves to mimic his hand wraps were also Amazon. I apologize for the amount of Amazon going on with this cosplay.</p>
+
+                    <a href="#flex" target="_self">&#8593; Back to top</a>
+                </main>
+                <footer w3-include-html="\js\footer.html"></footer>
+            </div>
+            
+            <aside style="background-image: url('img/noiz/2022-2.png')"></aside>
+
+        </div>
+
+
+	<script>includeHTML();</script>
+
+  </body>
+
+</html>
