@@ -321,7 +321,7 @@ ul {
 	padding-left: 15px;
 }
 
-ul > ul {padding-left: 40px;}
+li > ul {padding-left: 40px;}
 
 .exception li {list-style-image: none;}
 
