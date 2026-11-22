@@ -68,12 +68,12 @@
 			transition: transform ease-in .3s, opacity ease-in .3s;
 		}
 
-		.graveyard .spray{
+		#graveyard .spray{
 			filter: grayscale(50%);
 			transition: transform ease-out .3s, filter ease-out .3s;
 		}
 
-		.graveyard .spray:hover{
+		#graveyard .spray:hover{
 			filter: grayscale(0%);
 			transition: transform ease-in .3s, filter ease-in .3s;
 		}
@@ -298,6 +298,19 @@
 									<li>Fresh Magnolia</li>
 									<li>Creamy Sandalwood</li>
 									<li>Warm Musk</li>
+								</ul>
+						</div>
+					</div>
+
+                    <div tabindex="0" class="spray" style="background-image:url(/img/bbw/worthWanting.png);">
+						<div class="description">
+							<h3>Worth Wanting</h3>
+							<p>Released 2026</p>
+							<p>Fragrance Notes: </p>
+								<ul>
+									<li>Sheer Stone Fruits</li>
+									<li>Luminous Lily</li>
+									<li>Whipped Honey</li>
 								</ul>
 						</div>
 					</div>
@@ -558,12 +571,15 @@
 					<div class="spray" style="background-image:url(/img/bbw/champagneToastEDP.png); width: 150px;">
 					</div>
 
+                    <div class="spray" style="background-image:url(/img/bbw/pinkObsessedEDP.png); width: 156px;">
+					</div>
+
 				</div>
 
 				<h2>Graveyard</h2>
 				<p>Scents of times past that were too significant (or yummy) to fully remove. Gone but never forgotten...</p>
 
-				<div class="flex graveyard">
+				<div class="flex" id="graveyard">
 					<div tabindex="0" class="spray" style="background-image:url(/img/bbw/parisamor.png);">
 						<div class="description">
 							<h3>Paris Amour</h3>
